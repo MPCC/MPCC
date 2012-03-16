@@ -1,0 +1,5 @@
+C:\New\MPCC\MPCC\Rest\bin\Rest.dll
+C:\New\MPCC\MPCC\Rest\bin\Rest.pdb
+C:\New\MPCC\MPCC\Rest\obj\Debug\ResolveAssemblyReference.cache
+C:\New\MPCC\MPCC\Rest\obj\Debug\Rest.dll
+C:\New\MPCC\MPCC\Rest\obj\Debug\Rest.pdb
