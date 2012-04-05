@@ -3,3 +3,8 @@ C:\New\MPCC\MPCC\Rest\bin\Rest.pdb
 C:\New\MPCC\MPCC\Rest\obj\Debug\ResolveAssemblyReference.cache
 C:\New\MPCC\MPCC\Rest\obj\Debug\Rest.dll
 C:\New\MPCC\MPCC\Rest\obj\Debug\Rest.pdb
+D:\mpcc\MPCC\MPCC\Rest\bin\Rest.dll
+D:\mpcc\MPCC\MPCC\Rest\bin\Rest.pdb
+D:\mpcc\MPCC\MPCC\Rest\obj\Debug\ResolveAssemblyReference.cache
+D:\mpcc\MPCC\MPCC\Rest\obj\Debug\Rest.dll
+D:\mpcc\MPCC\MPCC\Rest\obj\Debug\Rest.pdb

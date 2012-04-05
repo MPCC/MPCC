@@ -19,15 +19,21 @@ namespace Rest
     {
         // TODO: Implement the collection resource that will contain the SampleItem instances
 
-        [WebGet(UriTemplate = "")]
-        public List<SampleItem> GetCollection()
+        [WebGet(UriTemplate = "", ResponseFormat= WebMessageFormat.Json)]
+        [OperationContract]
+        public string GetCollection()
         {
             // TODO: Replace the current implementation to return a collection of SampleItem instances
-            return new List<SampleItem>() { new SampleItem() { Id = 1, StringValue = "Hello" } };
+            List<SampleUser> list = new List<SampleUser>()
+                           {
+                               new SampleUser() {memberId = 1, fname = "Eric", lname  = "Jones"},
+                               new SampleUser() {memberId = 2, fname = "Iulian", lname  = "Mihai"}
+                           };
+            return list.ToJSON();
         }
 
-        [WebInvoke(UriTemplate = "", Method = "POST")]
-        public SampleItem Create(SampleItem instance)
+        [WebInvoke(UriTemplate = "", Method = "POST", RequestFormat = WebMessageFormat.Json)]
+        public SampleUser Create(SampleUser instance)
         {
             // TODO: Add the new instance of SampleItem to the collection
             throw new NotImplementedException();
