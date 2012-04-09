@@ -2,6 +2,7 @@
 using System.ServiceModel.Activation;
 using System.Web;
 using System.Web.Routing;
+using Rest.Routes;
 
 namespace Rest
 {
@@ -14,8 +15,7 @@ namespace Rest
 
         private void RegisterRoutes()
         {
-            // Edit the base address of Service1 by replacing the "Service1" string below
-            RouteTable.Routes.Add(new ServiceRoute("Service1", new WebServiceHostFactory(), typeof(Service1)));
+            RouteTable.Routes.Add(new ServiceRoute("Member", new WebServiceHostFactory(), typeof(MemberService)));
         }
     }
 }
