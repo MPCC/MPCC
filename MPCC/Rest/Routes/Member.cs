@@ -13,10 +13,10 @@ namespace Rest.Routes
     
     public class MemberService
     {
-        [WebGet(UriTemplate = "", ResponseFormat = WebMessageFormat.Json)]
-        public string GetCollection()
+        [WebGet(UriTemplate = "/?index={index}&paging={paging}", ResponseFormat = WebMessageFormat.Json)]
+        public string GetCollection(int index, int paging)
         {
-            return new GetCollectionResponse<Member>() { Total = SampleData.GetMemberList().Count, Entities = SampleData.GetMemberList() }.ToJSON();
+            return new GetCollectionResponse<Member>() { Index = index, Paging = paging, Total = SampleData.GetMemberList().Count, Entities = SampleData.GetMemberList() }.ToJSON();
         }
 
         [WebInvoke(UriTemplate = "", Method = "POST", RequestFormat = WebMessageFormat.Json)]
@@ -24,13 +24,13 @@ namespace Rest.Routes
         {
             return new GetResponse<Member>() { Entity = SampleData.SaveMember(entity) }.ToJSON();
         }
-
+        
         [WebGet(UriTemplate = "{id}", ResponseFormat = WebMessageFormat.Json)]
         public string Get(string id)
         {
             return new GetResponse<Member>() { Entity = SampleData.GetMemberById(id) }.ToJSON();
         }
-
+        
         [WebInvoke(UriTemplate = "{id}", Method = "DELETE", RequestFormat = WebMessageFormat.Json)]
         public void Delete(string id)
         {
