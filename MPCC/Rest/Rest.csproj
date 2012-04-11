@@ -33,7 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\..\Common\FluentNHibernate\FluentNHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NHibernate">
+      <HintPath>..\..\Common\FluentNHibernate\NHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System" />
@@ -63,6 +69,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Enums.cs" />
     <Compile Include="Data\SampleData.cs" />
     <Compile Include="Objects\Member.cs" />
     <Compile Include="Objects\Route.cs" />

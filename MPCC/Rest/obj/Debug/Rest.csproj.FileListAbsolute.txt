@@ -8,3 +8,12 @@ D:\mpcc\MPCC\MPCC\Rest\bin\Rest.pdb
 D:\mpcc\MPCC\MPCC\Rest\obj\Debug\ResolveAssemblyReference.cache
 D:\mpcc\MPCC\MPCC\Rest\obj\Debug\Rest.dll
 D:\mpcc\MPCC\MPCC\Rest\obj\Debug\Rest.pdb
+D:\mpcc\MPCC\MPCC\Rest\bin\FluentNHibernate.dll
+D:\mpcc\MPCC\MPCC\Rest\bin\NHibernate.dll
+D:\mpcc\MPCC\MPCC\Rest\bin\Iesi.Collections.dll
+D:\mpcc\MPCC\MPCC\Rest\bin\FluentNHibernate.pdb
+D:\mpcc\MPCC\MPCC\Rest\bin\FluentNHibernate.xml
+D:\mpcc\MPCC\MPCC\Rest\bin\NHibernate.pdb
+D:\mpcc\MPCC\MPCC\Rest\bin\NHibernate.xml
+D:\mpcc\MPCC\MPCC\Rest\bin\Iesi.Collections.pdb
+D:\mpcc\MPCC\MPCC\Rest\bin\Iesi.Collections.xml

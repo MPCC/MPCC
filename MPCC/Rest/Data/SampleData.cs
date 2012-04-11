@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Rest.Objects;
-using Rest.Routes;
 
 namespace Rest.Data
 {
@@ -29,38 +28,53 @@ namespace Rest.Data
 
         public static Member SampleMemberOne()
         {
-            Name name = new Name();
+            var name = new Name();
             name.First = "Eric";
             name.Last = "Jones";
             name.Middle = "Who Cares";
 
-            Address address = new Address();
+            var address = new Address();
             address.Street = "1234 East St.";
+            address.Apt = String.Empty;
             address.City = "Greenwood";
             address.State = "IN";
             address.Zip = 46142;
 
-            Channel c1 = new Channel();
-            c1.ChannelName = MessageChannels.Twitter.ToString();
+            var twitter = new MessageChannel();
+            twitter.Name = Enums.MessageChannels.Twitter.ToString();
+            twitter.Id = Enums.MessageChannels.Twitter;
+
+            var email = new MessageChannel();
+            email.Name = Enums.MessageChannels.Email.ToString();
+            email.Id = Enums.MessageChannels.Email;
+
+            var c1 = new Channel();
+            c1.Type = twitter;
             c1.AccountId = "@erjjones";
-            c1.ChannelId = MessageChannels.Twitter;
             c1.IsPreferred = true;
             c1.IsActive = true;
             c1.IsOptIn = true;
 
-            Channel c2 = new Channel();
-            c2.ChannelName = MessageChannels.Email.ToString();
+            var c2 = new Channel();
+            c2.Type = email;
             c2.AccountId = "erjjones@gmail.com";
-            c2.ChannelId = MessageChannels.Email;
             c2.IsPreferred = false;
             c2.IsActive = true;
             c2.IsOptIn = true;
 
-            List<Channel> clist = new List<Channel>();
+            var clist = new List<Channel>();
             clist.Add(c1);
             clist.Add(c2);
 
             var dob = new DateTime(1981, 4, 25);
+            var startDate = new DateTime(1986, 1, 1);
+            var lastVisitDate = new DateTime(2012, 4, 8);
+
+            var m = new Membership();
+            m.StartDate = Utility.ToISO86(startDate);
+            m.LastVisitDate = Utility.ToISO86(lastVisitDate);
+            m.EndDate = "";
+            m.IsActive = true;
 
             return new Member()
             {
@@ -68,44 +82,61 @@ namespace Rest.Data
                 Name = name,
                 DateOfBirth = Utility.ToISO86(dob),
                 Address = address,
-                Channels = clist
+                Channels = clist,
+                Membership = m
             };
         }
 
         public static Member SampleMemberTwo()
         {
-            Name name = new Name();
+            var name = new Name();
             name.First = "Bob";
             name.Last = "Smith";
             name.Middle = "Riley";
 
-            Address address = new Address();
+            var address = new Address();
             address.Street = "123 Elm St";
+            address.Apt = String.Empty;
             address.City = "Indianapolis";
             address.State = "IN";
             address.Zip = 46225;
 
-            Channel c1 = new Channel();
-            c1.ChannelName = MessageChannels.Twitter.ToString();
+            var twitter = new MessageChannel();
+            twitter.Name = Enums.MessageChannels.Twitter.ToString();
+            twitter.Id = Enums.MessageChannels.Twitter;
+
+            var email = new MessageChannel();
+            email.Name = Enums.MessageChannels.Email.ToString();
+            email.Id = Enums.MessageChannels.Email;
+
+            var c1 = new Channel();
+            c1.Type = twitter;
             c1.AccountId = "@bobsmith";
-            c1.ChannelId = MessageChannels.Twitter;
             c1.IsPreferred = false;
             c1.IsActive = true;
             c1.IsOptIn = true;
 
-            Channel c2 = new Channel();
-            c2.ChannelName = MessageChannels.Email.ToString();
+            var c2 = new Channel();
+            c2.Type = email;
             c2.AccountId = "bobsmith@yahoo.com";
-            c2.ChannelId = MessageChannels.Email;
             c2.IsPreferred = true;
             c2.IsActive = true;
             c2.IsOptIn = true;
 
-            List<Channel> clist = new List<Channel>();
+            var clist = new List<Channel>();
             clist.Add(c1);
             clist.Add(c2);
 
             var dob = new DateTime(1979, 9, 19);
+            var startDate = new DateTime(2001, 4, 1);
+            var lastVisitDate = new DateTime(2002, 11, 6);
+            var endDate = new DateTime(2003, 1, 1);
+
+            var m = new Membership();
+            m.StartDate = Utility.ToISO86(startDate);
+            m.LastVisitDate = Utility.ToISO86(lastVisitDate);
+            m.EndDate = Utility.ToISO86(endDate);
+            m.IsActive = false;
 
             return new Member()
             {
@@ -113,7 +144,8 @@ namespace Rest.Data
                 Name = name,
                 DateOfBirth = Utility.ToISO86(dob),
                 Address = address,
-                Channels = clist
+                Channels = clist,
+                Membership = m
             };
         }
     }
