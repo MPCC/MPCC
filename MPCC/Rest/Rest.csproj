@@ -33,7 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\..\Common\FluentNHibernate\FluentNHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NHibernate">
+      <HintPath>..\..\Common\FluentNHibernate\NHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System" />
@@ -63,14 +69,16 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extension.cs" />
-    <Compile Include="SampleUser.cs" />
-    <Compile Include="Service1.cs" />
-    <Compile Include="SampleItem.cs" />
+    <Compile Include="Data\Enums.cs" />
+    <Compile Include="Data\SampleData.cs" />
+    <Compile Include="Objects\Member.cs" />
+    <Compile Include="Objects\Route.cs" />
+    <Compile Include="Routes\Member.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
