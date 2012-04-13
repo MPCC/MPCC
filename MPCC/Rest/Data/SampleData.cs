@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using FluentNHibernate.Data;
 using Rest.Objects;
 
 namespace Rest.Data
@@ -11,6 +12,24 @@ namespace Rest.Data
             var list = new List<Member>();
             list.Add(SampleMemberOne());
             list.Add(SampleMemberTwo());
+
+            //var s = Entity<Member>.CreateSessionFactory();
+
+            //using (var session = s.OpenSession())
+            //{
+            //    using (var transaction = session.BeginTransaction())
+            //    {
+            //        var entities = session.CreateCriteria(typeof(Member))
+            //            .List<Member>();
+
+            //        foreach (var x in entities)
+            //        {
+            //            list.Add(x);
+            //        }
+            //        transaction.Commit();
+            //    }
+            //}
+
             return list;
         }
 
