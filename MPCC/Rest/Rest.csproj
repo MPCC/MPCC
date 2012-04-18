@@ -69,6 +69,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Entity.cs" />
     <Compile Include="Data\Enums.cs" />
     <Compile Include="Data\SampleData.cs" />
     <Compile Include="Objects\Member.cs" />

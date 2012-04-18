@@ -119,11 +119,11 @@ namespace Rest.Objects
     {
         public MemberMap()
         {
-            Id(x => x.Id);
+            Id(x => x.Id).Column("MemberId");
             Map(x => x.Name.First).Column("FirstName");
             Map(x => x.Name.Middle).Column("MiddleName");
             Map(x => x.Name.Last).Column("LastName");
-            Map(x => x.Address.Street).Column("StreetAddress");
+            Map(x => x.Address.Street).Column("Street");
             Map(x => x.Address.Apt);
             Map(x => x.Address.City);
             Map(x => x.Address.State);
@@ -133,9 +133,9 @@ namespace Rest.Objects
             Map(x => x.Membership.LastVisitDate).Column("LastVisitDate");
             Map(x => x.Membership.EndDate).Column("EndDate");
             Map(x => x.Membership.IsActive).Column("IsActive");
-            HasMany(x => x.Channels)
-                .Inverse()
-                .Cascade.All();
+            //HasMany(x => x.Channels)
+            //    .Inverse()
+            //    .Cascade.All();
         }
     }
 
