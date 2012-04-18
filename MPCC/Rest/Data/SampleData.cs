@@ -35,7 +35,15 @@ namespace Rest.Data
 
         public static Member GetMemberById(string id)
         {
-            return SampleMemberOne();
+            if (id == "1")
+            {
+                return SampleMemberOne();
+            }
+            else
+            {
+                return SampleMemberTwo();
+            }
+            
         }
 
         public static Member SaveMember(Member member)
