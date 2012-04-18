@@ -30,6 +30,12 @@ namespace Rest.Objects
 
         [DataMember]
         public virtual Membership Membership { get; set; }
+
+        [DataMember]
+        public virtual string Image { get; set; }
+
+        [DataMember]
+        public virtual Family Family { get; set; }
     }
 
     [DataContract]
@@ -112,6 +118,19 @@ namespace Rest.Objects
         public virtual bool IsActive { get; set; }
     }
 
+    [DataContract]
+    public class Family
+    {
+        [DataMember]
+        public virtual int Id { get; set; }
+
+        [DataMember]
+        public virtual string Name { get; set; }
+
+        [DataMember]
+        public virtual string Image { get; set; }
+    }
+
     #endregion
 
     #region Mappings
@@ -124,6 +143,7 @@ namespace Rest.Objects
             Map(x => x.Name.Middle).Column("MiddleName");
             Map(x => x.Name.Last).Column("LastName");
             Map(x => x.Address.Street).Column("Street");
+            Map(x => x.Image);
             Map(x => x.Address.Apt);
             Map(x => x.Address.City);
             Map(x => x.Address.State);
