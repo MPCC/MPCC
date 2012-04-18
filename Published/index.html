@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
+         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    </head>
+    <body>
+         <div data-role="page" data-theme="b" id="page1">
+            <div data-theme="a" data-role="header">
+                <h3>MPCC Mobile App</h3>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="txtUsername">Username</label>
+                        <input id="txtUsername" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="txtPassword">Password</label>
+                        <input id="txtPassword" placeholder="" value="" type="password" />
+                    </fieldset>
+                </div>
+                <!--<input type="submit" id="btnLogin" data-rel="#page2" value="Log On" />-->
+                <a href="#page2" data-role="button">Log On</a>
+            </div>
+        </div>
+        <div data-role="page" data-theme="b" id="page2">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Profile
+                </h3>
+            </div>
+            <div data-role="content">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="" class="ui-btn-active">
+                                Personal
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="">
+                                Family
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page1" data-theme="" data-icon="">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+            $('#btnLogin').click(function () {
+                page2
+            });
+        </script>
+    </body>
+</html>
