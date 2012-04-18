@@ -50,7 +50,7 @@ namespace Rest.Data
             var name = new Name();
             name.First = "Eric";
             name.Last = "Jones";
-            name.Middle = "Who Cares";
+            name.Middle = "Joseph";
 
             var address = new Address();
             address.Street = "1234 East St.";
@@ -59,6 +59,12 @@ namespace Rest.Data
             address.State = "IN";
             address.Zip = 46142;
 
+            var family = new Family();
+            family.Id = 1;
+            family.Name = "Jones";
+
+            var gravatar = "http://www.gravatar.com/avatar/ca1556da271e3177836fdd55bc926ecd.png";
+            
             var twitter = new MessageChannel();
             twitter.Name = Enums.MessageChannels.Twitter.ToString();
             twitter.Id = Enums.MessageChannels.Twitter;
@@ -102,7 +108,9 @@ namespace Rest.Data
                 DateOfBirth = Utility.ToISO86(dob),
                 Address = address,
                 Channels = clist,
-                Membership = m
+                Membership = m,
+                Image = gravatar,
+                Family = family
             };
         }
 
@@ -157,6 +165,10 @@ namespace Rest.Data
             m.EndDate = Utility.ToISO86(endDate);
             m.IsActive = false;
 
+            var family = new Family();
+            family.Id = 2;
+            family.Name = "Smith";
+
             return new Member()
             {
                 Id = 2,
@@ -164,7 +176,8 @@ namespace Rest.Data
                 DateOfBirth = Utility.ToISO86(dob),
                 Address = address,
                 Channels = clist,
-                Membership = m
+                Membership = m,
+                Family = family
             };
         }
     }
