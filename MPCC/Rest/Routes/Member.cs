@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ServiceModel;
 using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
@@ -16,13 +17,19 @@ namespace Rest.Routes
         [WebGet(UriTemplate = "/?index={index}&paging={paging}", ResponseFormat = WebMessageFormat.Json)]
         public string GetCollection(int index, int paging)
         {
-            return new GetCollectionResponse<Member>() { Index = index, Paging = paging, Total = SampleData.GetMemberList().Count, Entities = SampleData.GetMemberList() }.ToJSON();
+            List<Member> entities = MemberRepository.GetMemberList(index, paging);
+            return new GetCollectionResponse<Member>() { Index = index, Paging = paging, Total = entities.Count, Entities = entities }.ToJSON();
         }
 
         [WebInvoke(UriTemplate = "", Method = "POST", RequestFormat = WebMessageFormat.Json)]
         public string Create(Member entity)
         {
-            return new GetResponse<Member>() { Entity = SampleData.SaveMember(entity) }.ToJSON();
+            Member m = entity;
+            m.LastVisitDate = Utility.ToDateTime(entity.LastVisitDate.ToString());
+            m.ModifiedDate = DateTime.Now;
+
+            Entity<Member>.Save(m);
+            return new GetResponse<Member>() { Entity = SampleData.SaveMember(m) }.ToJSON();
         }
         
         [WebGet(UriTemplate = "{id}", ResponseFormat = WebMessageFormat.Json)]

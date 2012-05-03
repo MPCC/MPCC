@@ -40,6 +40,9 @@
     <Reference Include="NHibernate">
       <HintPath>..\..\Common\FluentNHibernate\NHibernate.dll</HintPath>
     </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>..\..\Common\FluentNHibernate\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System" />
@@ -71,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Data\Entity.cs" />
     <Compile Include="Data\Enums.cs" />
+    <Compile Include="Data\MemberRepository.cs" />
     <Compile Include="Data\SampleData.cs" />
     <Compile Include="Objects\Member.cs" />
     <Compile Include="Objects\Route.cs" />

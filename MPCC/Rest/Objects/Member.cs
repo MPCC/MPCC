@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 using FluentNHibernate.Mapping;
 using Rest.Data;
@@ -17,43 +18,20 @@ namespace Rest.Objects
         public virtual int Id { get; set; }
 
         [DataMember]
-        public virtual Name Name { get; set; }
+        public virtual string FirstName { get; set; }
+
+        [DataMember]
+        public virtual string MiddleName { get; set; }
+
+        [DataMember]
+        public virtual string LastName { get; set; }
 
         [DataMember]
         public virtual string DateOfBirth { get; set; }
 
         [DataMember]
-        public virtual Address Address { get; set; }
-
-        [DataMember]
-        public virtual List<Channel> Channels { get; set; }
-
-        [DataMember]
-        public virtual Membership Membership { get; set; }
-
-        [DataMember]
         public virtual string Image { get; set; }
 
-        [DataMember]
-        public virtual Family Family { get; set; }
-    }
-
-    [DataContract]
-    public class Name
-    {
-        [DataMember]
-        public virtual string First { get; set; }
-
-        [DataMember]
-        public virtual string Middle { get; set; }
-
-        [DataMember]
-        public virtual string Last { get; set; }
-    }
-
-    [DataContract]
-    public class Address
-    {
         [DataMember]
         public virtual string Street { get; set; }
 
@@ -67,9 +45,34 @@ namespace Rest.Objects
         public virtual string State { get; set; }
 
         [DataMember]
-        public virtual int Zip { get; set; }
+        public virtual int? Zip { get; set; }
+
+        [DataMember]
+        public virtual DateTime? StartDate { get; set; }
+
+        [DataMember]
+        public virtual DateTime? LastVisitDate { get; set; }
+
+        [DataMember]
+        public virtual DateTime? EndDate { get; set; }
+
+        [DataMember]
+        public virtual bool IsActive { get; set; }
+
+        [DataMember]
+        public virtual int? FamilyId { get; set; }
+        
+        [DataMember]
+        public virtual List<Channel> Channels { get; set; }
+
+        [DataMember]
+        public virtual DateTime? CreatedDate { get; set; }
+
+        [DataMember]
+        public virtual DateTime? ModifiedDate { get; set; }
     }
 
+   
     [DataContract]
     public class Channel
     {
@@ -103,22 +106,6 @@ namespace Rest.Objects
     }
 
     [DataContract]
-    public class Membership
-    {
-        [DataMember]
-        public virtual string StartDate { get; set; }
-
-        [DataMember]
-        public virtual string LastVisitDate { get; set; }
-
-        [DataMember]
-        public virtual string EndDate { get; set; }
-
-        [DataMember]
-        public virtual bool IsActive { get; set; }
-    }
-
-    [DataContract]
     public class Family
     {
         [DataMember]
@@ -139,38 +126,40 @@ namespace Rest.Objects
         public MemberMap()
         {
             Id(x => x.Id).Column("MemberId");
-            Map(x => x.Name.First).Column("FirstName");
-            Map(x => x.Name.Middle).Column("MiddleName");
-            Map(x => x.Name.Last).Column("LastName");
-            Map(x => x.Address.Street).Column("Street");
+            Map(x => x.FirstName);
+            Map(x => x.MiddleName);
+            Map(x => x.LastName);
+            Map(x => x.Street);
             Map(x => x.Image);
-            Map(x => x.Address.Apt);
-            Map(x => x.Address.City);
-            Map(x => x.Address.State);
-            Map(x => x.Address.Zip);
+            Map(x => x.Apt);
+            Map(x => x.City);
+            Map(x => x.State);
+            Map(x => x.Zip);
             Map(x => x.DateOfBirth);
-            Map(x => x.Membership.StartDate).Column("StartDate");
-            Map(x => x.Membership.LastVisitDate).Column("LastVisitDate");
-            Map(x => x.Membership.EndDate).Column("EndDate");
-            Map(x => x.Membership.IsActive).Column("IsActive");
+            Map(x => x.StartDate);
+            Map(x => x.LastVisitDate);
+            Map(x => x.EndDate);
+            Map(x => x.IsActive);
+            Map(x => x.CreatedDate).ReadOnly();
+            Map(x => x.ModifiedDate);
             //HasMany(x => x.Channels)
             //    .Inverse()
             //    .Cascade.All();
         }
     }
 
-    public class ChannelMap : ClassMap<Channel>
-    {
-        public ChannelMap()
-        {
-            Id(x => x.Id);
-            Map(x => x.Type.Id).Column("ChannelTypeId");
-            Map(x => x.Type.Name).Column("ChannelTypeName");
-            Map(x => x.AccountId);
-            Map(x => x.IsActive);
-            Map(x => x.IsPreferred);
-            Map(x => x.IsOptIn);
-        }
-    } 
+    //public class ChannelMap : ClassMap<Channel>
+    //{
+    //    public ChannelMap()
+    //    {
+    //        Id(x => x.Id);
+    //        Map(x => x.Type.Id).Column("ChannelTypeId");
+    //        Map(x => x.Type.Name).Column("ChannelTypeName");
+    //        Map(x => x.AccountId);
+    //        Map(x => x.IsActive);
+    //        Map(x => x.IsPreferred);
+    //        Map(x => x.IsOptIn);
+    //    }
+    //} 
     #endregion
 }

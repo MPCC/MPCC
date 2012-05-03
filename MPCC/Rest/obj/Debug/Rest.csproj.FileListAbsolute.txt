@@ -17,3 +17,8 @@ D:\mpcc\MPCC\MPCC\Rest\bin\NHibernate.pdb
 D:\mpcc\MPCC\MPCC\Rest\bin\NHibernate.xml
 D:\mpcc\MPCC\MPCC\Rest\bin\Iesi.Collections.pdb
 D:\mpcc\MPCC\MPCC\Rest\bin\Iesi.Collections.xml
+D:\mpcc\MPCC\MPCC\Rest\bin\NHibernate.ByteCode.Castle.dll
+D:\mpcc\MPCC\MPCC\Rest\bin\Castle.Core.dll
+D:\mpcc\MPCC\MPCC\Rest\bin\NHibernate.ByteCode.Castle.pdb
+D:\mpcc\MPCC\MPCC\Rest\bin\NHibernate.ByteCode.Castle.xml
+D:\mpcc\MPCC\MPCC\Rest\bin\Castle.Core.xml

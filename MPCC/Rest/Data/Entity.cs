@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
-using NHibernate.Cache;
+using Rest.Objects;
 
 namespace Rest.Data
 {
@@ -18,8 +16,15 @@ namespace Rest.Data
             {
                 using (var transaction = session.BeginTransaction())
                 {
-                    session.Save(Entity);
-                    transaction.Commit();
+                    try
+                    {
+                        session.Save(Entity);
+                        transaction.Commit();
+                    }
+                    catch (Exception e)
+                    {
+                        throw new Exception(e.InnerException.ToString());
+                    }
                 }
             }
         }
@@ -40,25 +45,21 @@ namespace Rest.Data
 
         public static ISessionFactory CreateSessionFactory()
         {
-            return Fluently.Configure()
+            try
+            {
+                return Fluently.Configure()
                 .Database(MsSqlConfiguration.MsSql2008
-                    .ConnectionString(c => c.FromAppSetting("connectionString"))
-                    .DefaultSchema("dbo"))
-                .Cache(c => c.UseQueryCache().ProviderClass<HashtableCacheProvider>())
-                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Objects.Member>())
+                .ConnectionString(c => c
+                    .FromAppSetting("connectionString"))
+                .Cache(c => c
+                    .UseQueryCache()).ShowSql())
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Member>())
                 .BuildSessionFactory();
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.InnerException.ToString());
+            }
         }
-
-        //private void ConfigureAssemblies()
-        //{
-        //    foreach (Assembly assembly in AppDomain.CurrentDomain.GetAssemblies())
-        //    {
-        //        foreach (object attribute in assembly.GetCustomAttributes(true))
-        //        {
-        //            //if (attribute is HibernatePersistenceAssembly)
-        //                //configuration.AddAssembly(assembly);
-        //        }
-        //    }
-        //}
     }
 }

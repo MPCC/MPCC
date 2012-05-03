@@ -16,12 +16,14 @@ BEGIN
 		[State] nvarchar(4) NULL,
 		Zip int NULL,
 		DateOfBirth datetime NULL,
+		[Image] nvarchar(255) NULL,
+		FamilyId int NULL,
 		StartDate datetime NULL,
 		LastVisitDate datetime NULL,
 		EndDate datetime NULL,
 		IsActive bit NOT NULL CONSTRAINT DF_Member_IsActive DEFAULT((1)),
-		CreatedDate datetime NOT NULL CONSTRAINT DF_Member_CreateDate DEFAULT (getdate()),
-		ModifiedDate datetime NOT NULL CONSTRAINT DF_Member_Modified DEFAULT (getdate())
+		CreatedDate datetime NOT NULL CONSTRAINT DF_Member_CreatedDate DEFAULT (getdate()),
+		ModifiedDate datetime NOT NULL CONSTRAINT DF_Member_ModifiedDate DEFAULT (getdate())
 		
 		CONSTRAINT PK_Member PRIMARY KEY CLUSTERED (
 			[MemberId] ASC,
