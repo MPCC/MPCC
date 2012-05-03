@@ -15,27 +15,34 @@ namespace Rest.Routes
     public class MemberService
     {
         [WebGet(UriTemplate = "/?index={index}&paging={paging}", ResponseFormat = WebMessageFormat.Json)]
-        public string GetCollection(int index, int paging)
+        public GetCollectionResponse<Member> GetCollection(int index, int paging)
         {
             List<Member> entities = MemberRepository.GetMemberList(index, paging);
-            return new GetCollectionResponse<Member>() { Index = index, Paging = paging, Total = entities.Count, Entities = entities }.ToJSON();
+            return
+                new GetCollectionResponse<Member>()
+                    {
+                        Index = index,
+                        Paging = paging,
+                        Total = SampleData.GetMemberList().Count,
+                        Entities = SampleData.GetMemberList()
+                    };
         }
 
         [WebInvoke(UriTemplate = "", Method = "POST", RequestFormat = WebMessageFormat.Json)]
-        public string Create(Member entity)
+        public GetResponse<Member> Create(Member entity)
         {
             Member m = entity;
             m.LastVisitDate = Utility.ToDateTime(entity.LastVisitDate.ToString());
             m.ModifiedDate = DateTime.Now;
 
             Entity<Member>.Save(m);
-            return new GetResponse<Member>() { Entity = SampleData.SaveMember(m) }.ToJSON();
+            return new GetResponse<Member>() { Entity = SampleData.SaveMember(entity) };
         }
         
         [WebGet(UriTemplate = "{id}", ResponseFormat = WebMessageFormat.Json)]
-        public string Get(string id)
+        public GetResponse<Member> Get(string id)
         {
-            return new GetResponse<Member>() { Entity = SampleData.GetMemberById(id) }.ToJSON();
+            return new GetResponse<Member>() { Entity = SampleData.GetMemberById(id) };
         }
         
         [WebInvoke(UriTemplate = "{id}", Method = "DELETE", RequestFormat = WebMessageFormat.Json)]
