@@ -1,11 +1,31 @@
 ﻿using System;
+using System.Net;
+using System.ServiceModel.Web;
 using System.Web.Script.Serialization;
 using System.Xml;
+using Auth;
 
 namespace Rest
 {
     public static class Utility
     {
+        public static Principal GetContext(IncomingWebRequestContext request)
+        {
+            var token = request.Headers.Get("oauth_token") ?? String.Empty;
+
+            if (String.IsNullOrEmpty(token))
+            {
+                throw new WebFaultException(HttpStatusCode.Unauthorized);
+            }
+
+            if (!AuthManager.ValidateToken(token))
+            {
+                throw new WebFaultException(HttpStatusCode.Unauthorized);
+            }
+
+            return AuthManager.GetPrincipal(token);
+        }
+
         public static string ToISO86(DateTime date)
         {
             return XmlConvert.ToString(date, XmlDateTimeSerializationMode.Local);

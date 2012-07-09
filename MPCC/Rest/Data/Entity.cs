@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
+using NHibernate.Criterion;
 using Rest.Objects;
 
 namespace Rest.Data
@@ -42,8 +44,59 @@ namespace Rest.Data
                 }
             }
         }
+        
+        public static T FindOne<T>(object id) where T : class
+        {
+            var s = Entity<TData>.CreateSessionFactory();
+            var entity = new Object();
 
-        public static ISessionFactory CreateSessionFactory()
+            using (var session = s.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    entity = session.Get<TData>(id);
+                    transaction.Commit();
+                }
+            }
+            return (T)entity;
+        }
+
+        public static List<TData> FindMany<T>(ICriterion filter, int index, int paging, out long count) where T : class
+        {
+            var s = Entity<TData>.CreateSessionFactory();
+            var skip = index > 1 ? (index * paging) / 2 : 0;
+            var take = Math.Min(paging, 100);
+            var list = new List<TData>();
+
+            using (var session = s.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    var cnt = session.QueryOver<T>()
+                        .Where(filter)
+                        .ToRowCountInt64Query()
+                        .FutureValue<long>();
+
+                    var entities = session.QueryOver<T>()
+                        .Where(filter)
+                        .Take(take)
+                        .Skip(skip)
+                        .List<TData>();
+
+                    foreach (var x in entities)
+                    {
+                        list.Add(x);
+                    }
+
+                    count = cnt.Value;
+                    transaction.Commit();
+                }
+            }
+            
+            return list;
+        }
+
+        private static ISessionFactory CreateSessionFactory()
         {
             try
             {

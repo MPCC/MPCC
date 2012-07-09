@@ -15,7 +15,16 @@ namespace Rest.Objects
     public class Member
     {
         [DataMember]
-        public virtual int Id { get; set; }
+        public virtual int MemberId { get; set; }
+
+        [DataMember]
+        public virtual int EnterpriseId { get; set; }
+
+        [DataMember]
+        public virtual int BusinessUnitId { get; set; }
+
+        [DataMember]
+        public virtual Guid ProviderUserKey { get; set; }
 
         [DataMember]
         public virtual string FirstName { get; set; }
@@ -31,6 +40,9 @@ namespace Rest.Objects
 
         [DataMember]
         public virtual string Image { get; set; }
+
+        [DataMember]
+        public virtual string Email { get; set; }
 
         [DataMember]
         public virtual string Street { get; set; }
@@ -125,12 +137,16 @@ namespace Rest.Objects
     {
         public MemberMap()
         {
-            Id(x => x.Id).Column("MemberId");
+            Id(x => x.MemberId).Column("MemberId");
+            Map(x => x.EnterpriseId);
+            Map(x => x.BusinessUnitId);
+            Map(x => x.ProviderUserKey);
             Map(x => x.FirstName);
             Map(x => x.MiddleName);
             Map(x => x.LastName);
             Map(x => x.Street);
             Map(x => x.Image);
+            Map(x => x.Email);
             Map(x => x.Apt);
             Map(x => x.City);
             Map(x => x.State);

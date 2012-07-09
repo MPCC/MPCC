@@ -7,7 +7,7 @@ namespace Rest.Objects
     public class GetCollectionResponse<TData>
     {
         public virtual int Index { get; set; }
-        public virtual int Total { get; set; }
+        public virtual long Total { get; set; }
         public virtual int Paging { get; set; }
         public virtual List<TData> Entities { get; set; }
     }

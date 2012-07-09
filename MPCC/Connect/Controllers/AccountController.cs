@@ -34,6 +34,10 @@ namespace Connect.Controllers
                 if (Membership.ValidateUser(model.UserName, model.Password))
                 {
                     FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
+                    
+                    var token = CustomLogin(model, Request.Headers["x-forwarded-for"] ?? String.Empty, Request.Headers["user-agent"] ?? String.Empty);
+                    Response.Headers.Add("oauth_token", token);
+                    
                     return Json(new { success = true, redirect = returnUrl });
                 }
                 else
@@ -58,6 +62,10 @@ namespace Connect.Controllers
                 if (Membership.ValidateUser(model.UserName, model.Password))
                 {
                     FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
+                    
+                    var token = CustomLogin(model, Request.Headers["x-forwarded-for"] ?? String.Empty, Request.Headers["user-agent"] ?? String.Empty);
+                    Response.Headers.Add("oauth_token", token);
+
                     if (Url.IsLocalUrl(returnUrl))
                     {
                         return Redirect(returnUrl);
@@ -83,7 +91,11 @@ namespace Connect.Controllers
         public ActionResult LogOff()
         {
             FormsAuthentication.SignOut();
-
+            var token = Request.Headers["oauth_token"];
+            if(!String.IsNullOrEmpty(token))
+            {
+                Auth.AuthManager.DisposeToken(token);
+            }
             return RedirectToAction("Index", "Home");
         }
 
@@ -112,6 +124,11 @@ namespace Connect.Controllers
                 if (createStatus == MembershipCreateStatus.Success)
                 {
                     FormsAuthentication.SetAuthCookie(model.UserName, createPersistentCookie: false);
+                    RegisterCustomUser(Membership.GetUser(model.UserName));
+                    
+                    var token = CustomLogin(Membership.GetUser(model.UserName), Request.Headers["x-forwarded-for"] ?? String.Empty, Request.Headers["user-agent"] ?? String.Empty);
+                    Response.Headers.Add("oauth_token", token);
+
                     return Json(new { success = true });
                 }
                 else
@@ -136,10 +153,15 @@ namespace Connect.Controllers
                 // Attempt to register the user
                 MembershipCreateStatus createStatus;
                 Membership.CreateUser(model.UserName, model.Password, model.Email, passwordQuestion: null, passwordAnswer: null, isApproved: true, providerUserKey: null, status: out createStatus);
-
+                
                 if (createStatus == MembershipCreateStatus.Success)
                 {
                     FormsAuthentication.SetAuthCookie(model.UserName, createPersistentCookie: false);
+                    RegisterCustomUser(Membership.GetUser(model.UserName));
+
+                    var token = CustomLogin(Membership.GetUser(model.UserName), Request.Headers["x-forwarded-for"] ?? String.Empty, Request.Headers["user-agent"] ?? String.Empty);
+                    Response.Headers.Add("oauth_token", token);
+
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -222,6 +244,29 @@ namespace Connect.Controllers
         private IEnumerable<string> GetErrorsFromModelState()
         {
             return ModelState.SelectMany(x => x.Value.Errors.Select(error => error.ErrorMessage));
+        }
+
+        private static string CustomLogin(LoginModel model, string ipAddress, string userAgent)
+        {
+            if (model != null)
+            {
+                return CustomLogin(Membership.GetUser(model.UserName), ipAddress, userAgent);
+            }
+            throw new HttpException(401, "Unauthorized");
+        }
+
+        private static string CustomLogin(MembershipUser user, string ipAddress, string userAgent)
+        {
+            if(user!= null)
+            {
+                return Auth.AuthManager.GenerateToken(new Guid(user.ProviderUserKey.ToString()), ipAddress, userAgent);
+            }
+            throw new HttpException(401, "Unauthorized");
+        }
+
+        private static void RegisterCustomUser(MembershipUser user)
+        {
+            Auth.AuthManager.CreateMember(user.UserName, user.Email, new Guid(user.ProviderUserKey.ToString()));
         }
 
         #region Status Codes

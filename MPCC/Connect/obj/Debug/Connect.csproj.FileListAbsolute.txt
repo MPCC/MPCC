@@ -48,7 +48,6 @@ D:\mpcc\MPCC\MPCC\Connect\bin\System.Web.Razor.dll
 D:\mpcc\MPCC\MPCC\Connect\bin\System.Web.WebPages.Deployment.dll
 D:\mpcc\MPCC\MPCC\Connect\bin\System.Web.WebPages.dll
 D:\mpcc\MPCC\MPCC\Connect\bin\System.Web.WebPages.Razor.dll
-D:\mpcc\MPCC\MPCC\Connect\bin\EntityFramework.xml
 D:\mpcc\MPCC\MPCC\Connect\bin\Microsoft.Web.Infrastructure.xml
 D:\mpcc\MPCC\MPCC\Connect\bin\System.Json.xml
 D:\mpcc\MPCC\MPCC\Connect\bin\System.Net.Http.xml
@@ -66,3 +65,5 @@ D:\mpcc\MPCC\MPCC\Connect\bin\System.Web.WebPages.Razor.xml
 D:\mpcc\MPCC\MPCC\Connect\obj\Debug\ResolveAssemblyReference.cache
 D:\mpcc\MPCC\MPCC\Connect\obj\Debug\Connect.dll
 D:\mpcc\MPCC\MPCC\Connect\obj\Debug\Connect.pdb
+D:\mpcc\MPCC\MPCC\Connect\bin\Auth.dll
+D:\mpcc\MPCC\MPCC\Connect\bin\Auth.pdb
