@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Collections;
-using System.Configuration;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
-using System.Configuration.Provider;
 
 namespace Auth
 {
     public class DBConnection
     {
         private static readonly string connStr = "Data Source=IN2708;Initial Catalog=MPCC_Connect;Integrated Security=SSPI";
-        //private static readonly string connStr = ConfigurationManager.ConnectionStrings["Connection"].ToString();
         
-
         public static Hashtable ExecuteQuery(string sql, SqlParameter[] parameters)
         {
 
