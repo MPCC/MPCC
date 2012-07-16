@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Web;
 using Auth;
 using NHibernate.Criterion;
 using Rest.Objects;
@@ -24,6 +25,16 @@ namespace Rest.Data
             {
                 return member;
             }
+        }
+
+        public static Member UpdateMember(Principal principal, Member member)
+        {
+            if(principal.MemberID != member.MemberId)
+            {
+                throw new HttpException(401, "Unauthorized");
+            }
+            Entity<Member>.Save(member);
+            return member;
         }
     }
 }

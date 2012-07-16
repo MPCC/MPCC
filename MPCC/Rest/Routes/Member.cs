@@ -28,17 +28,6 @@ namespace Rest.Routes
             var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
             return new GetResponse<Member>() { Entity = MemberRepository.GetMember(principal, Convert.ToInt32(id)) };
         }
-
-        //[WebInvoke(UriTemplate = "", Method = "POST", RequestFormat = WebMessageFormat.Json)]
-        //public GetResponse<Member> Create(Member entity)
-        //{
-        //    Member m = entity;
-        //    m.LastVisitDate = Utility.ToDateTime(entity.LastVisitDate.ToString());
-        //    m.ModifiedDate = DateTime.Now;
-
-        //    Entity<Member>.Save(m);
-        //    return new GetResponse<Member>() { Entity = SampleData.SaveMember(entity) };
-        //}
         
         //[WebInvoke(UriTemplate = "{id}", Method = "DELETE", RequestFormat = WebMessageFormat.Json)]
         //public void Delete(string id)
@@ -46,10 +35,11 @@ namespace Rest.Routes
         //    SampleData.DeleteMember(id);
         //}
 
-        //[WebInvoke(UriTemplate = "{id}", Method = "PUT", RequestFormat = WebMessageFormat.Json)]
-        //public string Update(string id, Member entity)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        [WebInvoke(UriTemplate = "{id}", Method = "PUT", RequestFormat = WebMessageFormat.Json)]
+        public GetResponse<Member> Update(string id, Member entity)
+        {
+            var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
+            return new GetResponse<Member>() {Entity = MemberRepository.UpdateMember(principal, entity) };
+        }
     }
 }
