@@ -117,19 +117,6 @@ namespace Rest.Objects
         public virtual string Name { get; set; }
     }
 
-    [DataContract]
-    public class Family
-    {
-        [DataMember]
-        public virtual int Id { get; set; }
-
-        [DataMember(EmitDefaultValue = false)]
-        public virtual string Name { get; set; }
-
-        [DataMember(EmitDefaultValue = false)]
-        public virtual string Image { get; set; }
-    }
-
     #endregion
 
     #region Mappings

@@ -44,6 +44,20 @@ namespace Rest.Data
                 }
             }
         }
+
+        public static void Delete(TData Entity)
+        {
+            var s = CreateSessionFactory();
+
+            using (var session = s.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    session.Delete(Entity);
+                    transaction.Commit();
+                }
+            }
+        }
         
         public static T FindOne<T>(object id) where T : class
         {

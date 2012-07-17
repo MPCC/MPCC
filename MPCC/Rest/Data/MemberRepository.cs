@@ -32,7 +32,7 @@ namespace Rest.Data
         {
             if(principal.MemberID != member.MemberId)
             {
-                throw new HttpException(401, "Unauthorized");
+                throw new HttpException(400, "You do not have permissions to update this member.");
             }
 
             var m = GetMember(principal, member.MemberId);
