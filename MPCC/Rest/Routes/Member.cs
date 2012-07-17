@@ -35,7 +35,7 @@ namespace Rest.Routes
         //    SampleData.DeleteMember(id);
         //}
 
-        [WebInvoke(UriTemplate = "{id}", Method = "PUT", RequestFormat = WebMessageFormat.Json)]
+        [WebInvoke(UriTemplate = "{id}", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         public GetResponse<Member> Update(string id, Member entity)
         {
             var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);

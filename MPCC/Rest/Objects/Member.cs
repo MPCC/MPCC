@@ -26,61 +26,61 @@ namespace Rest.Objects
         [DataMember]
         public virtual Guid ProviderUserKey { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string FirstName { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string MiddleName { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string LastName { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string DateOfBirth { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string Image { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string Email { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string Street { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string Apt { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string City { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string State { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual int? Zip { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual DateTime? StartDate { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual DateTime? LastVisitDate { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual DateTime? EndDate { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual bool IsActive { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual int? FamilyId { get; set; }
-        
-        [DataMember]
+
+        [DataMember(EmitDefaultValue = false)]
         public virtual List<Channel> Channels { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual DateTime? CreatedDate { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual DateTime? ModifiedDate { get; set; }
     }
 
@@ -91,19 +91,19 @@ namespace Rest.Objects
         [DataMember]
         public virtual int Id { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual MessageChannel Type { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string AccountId { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual bool IsPreferred { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual bool IsActive { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual bool IsOptIn { get; set; }
     }
 
@@ -113,7 +113,7 @@ namespace Rest.Objects
         [DataMember]
         public virtual Enums.MessageChannels Id { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string Name { get; set; }
     }
 
@@ -123,10 +123,10 @@ namespace Rest.Objects
         [DataMember]
         public virtual int Id { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string Name { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string Image { get; set; }
     }
 

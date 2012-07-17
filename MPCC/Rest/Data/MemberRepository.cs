@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Web;
 using Auth;
 using NHibernate.Criterion;
@@ -33,8 +34,25 @@ namespace Rest.Data
             {
                 throw new HttpException(401, "Unauthorized");
             }
-            Entity<Member>.Save(member);
-            return member;
+
+            var m = GetMember(principal, member.MemberId);
+            m.Street = String.IsNullOrEmpty(member.Street) ? m.Street : member.Street;
+            m.Zip = member.Zip ?? m.Zip;
+            m.Apt = String.IsNullOrEmpty(member.Apt) ? m.Apt : member.Apt; 
+            m.City = String.IsNullOrEmpty(member.City) ? m.City : member.City; 
+            m.DateOfBirth = member.DateOfBirth;
+            m.Email = String.IsNullOrEmpty(member.Email) ? m.Email : member.Email;
+            m.FamilyId = member.FamilyId ?? 0;
+            m.FirstName = String.IsNullOrEmpty(member.FirstName) ? String.Empty : member.FirstName;
+            m.MiddleName = String.IsNullOrEmpty(member.MiddleName) ? String.Empty : member.MiddleName;
+            m.LastName = String.IsNullOrEmpty(member.LastName) ? String.Empty : member.LastName;
+            m.ModifiedDate = DateTime.Now;
+            m.Image = String.IsNullOrEmpty(member.Image) ? String.Empty : member.Image;
+            //m.StartDate
+            //m.LastVisitDate
+
+            Entity<Member>.Update(m);
+            return m;
         }
     }
 }
