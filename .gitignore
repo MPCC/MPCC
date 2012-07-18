@@ -36,3 +36,19 @@ _ReSharper*/
 
 # emacs backups
 .#*.*
+MPCC/Rest/Web.config
+MPCC/Connect/obj/Debug/Connect.csproj.FileListAbsolute.txt
+MPCC/Connect/obj/Debug/Connect.dll
+MPCC/Connect/Web.config
+MPCC/MPCC.suo
+MPCC/Rest/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+MPCC/Rest/obj/Debug/Rest.dll
+.gitignore
+MPCC/Connect/obj/Debug/Connect.dll
+MPCC/Connect/obj/Debug/Connect.pdb
+MPCC/Connect/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+MPCC/MPCC.suo
+MPCC/Rest/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+MPCC/Rest/obj/Debug/Rest.csproj.FileListAbsolute.txt
+MPCC/Rest/obj/Debug/Rest.dll
+MPCC/Rest/obj/Debug/Rest.pdb
