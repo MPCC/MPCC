@@ -171,7 +171,12 @@ namespace Connect.Controllers
             }
 
             // If we got this far, something failed, redisplay form
-            return View(model);
+            if (Request.IsAjaxRequest())
+                return PartialView(model);
+            else
+                return View(model);
+
+            //return View(model);
         }
 
         //
@@ -226,6 +231,14 @@ namespace Connect.Controllers
             return View();
         }
 
+        public ActionResult Reg()
+        {
+            if (Request.IsAjaxRequest())
+                return PartialView("Register");
+            else
+                return View("Register");
+        }
+
         private ActionResult ContextDependentView()
         {
             string actionName = ControllerContext.RouteData.GetRequiredString("action");
@@ -237,7 +250,7 @@ namespace Connect.Controllers
             else
             {
                 ViewBag.FormAction = actionName;
-                return View();
+                return PartialView();
             }
         }
 

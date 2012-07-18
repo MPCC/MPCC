@@ -49,6 +49,10 @@ namespace Connect
             RegisterRoutes(RouteTable.Routes);
 
             BundleTable.Bundles.RegisterTemplateBundles();
+
+            Bundle defaultTheme = new Bundle("~/Content/themes/default/css", new CssMinify());
+            defaultTheme.AddDirectory("~/Content/themes/default", "*.css", false);
+            BundleTable.Bundles.Add(defaultTheme);
         }
     }
 }
