@@ -84,7 +84,6 @@ namespace Rest.Objects
         public virtual DateTime? ModifiedDate { get; set; }
     }
 
-   
     [DataContract]
     public class Channel
     {

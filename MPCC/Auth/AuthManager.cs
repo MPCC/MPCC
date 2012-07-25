@@ -50,10 +50,13 @@ namespace Auth
 
             if(row != null)
             {
-                principal.EnterpriseID = (int)row["EnterpriseId"];
-                principal.BusinessUnitID = (int)row["BusinessUnitId"];
-                principal.MemberID = (int)row["MemberId"];
-                principal.ProviderUserKey = providerUserKey;
+                if (row.Count > 0)
+                {
+                    principal.EnterpriseID = (int) row["EnterpriseId"];
+                    principal.BusinessUnitID = (int) row["BusinessUnitId"];
+                    principal.MemberID = (int) row["MemberId"];
+                    principal.ProviderUserKey = providerUserKey;
+                }
             }
 
             return principal;
@@ -73,7 +76,7 @@ namespace Auth
         private static void StoreToken(string token, byte[] salt, int enterpriseId, int businessUnitId, int memberId, Guid providerUserKey, string ipAddress, string userAgent)
         {
             var newSalt = ByteArrayToString(salt);
-            var expire = DateTime.Now.AddHours(3);
+            var expire = DateTime.Now.AddHours(23);
 
             const string sql = @"insert into dbo.Token (Token, Salt, EnterpriseId, BusinessUnitId, ProviderUserKey, MemberId, ExpirationDate, IpAddress, UserAgent) values (@Token, @Salt, @EnterpriseId, @BusinessUnitId, @ProviderUserKey,@MemberId, @ExpirationDate, @IpAddress,@UserAgent)";
             var sqlParams = new[]

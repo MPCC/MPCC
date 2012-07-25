@@ -18,7 +18,7 @@ namespace Rest.Objects
         public virtual string Image { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
-        public List<Member> Members { get; set; }
+        public virtual List<Member> Members { get; set; }
 
         [DataMember]
         public virtual bool IsActive { get; set; }

@@ -121,6 +121,7 @@ namespace Rest.Data
                 .Cache(c => c
                     .UseQueryCache()).ShowSql())
                 .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Member>())
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Family>())
                 .BuildSessionFactory();
             }
             catch (Exception e)

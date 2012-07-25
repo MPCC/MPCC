@@ -43,6 +43,8 @@ namespace Rest.Data
             f.CreatedBy = principal.MemberID;
             f.Image = family.Image ?? String.Empty;
             f.Name = family.Name ?? String.Empty;
+            f.ModifiedDate = DateTime.Now;
+            f.CreatedDate = DateTime.Now;
             Entity<Family>.Save(f);
             return f;
         }

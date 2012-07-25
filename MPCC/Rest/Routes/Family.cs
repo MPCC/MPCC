@@ -45,6 +45,13 @@ namespace Rest.Routes
             FamilyRepository.DeleteFamily(principal, Convert.ToInt32(id));
         }
 
+        [WebInvoke(UriTemplate = "", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        public GetResponse<Family> Create(Family entity)
+        {
+            var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
+            return new GetResponse<Family>() { Entity = FamilyRepository.CreateFamily(principal, entity) };
+        }
+
         [WebInvoke(UriTemplate = "{id}", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         public GetResponse<Family> Update(string id, Family entity)
         {

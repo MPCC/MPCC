@@ -23,7 +23,9 @@ namespace Rest
                 throw new WebFaultException(HttpStatusCode.Unauthorized);
             }
 
-            return AuthManager.GetPrincipal(token);
+            var principal = AuthManager.GetPrincipal(token);
+
+            return principal;
         }
 
         public static string ToISO86(DateTime date)
