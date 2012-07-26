@@ -31,6 +31,13 @@ namespace Rest.Routes
             return new GetCollectionResponse<Member>() { Index = index, Paging = paging, Total = count, Entities = entities };
         }
 
+        [WebInvoke(UriTemplate = "{id}/member/{memberId}", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        public GetResponse<Member> AddFamilyMember(string id, string memberId)
+        {
+            var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
+            return new GetResponse<Member>() { Entity = FamilyRepository.AddFamilyMember(principal, Convert.ToInt32(id), Convert.ToInt32(memberId)) };
+        }
+
         [WebGet(UriTemplate = "{id}", ResponseFormat = WebMessageFormat.Json)]
         public GetResponse<Family> Get(string id)
         {
@@ -56,6 +63,7 @@ namespace Rest.Routes
         public GetResponse<Family> Update(string id, Family entity)
         {
             var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
+            entity.Id = Convert.ToInt32(id);
             return new GetResponse<Family>() { Entity = FamilyRepository.UpdateFamily(principal, entity) };
         }
     }

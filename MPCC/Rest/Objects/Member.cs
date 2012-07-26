@@ -27,6 +27,9 @@ namespace Rest.Objects
         public virtual Guid ProviderUserKey { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
+        public virtual string UserName { get; set; }
+
+        [DataMember(EmitDefaultValue = false)]
         public virtual string FirstName { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
@@ -127,6 +130,7 @@ namespace Rest.Objects
             Map(x => x.EnterpriseId);
             Map(x => x.BusinessUnitId);
             Map(x => x.ProviderUserKey);
+            Map(x => x.UserName).ReadOnly();
             Map(x => x.FirstName);
             Map(x => x.MiddleName);
             Map(x => x.LastName);
@@ -142,6 +146,7 @@ namespace Rest.Objects
             Map(x => x.LastVisitDate);
             Map(x => x.EndDate);
             Map(x => x.IsActive);
+            Map(x => x.FamilyId);
             Map(x => x.CreatedDate).ReadOnly();
             Map(x => x.ModifiedDate);
             //HasMany(x => x.Channels)
