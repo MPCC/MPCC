@@ -43,6 +43,8 @@ namespace Rest.Objects
     {
         public FamilyMap()
         {
+            Schema("dbo");
+            Table("Family");
             Id(x => x.Id).Column("FamilyId");
             Map(x => x.Name);
             Map(x => x.Image);

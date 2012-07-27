@@ -126,6 +126,8 @@ namespace Rest.Objects
     {
         public MemberMap()
         {
+            Schema("dbo");
+            Table("Member");
             Id(x => x.MemberId).Column("MemberId");
             Map(x => x.EnterpriseId);
             Map(x => x.BusinessUnitId);
