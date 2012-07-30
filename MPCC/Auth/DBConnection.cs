@@ -8,7 +8,7 @@ namespace Auth
 {
     public class DBConnection
     {
-        private static readonly string connStr = "Data Source=IN2708;Initial Catalog=MPCC_Connect;Integrated Security=SSPI";
+        private static readonly string connStr = "Data Source=IN3710;Initial Catalog=MPCC_Connect;Integrated Security=SSPI";
 
         public static Hashtable ExecuteQuery(string sql, SqlParameter[] parameters)
         {
