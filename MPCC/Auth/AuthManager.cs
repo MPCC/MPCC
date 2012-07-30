@@ -7,22 +7,9 @@ namespace Auth
 {
     public class AuthManager
     {
-        private static readonly byte[] key1 = new byte[]
-                                                    {
-                                                        218, 93, 45, 117, 95, 201, 32, 108, 115, 224, 222, 15, 78, 43,
-                                                        32, 56, 176, 98, 155, 103, 49, 99, 19, 200, 81, 11, 87, 21,
-                                                        241, 90, 46, 192
-                                                    };
-
-        private static readonly byte[] key2 = new byte[]
-                                                    {
-                                                        109, 27, 43, 90, 142, 98, 219, 131, 66, 224, 197, 125, 83, 22,
-                                                        211, 97
-                                                    };
-
         public static string GenerateToken(int enterpriseId, int businessUnitId, int memberId, Guid providerUserKey, string ipAddress, string userAgent)
         {
-            return EncryptContext(enterpriseId, businessUnitId, memberId, providerUserKey, ipAddress, userAgent);
+            return EncryptPrincipal(enterpriseId, businessUnitId, memberId, providerUserKey, ipAddress, userAgent);
         }
 
         public static string GenerateToken(Guid providerUserKey, string ipAddress, string userAgent)
@@ -63,30 +50,33 @@ namespace Auth
 
             if(row != null)
             {
-                principal.EnterpriseID = (int)row["EnterpriseId"];
-                principal.BusinessUnitID = (int)row["BusinessUnitId"];
-                principal.MemberID = (int)row["MemberId"];
-                principal.ProviderUserKey = providerUserKey;
+                if (row.Count > 0)
+                {
+                    principal.EnterpriseID = (int) row["EnterpriseId"];
+                    principal.BusinessUnitID = (int) row["BusinessUnitId"];
+                    principal.MemberID = (int) row["MemberId"];
+                    principal.ProviderUserKey = providerUserKey;
+                }
             }
 
             return principal;
         }
 
-        private static string EncryptContext(int enterpriseId, int businessUnitId, int memberId, Guid providerUserKey, string ipAddress, string userAgent)
+        private static string EncryptPrincipal(int enterpriseId, int businessUnitId, int memberId, Guid providerUserKey, string ipAddress, string userAgent)
         {
+            var data = String.Join(",", new[] { enterpriseId, businessUnitId, memberId });
             var aes = new AesManaged();
             aes.GenerateIV();
             var salt = aes.IV;
-            var data = String.Join(",", new[] { enterpriseId, businessUnitId, memberId });
-            var token = string.Format("{0}_{1}", ByteArrayToHexString(salt), ByteArrayToHexString(Encrypt.EncryptStringToBytes(data, key1, key2)));
+            var token = string.Format("{0}_{1}", ByteArrayToString(salt), ByteArrayToString(Encrypt.EncryptStringToBytes(data, key1, key2)));
             StoreToken(token, salt, enterpriseId, businessUnitId, memberId, providerUserKey, ipAddress, userAgent);
             return token;
         }
 
         private static void StoreToken(string token, byte[] salt, int enterpriseId, int businessUnitId, int memberId, Guid providerUserKey, string ipAddress, string userAgent)
         {
-            var newSalt = ByteArrayToHexString(salt);
-            var expire = DateTime.Now.AddHours(3);
+            var newSalt = ByteArrayToString(salt);
+            var expire = DateTime.Now.AddHours(23);
 
             const string sql = @"insert into dbo.Token (Token, Salt, EnterpriseId, BusinessUnitId, ProviderUserKey, MemberId, ExpirationDate, IpAddress, UserAgent) values (@Token, @Salt, @EnterpriseId, @BusinessUnitId, @ProviderUserKey,@MemberId, @ExpirationDate, @IpAddress,@UserAgent)";
             var sqlParams = new[]
@@ -167,11 +157,11 @@ namespace Auth
             if(String.IsNullOrEmpty(key)) { throw new ArgumentNullException(); }
             char[] delim = {'_'};
             var splitKey = key.Split(delim);
-            byte[] b = HexStringToByteArray(splitKey[1]);
+            byte[] b = StringToByteArray(splitKey[1]);
             return Encrypt.DecryptStringFromBytes(b, key1, key2);
         }
 
-        private static byte[] HexStringToByteArray(string s)
+        private static byte[] StringToByteArray(string s)
         {
             s = s.Replace(" ", "");
             var buffer = new byte[s.Length / 2];
@@ -184,7 +174,7 @@ namespace Auth
             return buffer;
         }
 
-        private static string ByteArrayToHexString(byte[] bytes)
+        private static string ByteArrayToString(byte[] bytes)
         {
             int length = bytes.Length;
 
@@ -203,5 +193,19 @@ namespace Auth
 
             return new String(chars);
         }
+
+        // These are sample byte[]
+        private static readonly byte[] key1 = new byte[] 
+                                                    {
+                                                        218, 93, 45, 117, 95, 201, 32, 108, 115, 224, 222, 15, 78, 43,
+                                                        32, 56, 176, 98, 155, 103, 49, 99, 19, 200, 81, 11, 87, 21,
+                                                        241, 90, 46, 192
+                                                    };
+
+        private static readonly byte[] key2 = new byte[]
+                                                    {
+                                                        109, 27, 43, 90, 142, 98, 219, 131, 66, 224, 197, 125, 83, 22,
+                                                        211, 97
+                                                    };
     }
 }

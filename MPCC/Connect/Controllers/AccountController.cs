@@ -272,7 +272,10 @@ namespace Connect.Controllers
         {
             if(user!= null)
             {
-                return Auth.AuthManager.GenerateToken(new Guid(user.ProviderUserKey.ToString()), ipAddress, userAgent);
+                if (user.ProviderUserKey != null)
+                {
+                    return Auth.AuthManager.GenerateToken(new Guid(user.ProviderUserKey.ToString()), ipAddress,userAgent);
+                }
             }
             throw new HttpException(401, "Unauthorized");
         }

@@ -26,84 +26,86 @@ namespace Rest.Objects
         [DataMember]
         public virtual Guid ProviderUserKey { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
+        public virtual string UserName { get; set; }
+
+        [DataMember(EmitDefaultValue = false)]
         public virtual string FirstName { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string MiddleName { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string LastName { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string DateOfBirth { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string Image { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string Email { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string Street { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string Apt { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string City { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string State { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual int? Zip { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual DateTime? StartDate { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual DateTime? LastVisitDate { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual DateTime? EndDate { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual bool IsActive { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual int? FamilyId { get; set; }
-        
-        [DataMember]
+
+        [DataMember(EmitDefaultValue = false)]
         public virtual List<Channel> Channels { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual DateTime? CreatedDate { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual DateTime? ModifiedDate { get; set; }
     }
 
-   
     [DataContract]
     public class Channel
     {
         [DataMember]
         public virtual int Id { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual MessageChannel Type { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string AccountId { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual bool IsPreferred { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual bool IsActive { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual bool IsOptIn { get; set; }
     }
 
@@ -113,21 +115,8 @@ namespace Rest.Objects
         [DataMember]
         public virtual Enums.MessageChannels Id { get; set; }
 
-        [DataMember]
+        [DataMember(EmitDefaultValue = false)]
         public virtual string Name { get; set; }
-    }
-
-    [DataContract]
-    public class Family
-    {
-        [DataMember]
-        public virtual int Id { get; set; }
-
-        [DataMember]
-        public virtual string Name { get; set; }
-
-        [DataMember]
-        public virtual string Image { get; set; }
     }
 
     #endregion
@@ -137,10 +126,13 @@ namespace Rest.Objects
     {
         public MemberMap()
         {
+            Schema("dbo");
+            Table("Member");
             Id(x => x.MemberId).Column("MemberId");
             Map(x => x.EnterpriseId);
             Map(x => x.BusinessUnitId);
             Map(x => x.ProviderUserKey);
+            Map(x => x.UserName).ReadOnly();
             Map(x => x.FirstName);
             Map(x => x.MiddleName);
             Map(x => x.LastName);
@@ -156,6 +148,7 @@ namespace Rest.Objects
             Map(x => x.LastVisitDate);
             Map(x => x.EndDate);
             Map(x => x.IsActive);
+            Map(x => x.FamilyId);
             Map(x => x.CreatedDate).ReadOnly();
             Map(x => x.ModifiedDate);
             //HasMany(x => x.Channels)

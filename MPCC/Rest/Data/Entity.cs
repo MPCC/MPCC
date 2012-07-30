@@ -44,6 +44,20 @@ namespace Rest.Data
                 }
             }
         }
+
+        public static void Delete(TData Entity)
+        {
+            var s = CreateSessionFactory();
+
+            using (var session = s.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    session.Delete(Entity);
+                    transaction.Commit();
+                }
+            }
+        }
         
         public static T FindOne<T>(object id) where T : class
         {
@@ -107,6 +121,7 @@ namespace Rest.Data
                 .Cache(c => c
                     .UseQueryCache()).ShowSql())
                 .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Member>())
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Family>())
                 .BuildSessionFactory();
             }
             catch (Exception e)
