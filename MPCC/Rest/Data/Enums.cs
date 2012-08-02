@@ -12,5 +12,13 @@
             SMS,
             Twitter
         }
+
+        public enum NotificationCategory
+        {
+            SYSTEM,
+            REQUEST,
+            ALERT,
+            MESSAGE
+        }
     }
 }

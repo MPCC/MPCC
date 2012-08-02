@@ -67,3 +67,5 @@ D:\mpcc\MPCC\MPCC\Connect\obj\Debug\Connect.dll
 D:\mpcc\MPCC\MPCC\Connect\obj\Debug\Connect.pdb
 D:\mpcc\MPCC\MPCC\Connect\bin\Auth.dll
 D:\mpcc\MPCC\MPCC\Connect\bin\Auth.pdb
+D:\mpcc\MPCC\MPCC\Connect\bin\AjaxMin.dll
+D:\mpcc\MPCC\MPCC\Connect\bin\MvcOptimizationPack.dll

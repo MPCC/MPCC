@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Web;
 using FluentNHibernate.Mapping;
+using Rest.Data;
 
 namespace Rest.Objects
 {
@@ -37,6 +38,18 @@ namespace Rest.Objects
         [DataMember(EmitDefaultValue = false)]
         public virtual string Message { get; set; }
 
+        [DataMember(EmitDefaultValue = false)]
+        public virtual string ActionText { get; set; }
+
+        [DataMember(EmitDefaultValue = false)]
+        public virtual string ActionApiMethod { get; set; }
+
+        [DataMember(EmitDefaultValue = false)]
+        public virtual string ActionApi { get; set; }
+
+        [DataMember]
+        public virtual bool ActionOccurred { get; set; }
+
         [DataMember]
         public virtual bool HasRead { get; set; }
 
@@ -65,6 +78,10 @@ namespace Rest.Objects
             Map(x => x.Category);
             Map(x => x.Subject);
             Map(x => x.Message);
+            Map(x => x.ActionText);
+            Map(x => x.ActionApiMethod);
+            Map(x => x.ActionApi);
+            Map(x => x.ActionOccurred);
             Map(x => x.HasRead);
             Map(x => x.IsActive);
             Map(x => x.CreatedDate).ReadOnly();

@@ -8,5 +8,6 @@ namespace Auth
         public int BusinessUnitID { get; set; }
         public int MemberID { get; set; }
         public Guid ProviderUserKey { get; set; }
+        public string Username { get; set; }
     }
 }

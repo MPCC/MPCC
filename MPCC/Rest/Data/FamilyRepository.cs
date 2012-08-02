@@ -56,6 +56,10 @@ namespace Rest.Data
             var f = GetFamily(principal, familyId); // Make sure the family still exists.
             m.FamilyId = f.Id;
             Entity<Member>.Update(m);
+
+            var n = FamilyRequest(principal, memberId, f.Name, f.Id);
+            Entity<Notification>.Save(n);
+
             return m;
         }
 
@@ -81,6 +85,32 @@ namespace Rest.Data
             f.ModifiedDate = DateTime.Now;
             Entity<Family>.Update(f);
             return f;
+        }
+
+        /// <summary>
+        /// When a system user wants selects a family to join a FamilyRequest notification
+        /// should be sent to the createdby user of the family with the from information
+        /// being that of the requesting system user
+        /// </summary>
+        /// <returns></returns>
+        public static Notification FamilyRequest(Principal prinicipal, int toMemberId, string familyName, int familyId)
+        {
+            var message = String.Format(MessageLines.FamilyRequest, prinicipal.Username, familyName);
+            var apitext = String.Format("Add {0} to the {1} family", prinicipal.Username, familyName);
+            var api = String.Format("{0}/family/{1}/member/{2}", "http://localhost/rest2", familyId, prinicipal.MemberID);
+            return NotificationRepository.NotificationRequest(prinicipal, toMemberId, SubjectLines.FamilyRequest,message, api, apitext, "POST");
+        }
+
+        /// <summary>
+        /// When a system user confirms a family request a family request confirmed notification
+        /// should be sent to the family request from system user
+        /// </summary>
+        /// <returns></returns>
+        public static Notification FamilyRequestConfirmed(Principal prinicipal, int toMemberId, string familyName)
+        {
+            var subject = String.Format(SubjectLines.FamilyRequestConfirmed, familyName);
+            var message = String.Format(MessageLines.FamilyRequestConfirmed, familyName);
+            return NotificationRepository.NotificationMessage(prinicipal, toMemberId, subject, message);
         }
 
         private static void CheckPermissions(int x, int y)

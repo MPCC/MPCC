@@ -77,6 +77,7 @@
     <Compile Include="Data\Entity.cs" />
     <Compile Include="Data\Enums.cs" />
     <Compile Include="Data\FamilyRepository.cs" />
+    <Compile Include="Data\Helper.cs" />
     <Compile Include="Data\MemberRepository.cs" />
     <Compile Include="Data\NotificationRepository.cs" />
     <Compile Include="Objects\Family.cs" />

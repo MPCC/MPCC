@@ -37,6 +37,25 @@ namespace Auth
                     MemberID = Convert.ToInt32(context[2])
                 };
 
+
+            const string sql = @"select Username, ProviderUserKey from dbo.Member with (nolock) where EnterpriseID = @EnterpriseID and BusinessUnitID = @BusinessUnitID and MemberID = @MemberID";
+            var sqlParams = new[]
+                                {
+                                    new SqlParameter("@EnterpriseID", SqlDbType.Int) { Value = principal.EnterpriseID },
+                                    new SqlParameter("@BusinessUnitID", SqlDbType.Int) { Value = principal.BusinessUnitID },
+                                    new SqlParameter("@MemberID", SqlDbType.Int) { Value = principal.MemberID }
+                                };
+            var row = DBConnection.ExecuteQuery(sql, sqlParams);
+
+            if (row != null)
+            {
+                if (row.Count > 0)
+                {
+                    principal.ProviderUserKey = (Guid)row["ProviderUserKey"];
+                    principal.Username = row["Username"].ToString();
+                }
+            }
+
             return principal;
         }
 
@@ -44,7 +63,7 @@ namespace Auth
         {
             var principal = new Principal();
             
-            const string sql = @"select EnterpriseId, BusinessUnitId, MemberId from dbo.Member with (nolock) where ProviderUserKey = @ProviderUserKey";
+            const string sql = @"select EnterpriseId, BusinessUnitId, MemberId, Username from dbo.Member with (nolock) where ProviderUserKey = @ProviderUserKey";
             var sqlParams = new[] { new SqlParameter("@ProviderUserKey", SqlDbType.UniqueIdentifier) { Value = providerUserKey } };
             var row = DBConnection.ExecuteQuery(sql, sqlParams);
 
@@ -55,6 +74,7 @@ namespace Auth
                     principal.EnterpriseID = (int) row["EnterpriseId"];
                     principal.BusinessUnitID = (int) row["BusinessUnitId"];
                     principal.MemberID = (int) row["MemberId"];
+                    principal.Username = row["Username"].ToString();
                     principal.ProviderUserKey = providerUserKey;
                 }
             }
