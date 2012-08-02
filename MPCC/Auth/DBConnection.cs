@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Configuration;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
@@ -8,15 +9,14 @@ namespace Auth
 {
     public class DBConnection
     {
-        private static readonly string connStr = "Data Source=IN2708;Initial Catalog=MPCC_Connect;Integrated Security=SSPI";
-        
         public static Hashtable ExecuteQuery(string sql, SqlParameter[] parameters)
         {
+            var connect = ConfigurationManager.AppSettings["connect"];
 
             var hash = new Hashtable();
             try
             {
-                using (var conn = new SqlConnection(connStr))
+                using (var conn = new SqlConnection(connect))
                 {
                     conn.Open();
                     DbCommand cmd = conn.CreateCommand();

@@ -38,11 +38,6 @@ namespace Connect
 
         protected void Application_Start()
         {
-
-            //var token = Auth.AuthManager.GenerateToken(0, 1, 2, new Guid("057678FE-4EAF-4205-BA47-FED5CD6A1883"), String.Empty, String.Empty);
-            //var principal = Auth.AuthManager.GetPrincipal(token);
-            //var p = Auth.AuthManager.GetPrincipal(new Guid("057678FE-4EAF-4205-BA47-FED5CD6A1883"));
-            
             AreaRegistration.RegisterAllAreas();
 
             RegisterGlobalFilters(GlobalFilters.Filters);
