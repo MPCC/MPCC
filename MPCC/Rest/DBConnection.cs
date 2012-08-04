@@ -11,7 +11,7 @@ namespace Rest
     {
         public static Hashtable ExecuteQuery(string sql, SqlParameter[] parameters)
         {
-            var connect = ConfigurationManager.AppSettings["connect"];
+            var connect = ConfigurationManager.ConnectionStrings["DefaultConnection"].ToString();
 
             var hash = new Hashtable();
             try

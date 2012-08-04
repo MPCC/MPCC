@@ -17,7 +17,7 @@ namespace Rest
     public class Token
     {
         public string oauth_token { get; set; }
-        public string expires { get; set; }
+        public string oauth_timestamp { get; set; }
     }
 
     public class Login
