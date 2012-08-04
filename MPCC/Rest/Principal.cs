@@ -13,4 +13,16 @@ namespace Rest
         public Guid ProviderUserKey { get; set; }
         public string Username { get; set; }
     }
+
+    public class Token
+    {
+        public string oauth_token { get; set; }
+        public string expires { get; set; }
+    }
+
+    public class Login
+    {
+        public string username { get; set; }
+        public string password { get; set; }
+    }
 }

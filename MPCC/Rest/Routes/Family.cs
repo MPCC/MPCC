@@ -13,7 +13,7 @@ namespace Rest.Routes
 
     public class FamilyService
     {
-        [WebGet(UriTemplate = "/?index={index}&paging={paging}", ResponseFormat = WebMessageFormat.Json)]
+        [WebGet(UriTemplate = "v1/?index={index}&paging={paging}", ResponseFormat = WebMessageFormat.Json)]
         public GetCollectionResponse<Family> GetCollection(int index, int paging)
         {
             long count;
@@ -22,7 +22,7 @@ namespace Rest.Routes
             return new GetCollectionResponse<Family>() { Index = index, Paging = paging, Total = count, Entities = entities };
         }
 
-        [WebGet(UriTemplate = "{id}/members?index={index}&paging={paging}", ResponseFormat = WebMessageFormat.Json)]
+        [WebGet(UriTemplate = "v1/{id}/members?index={index}&paging={paging}", ResponseFormat = WebMessageFormat.Json)]
         public GetCollectionResponse<Member> GetFamilyMemberCollection(string id, int index, int paging)
         {
             long count;
@@ -31,35 +31,35 @@ namespace Rest.Routes
             return new GetCollectionResponse<Member>() { Index = index, Paging = paging, Total = count, Entities = entities };
         }
 
-        [WebInvoke(UriTemplate = "{id}/member/{memberId}", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        [WebInvoke(UriTemplate = "v1/{id}/member/{memberId}", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         public GetResponse<Member> AddFamilyMember(string id, string memberId)
         {
             var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
             return new GetResponse<Member>() { Entity = FamilyRepository.AddFamilyMember(principal, Convert.ToInt32(id), Convert.ToInt32(memberId)) };
         }
 
-        [WebGet(UriTemplate = "{id}", ResponseFormat = WebMessageFormat.Json)]
+        [WebGet(UriTemplate = "v1/{id}", ResponseFormat = WebMessageFormat.Json)]
         public GetResponse<Family> Get(string id)
         {
             var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
             return new GetResponse<Family>() { Entity = FamilyRepository.GetFamily(principal, Convert.ToInt32(id)) };
         }
 
-        [WebInvoke(UriTemplate = "{id}", Method = "DELETE", RequestFormat = WebMessageFormat.Json)]
+        [WebInvoke(UriTemplate = "v1/{id}", Method = "DELETE", RequestFormat = WebMessageFormat.Json)]
         public void Delete(string id)
         {
             var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
             FamilyRepository.DeleteFamily(principal, Convert.ToInt32(id));
         }
 
-        [WebInvoke(UriTemplate = "", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        [WebInvoke(UriTemplate = "v1/", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         public GetResponse<Family> Create(Family entity)
         {
             var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
             return new GetResponse<Family>() { Entity = FamilyRepository.CreateFamily(principal, entity) };
         }
 
-        [WebInvoke(UriTemplate = "{id}", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        [WebInvoke(UriTemplate = "v1/{id}", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         public GetResponse<Family> Update(string id, Family entity)
         {
             var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);

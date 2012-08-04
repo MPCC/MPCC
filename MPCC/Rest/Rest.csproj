@@ -88,6 +88,7 @@
     <Compile Include="Objects\Notification.cs" />
     <Compile Include="Objects\Route.cs" />
     <Compile Include="Principal.cs" />
+    <Compile Include="Routes\Auth.cs" />
     <Compile Include="Routes\Family.cs" />
     <Compile Include="Routes\Member.cs" />
     <Compile Include="Global.asax.cs">

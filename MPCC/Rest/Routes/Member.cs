@@ -13,7 +13,7 @@ namespace Rest.Routes
     
     public class MemberService
     {
-        [WebGet(UriTemplate = "/?index={index}&paging={paging}", ResponseFormat = WebMessageFormat.Json)]
+        [WebGet(UriTemplate = "v1/?index={index}&paging={paging}", ResponseFormat = WebMessageFormat.Json)]
         public GetCollectionResponse<Member> GetCollection(int index, int paging)
         {
             long count;
@@ -22,20 +22,20 @@ namespace Rest.Routes
             return new GetCollectionResponse<Member>() { Index = index, Paging = paging, Total = count, Entities = entities };
         }
 
-        [WebGet(UriTemplate = "{id}", ResponseFormat = WebMessageFormat.Json)]
+        [WebGet(UriTemplate = "v1/{id}", ResponseFormat = WebMessageFormat.Json)]
         public GetResponse<Member> Get(string id)
         {
             var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
             return new GetResponse<Member>() { Entity = MemberRepository.GetMember(principal, Convert.ToInt32(id)) };
         }
-        
-        //[WebInvoke(UriTemplate = "{id}", Method = "DELETE", RequestFormat = WebMessageFormat.Json)]
+
+        //[WebInvoke(UriTemplate = "v1/{id}", Method = "DELETE", RequestFormat = WebMessageFormat.Json)]
         //public void Delete(string id)
         //{
         //    SampleData.DeleteMember(id);
         //}
 
-        [WebInvoke(UriTemplate = "{id}", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        [WebInvoke(UriTemplate = "v1/{id}", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         public GetResponse<Member> Update(string id, Member entity)
         {
             var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
