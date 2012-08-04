@@ -94,7 +94,7 @@ namespace Connect.Controllers
             var token = Request.Headers["oauth_token"];
             if(!String.IsNullOrEmpty(token))
             {
-                Auth.AuthManager.DisposeToken(token);
+                //Rest.AuthManager.DisposeToken(token);
             }
             return RedirectToAction("Index", "Home");
         }
@@ -274,7 +274,8 @@ namespace Connect.Controllers
             {
                 if (user.ProviderUserKey != null)
                 {
-                    return Auth.AuthManager.GenerateToken(new Guid(user.ProviderUserKey.ToString()), ipAddress,userAgent);
+                    return "";
+                    //return Auth.AuthManager.GenerateToken(new Guid(user.ProviderUserKey.ToString()), ipAddress,userAgent);
                 }
             }
             throw new HttpException(401, "Unauthorized");
@@ -282,7 +283,7 @@ namespace Connect.Controllers
 
         private static void RegisterCustomUser(MembershipUser user)
         {
-            Auth.AuthManager.CreateMember(user.UserName, user.Email, new Guid(user.ProviderUserKey.ToString()));
+            //Auth.AuthManager.CreateMember(user.UserName, user.Email, new Guid(user.ProviderUserKey.ToString()));
         }
 
         #region Status Codes

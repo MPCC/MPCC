@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Net;
 using System.ServiceModel.Web;
-using Auth;
 using NHibernate.Criterion;
 using Rest.Objects;
 

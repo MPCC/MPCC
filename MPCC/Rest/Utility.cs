@@ -3,7 +3,6 @@ using System.Net;
 using System.ServiceModel.Web;
 using System.Web.Script.Serialization;
 using System.Xml;
-using Auth;
 
 namespace Rest
 {
