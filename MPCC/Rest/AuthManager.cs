@@ -63,7 +63,7 @@ namespace Rest
         {
             var principal = new Principal();
             
-            const string sql = @"select EnterpriseId, BusinessUnitId, MemberId, Username from dbo.Member with (nolock) where ProviderUserKey = @ProviderUserKey";
+            const string sql = @"select EnterpriseId, BusinessUnitId, MemberId, Username from dbo.Member with (nolock) where ProviderUserKey = @ProviderUserKey and IsActive = 1";
             var sqlParams = new[] { new SqlParameter("@ProviderUserKey", SqlDbType.UniqueIdentifier) { Value = providerUserKey } };
             var row = DBConnection.ExecuteQuery(sql, sqlParams);
 
