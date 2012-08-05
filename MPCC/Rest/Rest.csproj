@@ -83,22 +83,22 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuthManager.cs" />
+    <Compile Include="Auth\AuthManager.cs" />
+    <Compile Include="Auth\Encrypt.cs" />
     <Compile Include="Data\AuthRepository.cs" />
+    <Compile Include="Data\DBConnection.cs" />
     <Compile Include="Data\Entity.cs" />
     <Compile Include="Data\Enums.cs" />
     <Compile Include="Data\FamilyRepository.cs" />
     <Compile Include="Data\Helper.cs" />
     <Compile Include="Data\MemberRepository.cs" />
     <Compile Include="Data\NotificationRepository.cs" />
-    <Compile Include="DBConnection.cs" />
-    <Compile Include="Encrypt.cs" />
+    <Compile Include="Objects\AccountModels.cs" />
     <Compile Include="Objects\Family.cs" />
     <Compile Include="Objects\Member.cs" />
     <Compile Include="Objects\Notification.cs" />
+    <Compile Include="Objects\Principal.cs" />
     <Compile Include="Objects\Route.cs" />
-    <Compile Include="Principal.cs" />
-    <Compile Include="Provider\AccountModels.cs" />
     <Compile Include="Routes\Auth.cs" />
     <Compile Include="Routes\Family.cs" />
     <Compile Include="Routes\Member.cs" />

@@ -3,6 +3,7 @@ using System.Net;
 using System.ServiceModel.Web;
 using System.Web.Security;
 using Rest.Objects;
+using Rest.Auth;
 
 namespace Rest.Data
 {

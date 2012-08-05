@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace Rest.Provider
+namespace Rest.Objects
 {
     public class ChangePasswordModel
     {

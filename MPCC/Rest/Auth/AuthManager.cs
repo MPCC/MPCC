@@ -2,12 +2,14 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
+using Rest.Data;
+using Rest.Objects;
 
-namespace Rest
+namespace Rest.Auth
 {
     public class AuthManager
     {
-         public static string GenerateToken(int enterpriseId, int businessUnitId, int memberId, Guid providerUserKey, string ipAddress, string userAgent)
+        public static string GenerateToken(int enterpriseId, int businessUnitId, int memberId, Guid providerUserKey, string ipAddress, string userAgent)
         {
             return EncryptPrincipal(enterpriseId, businessUnitId, memberId, providerUserKey, ipAddress, userAgent);
         }
@@ -31,11 +33,11 @@ namespace Rest
             var x = DecryptContext(token);
             var context = x.Split(delim);
             var principal = new Principal()
-                {
-                    EnterpriseID = Convert.ToInt32(context[0]),
-                    BusinessUnitID = Convert.ToInt32(context[1]),
-                    MemberID = Convert.ToInt32(context[2])
-                };
+            {
+                EnterpriseID = Convert.ToInt32(context[0]),
+                BusinessUnitID = Convert.ToInt32(context[1]),
+                MemberID = Convert.ToInt32(context[2])
+            };
 
 
             const string sql = @"select Username, ProviderUserKey from dbo.Member with (nolock) where EnterpriseID = @EnterpriseID and BusinessUnitID = @BusinessUnitID and MemberID = @MemberID";
@@ -62,18 +64,18 @@ namespace Rest
         public static Principal GetPrincipal(Guid providerUserKey)
         {
             var principal = new Principal();
-            
+
             const string sql = @"select EnterpriseId, BusinessUnitId, MemberId, Username from dbo.Member with (nolock) where ProviderUserKey = @ProviderUserKey and IsActive = 1";
             var sqlParams = new[] { new SqlParameter("@ProviderUserKey", SqlDbType.UniqueIdentifier) { Value = providerUserKey } };
             var row = DBConnection.ExecuteQuery(sql, sqlParams);
 
-            if(row != null)
+            if (row != null)
             {
                 if (row.Count > 0)
                 {
-                    principal.EnterpriseID = (int) row["EnterpriseId"];
-                    principal.BusinessUnitID = (int) row["BusinessUnitId"];
-                    principal.MemberID = (int) row["MemberId"];
+                    principal.EnterpriseID = (int)row["EnterpriseId"];
+                    principal.BusinessUnitID = (int)row["BusinessUnitId"];
+                    principal.MemberID = (int)row["MemberId"];
                     principal.Username = row["Username"].ToString();
                     principal.ProviderUserKey = providerUserKey;
                 }
@@ -137,12 +139,12 @@ namespace Rest
                                 };
             var row = DBConnection.ExecuteQuery(sql, sqlParams);
 
-            if (row != null )
+            if (row != null)
             {
                 if (row.Count > 0)
                 {
-                    isValid = (bool) row["IsActive"];
-                    expire = (DateTime) row["ExpirationDate"];
+                    isValid = (bool)row["IsActive"];
+                    expire = (DateTime)row["ExpirationDate"];
 
                     if (isValid)
                     {
@@ -174,8 +176,8 @@ namespace Rest
 
         private static string DecryptContext(string key)
         {
-            if(String.IsNullOrEmpty(key)) { throw new ArgumentNullException(); }
-            char[] delim = {'_'};
+            if (String.IsNullOrEmpty(key)) { throw new ArgumentNullException(); }
+            char[] delim = { '_' };
             var splitKey = key.Split(delim);
             byte[] b = StringToByteArray(splitKey[1]);
             return Encrypt.DecryptStringFromBytes(b, key1, key2);
