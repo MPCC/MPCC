@@ -5,6 +5,7 @@ using System.ServiceModel;
 using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
 using System.Web;
+using Rest.Data;
 using Rest.Objects;
 
 namespace Rest.Routes
@@ -19,7 +20,7 @@ namespace Rest.Routes
         [WebInvoke(UriTemplate = "v1/tokenrequest", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         public GetResponse<Token> RequestToken(Login entity)
         {
-            return new GetResponse<Token>() { Entity = new Token() { oauth_timestamp = "2012-08-01 19:00:32.650", oauth_token = "35004A50F47DD74C7C930C2F0B5784B5_51B4580B016FBEAD81ED01056F8311F9" } };
+            return new GetResponse<Token>() { Entity = AuthRepository.Login(entity) };
         }
 
         [WebInvoke(UriTemplate = "v1/tokenrefresh", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
