@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
+using System.Web;
 using Rest.Data;
 using Rest.Objects;
 
@@ -118,6 +119,11 @@ namespace Rest.Auth
 
         public static bool ValidateToken(string token)
         {
+            return ValidateToken(token, false);
+        }
+
+        public static bool ValidateToken(string token, bool setcontext)
+        {
             var salt = "";
             var expire = DateTime.Now.AddHours(-1);
             bool isValid = false;
@@ -155,6 +161,23 @@ namespace Rest.Auth
                         }
                     }
                 }
+            }
+
+            if (setcontext && isValid)
+            {
+                var principal = GetPrincipal(token);
+
+                HttpContext.Current.User = new AuthUser()
+                    {
+                        Principal = principal,
+                        Identity = new AuthIdentity()
+                                        {
+                                            _id = principal.MemberID.ToString(),
+                                            Name = principal.Username,
+                                            IsAuthenticated = true
+                                        }
+                    };
+
             }
 
             return isValid;

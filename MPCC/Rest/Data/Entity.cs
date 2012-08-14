@@ -117,7 +117,7 @@ namespace Rest.Data
                 return Fluently.Configure()
                 .Database(MsSqlConfiguration.MsSql2008
                 .ConnectionString(c => c
-                    .FromAppSetting("connectionString"))
+                    .FromConnectionStringWithKey("DefaultConnection"))
                 .Cache(c => c
                     .UseQueryCache()).ShowSql())
                 .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Member>())

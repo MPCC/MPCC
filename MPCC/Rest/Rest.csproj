@@ -85,6 +85,7 @@
   <ItemGroup>
     <Compile Include="Auth\AuthManager.cs" />
     <Compile Include="Auth\Encrypt.cs" />
+    <Compile Include="Auth\ServiceAuthorization.cs" />
     <Compile Include="Data\AuthRepository.cs" />
     <Compile Include="Data\DBConnection.cs" />
     <Compile Include="Data\Entity.cs" />

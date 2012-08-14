@@ -14,6 +14,12 @@ namespace Rest.Data
             return Entity<Member>.FindMany<Member>(bufilter, index, paging, out count);
         }
 
+        //public static List<Member> GetMemberCollection(int index, int paging, out long count)
+        //{
+        //    var bufilter = Restrictions.Where<Member>(x => x.BusinessUnitId == principal.BusinessUnitID && x.EnterpriseId == principal.EnterpriseID);
+        //    return Entity<Member>.FindMany<Member>(bufilter, index, paging, out count);
+        //}
+
         public static Member GetMember(Principal principal, int id)
         {
             var member = Entity<Member>.FindOne<Member>(id);
