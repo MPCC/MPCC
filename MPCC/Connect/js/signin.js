@@ -4,7 +4,7 @@
             url: "http://localhost/Rest2/Auth/v1/tokenrequest",
             type: 'POST',
             contentType: 'application/json',
-            data: { username: $("#username").val(), password: $("#password").val() },
+            data: JSON.stringify({ username: $("#username").val(), password: $("#password").val() }),
             success: function () {
                 document.location = 'home.html';
             },
