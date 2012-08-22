@@ -51,7 +51,7 @@ namespace Rest.Data
             m.FirstName = String.IsNullOrEmpty(member.FirstName) ? String.Empty : member.FirstName;
             m.MiddleName = String.IsNullOrEmpty(member.MiddleName) ? String.Empty : member.MiddleName;
             m.LastName = String.IsNullOrEmpty(member.LastName) ? String.Empty : member.LastName;
-            m.ModifiedDate = DateTime.Now;
+            m.ModifiedDate = DateTime.Now.ToString();
             m.Image = String.IsNullOrEmpty(member.Image) ? String.Empty : member.Image;
             //m.StartDate
             //m.LastVisitDate

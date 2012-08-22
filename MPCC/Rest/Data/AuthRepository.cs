@@ -18,6 +18,8 @@ namespace Rest.Data
                 {
                     if (user.ProviderUserKey != null)
                     {
+                        
+
                         var token = AuthManager.GenerateToken(new Guid(user.ProviderUserKey.ToString()), string.Empty, string.Empty);
                         return new Token() { oauth_timestamp = DateTime.Now.ToString(), oauth_token = token};
                     }

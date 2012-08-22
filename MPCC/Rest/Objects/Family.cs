@@ -6,8 +6,10 @@ using FluentNHibernate.Mapping;
 namespace Rest.Objects
 {
     [DataContract]
-    public class Family
+    public class Family : BaseObject
     {
+        private static string _time;
+
         [DataMember]
         public virtual int Id { get; set; }
 
@@ -33,10 +35,18 @@ namespace Rest.Objects
         public virtual int CreatedBy { get; set; }
 
         [DataMember]
-        public virtual DateTime CreatedDate { get; set; }
+        public virtual string CreatedDate
+        {
+            get { return formatToISO86(Convert.ToDateTime(_time)); }
+            set { _time = value; }
+        }
 
         [DataMember]
-        public virtual DateTime ModifiedDate { get; set; }
+        public virtual string ModifiedDate
+        {
+            get { return formatToISO86(Convert.ToDateTime(_time)); }
+            set { _time = value; }
+        }
     }
 
     public class FamilyMap : ClassMap<Family>

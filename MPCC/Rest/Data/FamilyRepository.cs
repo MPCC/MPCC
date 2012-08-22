@@ -39,8 +39,8 @@ namespace Rest.Data
                     Image = family.Image ?? String.Empty,
                     Name = family.Name ?? String.Empty,
                     IsActive = true,
-                    ModifiedDate = DateTime.Now,
-                    CreatedDate = DateTime.Now,
+                    ModifiedDate = DateTime.Now.ToString(),
+                    CreatedDate = DateTime.Now.ToString(),
                 };
             Entity<Family>.Save(f);
             AddFamilyMember(principal, f.Id, principal.MemberID);
@@ -81,7 +81,7 @@ namespace Rest.Data
             
             f.Image = family.Image ?? String.Empty;
             f.Name = family.Name ?? String.Empty;
-            f.ModifiedDate = DateTime.Now;
+            f.ModifiedDate = DateTime.Now.ToString();
             Entity<Family>.Update(f);
             return f;
         }

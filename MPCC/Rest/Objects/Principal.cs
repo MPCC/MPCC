@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Principal;
 using System.Web;
+using Rest.Data;
 
 namespace Rest.Objects
 {
@@ -34,10 +35,16 @@ namespace Rest.Objects
         }
     }
 
-    public class Token
+
+    public class Token : BaseObject
     {
-        public string oauth_token { get; set; }
-        public string oauth_timestamp { get; set; }
+        private static string _time;
+        public string oauth_token { get;  set; }
+        public string oauth_timestamp
+        {
+            get { return formatToISO86(Convert.ToDateTime(_time));  }
+            set { _time = value; }
+        }
     }
 
     public class Login
