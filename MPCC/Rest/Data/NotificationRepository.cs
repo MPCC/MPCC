@@ -39,8 +39,8 @@ namespace Rest.Data
                 Category = GetNotificationCategory(notification.Category).ToString(),
                 IsActive = true,
                 HasRead = false,
-                ModifiedDate = DateTime.Now,
-                CreatedDate = DateTime.Now,
+                ModifiedDate = DateTime.Now.ToString(),
+                CreatedDate = DateTime.Now.ToString(),
             };
             Entity<Notification>.Save(n);
             return n;
@@ -55,7 +55,7 @@ namespace Rest.Data
         {
             var n = GetNotification(principal, notification.ID);
             CheckPermissions(principal.MemberID, n.ToMemberID);
-            n.ModifiedDate = DateTime.Now;
+            n.ModifiedDate = DateTime.Now.ToString();
             n.IsActive = notification.IsActive;
             n.HasRead = notification.HasRead;
             n.ActionOccurred = notification.ActionOccurred;
@@ -67,7 +67,7 @@ namespace Rest.Data
         {
             var n = GetNotification(principal, notificationID);
             CheckPermissions(principal.MemberID, n.FromMemberID);
-            n.ModifiedDate = DateTime.Now;
+            n.ModifiedDate = DateTime.Now.ToString();
             n.IsActive = false;
             Entity<Notification>.Update(n);
         }
@@ -121,8 +121,8 @@ namespace Rest.Data
                            Category = Enums.NotificationCategory.REQUEST.ToString(),
                            IsActive = true,
                            HasRead = false,
-                           ModifiedDate = DateTime.Now,
-                           CreatedDate = DateTime.Now,   
+                           ModifiedDate = DateTime.Now.ToString(),
+                           CreatedDate = DateTime.Now.ToString(),   
                        };
         }
 
@@ -149,8 +149,8 @@ namespace Rest.Data
                 Category = Enums.NotificationCategory.MESSAGE.ToString(),
                 IsActive = true,
                 HasRead = false,
-                ModifiedDate = DateTime.Now,
-                CreatedDate = DateTime.Now,
+                ModifiedDate = DateTime.Now.ToString(),
+                CreatedDate = DateTime.Now.ToString(),
             };
         }
     }

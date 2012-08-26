@@ -87,6 +87,7 @@
     <Compile Include="Auth\Encrypt.cs" />
     <Compile Include="Auth\ServiceAuthorization.cs" />
     <Compile Include="Data\AuthRepository.cs" />
+    <Compile Include="Data\BaseRepo.cs" />
     <Compile Include="Data\DBConnection.cs" />
     <Compile Include="Data\Entity.cs" />
     <Compile Include="Data\Enums.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="Data\MemberRepository.cs" />
     <Compile Include="Data\NotificationRepository.cs" />
     <Compile Include="Objects\AccountModels.cs" />
+    <Compile Include="Objects\BaseObject.cs" />
     <Compile Include="Objects\Family.cs" />
     <Compile Include="Objects\Member.cs" />
     <Compile Include="Objects\Notification.cs" />

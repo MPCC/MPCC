@@ -29,11 +29,6 @@ namespace Rest
             return principal;
         }
 
-        public static string ToISO86(DateTime date)
-        {
-            return XmlConvert.ToString(date, XmlDateTimeSerializationMode.Local);
-        }
-
         public static string ToJSON(this object obj)
         {
             var serializer = new JavaScriptSerializer();
