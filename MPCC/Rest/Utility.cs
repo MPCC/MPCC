@@ -3,7 +3,8 @@ using System.Net;
 using System.ServiceModel.Web;
 using System.Web.Script.Serialization;
 using System.Xml;
-using Auth;
+using Rest.Auth;
+using Rest.Objects;
 
 namespace Rest
 {
@@ -26,11 +27,6 @@ namespace Rest
             var principal = AuthManager.GetPrincipal(token);
 
             return principal;
-        }
-
-        public static string ToISO86(DateTime date)
-        {
-            return XmlConvert.ToString(date, XmlDateTimeSerializationMode.Local);
         }
 
         public static string ToJSON(this object obj)

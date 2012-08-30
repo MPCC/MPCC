@@ -43,6 +43,8 @@
     <Reference Include="NHibernate.ByteCode.Castle">
       <HintPath>..\..\Common\FluentNHibernate\NHibernate.ByteCode.Castle.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System" />
@@ -57,6 +59,13 @@
     <Reference Include="System.ServiceModel.Activation" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Common\Mvc4\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\..\Common\System.Web.Providers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
@@ -74,15 +83,26 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Auth\AuthManager.cs" />
+    <Compile Include="Auth\Encrypt.cs" />
+    <Compile Include="Auth\ServiceAuthorization.cs" />
+    <Compile Include="Data\AuthRepository.cs" />
+    <Compile Include="Data\BaseRepo.cs" />
+    <Compile Include="Data\DBConnection.cs" />
     <Compile Include="Data\Entity.cs" />
     <Compile Include="Data\Enums.cs" />
     <Compile Include="Data\FamilyRepository.cs" />
+    <Compile Include="Data\Helper.cs" />
     <Compile Include="Data\MemberRepository.cs" />
     <Compile Include="Data\NotificationRepository.cs" />
+    <Compile Include="Objects\AccountModels.cs" />
+    <Compile Include="Objects\BaseObject.cs" />
     <Compile Include="Objects\Family.cs" />
     <Compile Include="Objects\Member.cs" />
     <Compile Include="Objects\Notification.cs" />
+    <Compile Include="Objects\Principal.cs" />
     <Compile Include="Objects\Route.cs" />
+    <Compile Include="Routes\Auth.cs" />
     <Compile Include="Routes\Family.cs" />
     <Compile Include="Routes\Member.cs" />
     <Compile Include="Global.asax.cs">
@@ -94,12 +114,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Auth\Auth.csproj">
-      <Project>{3B20A89F-DC1E-4A08-8864-9DDBF9EEE17C}</Project>
-      <Name>Auth</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

@@ -15,6 +15,7 @@ namespace Rest
 
         private void RegisterRoutes()
         {
+            RouteTable.Routes.Add(new ServiceRoute("Auth", new WebServiceHostFactory(), typeof(AuthService)));
             RouteTable.Routes.Add(new ServiceRoute("Member", new WebServiceHostFactory(), typeof(MemberService)));
             RouteTable.Routes.Add(new ServiceRoute("Family", new WebServiceHostFactory(), typeof(FamilyService)));
             RouteTable.Routes.Add(new ServiceRoute("Notification", new WebServiceHostFactory(), typeof(NotificationService)));

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web;
-using Auth;
 using NHibernate.Criterion;
 using Rest.Objects;
 
@@ -14,6 +13,12 @@ namespace Rest.Data
             var bufilter = Restrictions.Where<Member>(x => x.BusinessUnitId == principal.BusinessUnitID && x.EnterpriseId == principal.EnterpriseID);
             return Entity<Member>.FindMany<Member>(bufilter, index, paging, out count);
         }
+
+        //public static List<Member> GetMemberCollection(int index, int paging, out long count)
+        //{
+        //    var bufilter = Restrictions.Where<Member>(x => x.BusinessUnitId == principal.BusinessUnitID && x.EnterpriseId == principal.EnterpriseID);
+        //    return Entity<Member>.FindMany<Member>(bufilter, index, paging, out count);
+        //}
 
         public static Member GetMember(Principal principal, int id)
         {
@@ -46,7 +51,7 @@ namespace Rest.Data
             m.FirstName = String.IsNullOrEmpty(member.FirstName) ? String.Empty : member.FirstName;
             m.MiddleName = String.IsNullOrEmpty(member.MiddleName) ? String.Empty : member.MiddleName;
             m.LastName = String.IsNullOrEmpty(member.LastName) ? String.Empty : member.LastName;
-            m.ModifiedDate = DateTime.Now;
+            m.ModifiedDate = DateTime.Now.ToString();
             m.Image = String.IsNullOrEmpty(member.Image) ? String.Empty : member.Image;
             //m.StartDate
             //m.LastVisitDate

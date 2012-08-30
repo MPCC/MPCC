@@ -12,8 +12,10 @@ namespace Rest.Objects
     #region Entities
     
     [DataContract]
-    public class Member
+    public class Member : BaseObject
     {
+        private static string _time;
+
         [DataMember]
         public virtual int MemberId { get; set; }
 
@@ -39,7 +41,11 @@ namespace Rest.Objects
         public virtual string LastName { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
-        public virtual string DateOfBirth { get; set; }
+        public virtual string DateOfBirth
+        {
+            get { return formatToISO86(Convert.ToDateTime(_time)); }
+            set { _time = value; }
+        }
 
         [DataMember(EmitDefaultValue = false)]
         public virtual string Image { get; set; }
@@ -63,13 +69,25 @@ namespace Rest.Objects
         public virtual int? Zip { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
-        public virtual DateTime? StartDate { get; set; }
+        public virtual string StartDate
+        {
+            get { return formatToISO86(Convert.ToDateTime(_time)); }
+            set { _time = value; }
+        }
 
         [DataMember(EmitDefaultValue = false)]
-        public virtual DateTime? LastVisitDate { get; set; }
+        public virtual string LastVisitDate
+        {
+            get { return formatToISO86(Convert.ToDateTime(_time)); }
+            set { _time = value; }
+        }
 
         [DataMember(EmitDefaultValue = false)]
-        public virtual DateTime? EndDate { get; set; }
+        public virtual string EndDate
+        {
+            get { return formatToISO86(Convert.ToDateTime(_time)); }
+            set { _time = value; }
+        }
 
         [DataMember(EmitDefaultValue = false)]
         public virtual bool IsActive { get; set; }
@@ -81,10 +99,18 @@ namespace Rest.Objects
         public virtual List<Channel> Channels { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
-        public virtual DateTime? CreatedDate { get; set; }
+        public virtual string CreatedDate
+        {
+            get { return formatToISO86(Convert.ToDateTime(_time)); }
+            set { _time = value; }
+        }
 
         [DataMember(EmitDefaultValue = false)]
-        public virtual DateTime? ModifiedDate { get; set; }
+        public virtual string ModifiedDate
+        {
+            get { return formatToISO86(Convert.ToDateTime(_time)); }
+            set { _time = value; }
+        }
     }
 
     [DataContract]
