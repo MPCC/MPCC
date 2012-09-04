@@ -1,7 +1,6 @@
 ﻿<div class="account-container register">
 	<div class="content clearfix">
-		<!--<form action="./" method="post">-->
-		
+		<form action="" id="register-form">
 		    <h1>Create Your Account</h1>
             <div class="alert alert-error hidden">
             </div>
@@ -19,7 +18,8 @@
 			    </div>
                 <div class="field control-group warning">
 					<label for="username">Username:</label>	
-					<input type="text" id="txtUsername" name="txtUsernamer" value="" placeholder="Username" class="login" />
+                    <input type="text" id="txtUsername" name="txtUsername" value="" placeholder="Username" class="login" />
+                    <div style="font-size:11px;line-height:normal;padding:3px;">The username must be at least 6 characters long</div>
 				</div>
 				<div class="field control-group warning">
 					<label for="email">Email Address:</label>
@@ -27,7 +27,8 @@
 				</div>
 				<div class="field control-group warning">
 					<label for="password">Password:</label>
-					<input type="password" id="password" name="password" value="" placeholder="Password" class="login"/>
+				    <input type="password" id="password" name="password" value="" placeholder="Password" class="login"/>
+                    <div style="font-size:11px;line-height:normal;padding:3px;">The password must be at least 8 characters long. The password cannot contain the username. The password must contain at least 1 alpha, 1 numeric, and 1 special character</div>
 				</div>
 				<div class="field control-group warning">
 					<label for="confirm_password">Confirm Password:</label>
@@ -41,11 +42,12 @@
 					<label class="choice" for="Field">I have read and agree with the Terms of Use.</label>
 				</span>
 									
-				<button id="btnRegister" class="button btn btn-primary btn-large">Register</button>
+			    <button id="btnRegister" class="button btn btn-warning btn-large"><i class="icon-user"></i> Register</button>
+                <!--button btn btn-warning btn-large-->
 			</div>
-		<!--</form>-->
+		</form>
 	</div>
 </div>
 <div class="login-extra">
-	Already have an account? <a href="index.html">Login</a>
+	Already have an account? <a href="index.html"> Login</a>
 </div>
