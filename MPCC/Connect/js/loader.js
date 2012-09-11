@@ -3,6 +3,7 @@ function () {
     return {
         Backbone: Backbone.noConflict(),
         _: _.noConflict(),
+        Bootstrap: Bootstrap.noConflict(),
         $: jQuery.noConflict()
     };
 });

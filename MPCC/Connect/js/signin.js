@@ -21,7 +21,8 @@
             }
         });
     });
-    $("#btnRegister").live('click', function () {
+    $("#btnRegister").live('click', function (event) {
+        event.preventDefault(); 
         if ($('#register-form').valid()) {
             $.ajax({
                 url: "http://localhost/Rest2/auth/v1/registermember",
@@ -29,7 +30,7 @@
                 contentType: 'application/json',
                 data: JSON.stringify({ email: $('#email').val(), password: $("#password").val(), username: $("#txtUsername").val() }),
                 success: function(data, textStatus, xhr) {
-                    document.location = 'index.html';
+                    $('.alert-error').html('<a class="close">×</a><strong>Success</strong> The user was created successfully').addClass('alert-success').removeClass('hidden alert-error');
                 },
                 error: function(err) {
                     $('.alert-error').html('<a class="close">×</a><strong>Error</strong> This user already exist.').removeClass('hidden');
@@ -39,7 +40,7 @@
             $('.alert-error').html('<a class="close">×</a><strong>Error</strong> Your registration form is not valid.').removeClass('hidden');
         }
     });
-    $('input').keydown(function (e) {
+    $('input').live('keydown',function (e) {
         if (e.keyCode == 13) {
             $('#btnSignIn').click();
             return false;
@@ -103,10 +104,10 @@
                                 },
                                 highlight: function (label) {
                                     $(label).closest('.control-group').removeClass('success').addClass('error');
-                                    $(label).parent().children('.icon-ok').removeClass('icon-ok');
+                                    $(label).parent().children('.icon-ok').removeClass('icon-ok').removeAttr('style');
                                 },
                                 success: function (label) {
-                                    label.addClass('icon-ok').closest('.control-group').addClass('success');
+                                    label.addClass('icon-ok').attr('style', 'display:inline-block;height:20px;width:15px;position:absolute;margin:-30px 0 0 328px;').closest('.control-group').addClass('success');
                                 }
                             });
                         }
