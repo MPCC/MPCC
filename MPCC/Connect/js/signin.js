@@ -78,10 +78,10 @@
                                 },
                                 highlight: function (label) {
                                     $(label).closest('.control-group').removeClass('success').addClass('error');
-                                    $(label).parent().children('.icon-ok').removeClass('icon-ok');
+                                    $(label).parent().children('.icon-ok').removeClass('icon-ok').removeAttr('style');
                                 },
                                 success: function (label) {
-                                    label.addClass('icon-ok').closest('.control-group').addClass('success');
+                                    label.addClass('icon-ok').attr('style','display:inline-block;height:20px;width:15px;position:absolute;margin:-30px 0 0 328px;').closest('.control-group').addClass('success');
                                 }
                             });
                         }
