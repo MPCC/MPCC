@@ -3,7 +3,7 @@
   'Bootstrap',
   'Underscore',
   'Backbone'
-], function($,Bootstrap, _, Backbone){
+], function ($, Bootstrap, _, Backbone) {
   var initialize = function(){
     //Router.initialize();
   };
