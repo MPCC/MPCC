@@ -1,6 +1,7 @@
 ﻿using System.ServiceModel;
 using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
+using System.Web;
 using Rest.Data;
 using Rest.Objects;
 
@@ -15,7 +16,16 @@ namespace Rest.Routes
         [WebInvoke(UriTemplate = "v1/tokenrequest", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         public GetResponse<Token> RequestToken(Login entity)
         {
-            return new GetResponse<Token>() { Entity = AuthRepository.Login(entity) };
+            var token = AuthRepository.Login(entity);
+            var cookie = new HttpCookie("_mpcc", "OAuth oauth_token=" + token.oauth_token);
+
+            HttpContext.Current.Response.SetCookie(cookie);
+            HttpContext.Current.Response.Headers.Add("Authorization", "OAuth oauth_token=" + token.oauth_token);
+            HttpContext.Current.Response.Headers.Add("Access-Control-Allow-Origin", "*");
+            HttpContext.Current.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+            HttpContext.Current.Response.Headers.Add("Access-Control-Allow-Headers", "Authorization,content-type,applicationid");
+
+            return new GetResponse<Token>() { Entity = token };
         }
 
         [WebInvoke(UriTemplate = "v1/tokenrefresh", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
@@ -38,8 +48,10 @@ namespace Rest.Routes
         }
 
         [WebInvoke(UriTemplate = "v1/logoff", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-        public static void Logoff(Token entity)
+        public void Logoff(Token entity)
         {
+            var cookie = new HttpCookie("_mpcc", string.Empty);
+            HttpContext.Current.Response.SetCookie(cookie);
             AuthRepository.Logoff(entity);
         }
     }
