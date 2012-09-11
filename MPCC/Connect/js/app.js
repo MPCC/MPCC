@@ -1,9 +1,14 @@
-﻿define(['jquery', 'underscore', 'backbone'],
-    function ($, _, backbone) {
+﻿define([
+  'jQuery',
+  'Bootstrap',
+  'Underscore',
+  'Backbone'
+], function($,Bootstrap, _, Backbone){
+  var initialize = function(){
+    //Router.initialize();
+  };
 
-        return {
-            init: function () {
-                alert('The app was initialized');
-            }
-        };
-    });
+ return {
+    initialize: initialize
+  };
+});
