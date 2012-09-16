@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
+using System.ServiceModel.Web;
 using System.Web;
 using NHibernate.Criterion;
 using Rest.Objects;
@@ -23,14 +25,11 @@ namespace Rest.Data
         public static Member GetMember(Principal principal, int id)
         {
             var member = Entity<Member>.FindOne<Member>(id);
-            if(member.BusinessUnitId != principal.BusinessUnitID)
+            if (member.MemberId != principal.MemberID)
             {
-                return new Member();
+                throw new WebFaultException(HttpStatusCode.Unauthorized);
             }
-            else
-            {
-                return member;
-            }
+            return member;
         }
 
         public static Member UpdateMember(Principal principal, Member member)

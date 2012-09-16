@@ -34,7 +34,14 @@ namespace Rest.Routes
             if (WebOperationContext.Current != null)
             {
                 var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
-                return new GetResponse<Member>() {Entity = MemberRepository.GetMember(principal, Convert.ToInt32(id))};
+                if(id.ToLower().Trim() == "me")
+                {
+                    return new GetResponse<Member>() { Entity = MemberRepository.GetMember(principal, principal.MemberID) };
+                }
+                else
+                {
+                    return new GetResponse<Member>() { Entity = MemberRepository.GetMember(principal, Convert.ToInt32(id)) };    
+                }
             }
             throw new WebFaultException(HttpStatusCode.BadRequest);
         }
