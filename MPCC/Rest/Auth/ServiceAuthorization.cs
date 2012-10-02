@@ -20,11 +20,18 @@ namespace Rest.Auth
 
         public string GetToken(OperationContext operationContext)
         {
-            if(String.IsNullOrEmpty(HttpContext.Current.Request.Headers["oauth_token"]))
+            if(!String.IsNullOrEmpty(HttpContext.Current.Request.Headers["oauth_token"]))
             {
-                throw new WebFaultException(HttpStatusCode.Unauthorized);
+                return HttpContext.Current.Request.Headers["oauth_token"];  
             }
-            return HttpContext.Current.Request.Headers["oauth_token"];
+
+
+            if(!String.IsNullOrEmpty(HttpContext.Current.Request.QueryString["oauth_token"]))
+            {
+                return HttpContext.Current.Request.QueryString["oauth_token"];
+            }
+
+            throw new WebFaultException(HttpStatusCode.Unauthorized);
         }
     }
 }

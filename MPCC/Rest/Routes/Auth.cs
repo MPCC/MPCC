@@ -2,6 +2,7 @@
 using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
 using System.Web;
+using System.Web.Security;
 using Rest.Data;
 using Rest.Objects;
 
@@ -24,7 +25,7 @@ namespace Rest.Routes
             HttpContext.Current.Response.Headers.Add("Access-Control-Allow-Origin", "*");
             HttpContext.Current.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
             HttpContext.Current.Response.Headers.Add("Access-Control-Allow-Headers", "Authorization,content-type,applicationid");
-
+            
             return new GetResponse<Token>() { Entity = token };
         }
 

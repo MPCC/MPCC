@@ -13,59 +13,59 @@
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Family.cs" caret="3285" fromTop="35" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Notification.cs" caret="2699" fromTop="37" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:Encrypt.cs" caret="70" fromTop="3" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:DBConnection.cs" caret="89" fromTop="3" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Global.asax.cs" caret="813" fromTop="20" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:AuthManager.cs" caret="3203" fromTop="40" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="860" fromTop="23" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:Entity.cs" caret="3730" fromTop="19" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Utility.cs" caret="1383" fromTop="35" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:AccountModels.cs" caret="0" fromTop="0" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:BaseRepo.cs" caret="15" fromTop="1" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:FamilyRepository.cs" caret="3532" fromTop="27" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Principal.cs" caret="1260" fromTop="39" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:BaseObject.cs" caret="212" fromTop="8" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Notification.cs" caret="1963" fromTop="67" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Member.cs" caret="3460" fromTop="100" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Family.cs" caret="941" fromTop="28" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="2468" fromTop="27" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:NotificationRepository.cs" caret="1256" fromTop="23" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="470" fromTop="15" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:AuthRepository.cs" caret="929" fromTop="23" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="795" fromTop="20" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="1441" fromTop="28" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Member.cs" caret="3460" fromTop="100" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:DBConnection.cs" caret="1867" fromTop="26" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="414" fromTop="9" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1419" fromTop="17" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:AuthRepository.cs" caret="1036" fromTop="30" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2738" fromTop="30" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="484" fromTop="16" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="2785" fromTop="40" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:AuthManager.cs" caret="6211" fromTop="26" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Utility.cs" caret="406" fromTop="16" />
     </RecentFiles>
     <RecentEdits>
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:BaseObject.cs" caret="99" fromTop="5" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:BaseObject.cs" caret="212" fromTop="8" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Member.cs" caret="1342" fromTop="21" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Member.cs" caret="385" fromTop="16" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Member.cs" caret="2125" fromTop="32" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Member.cs" caret="2344" fromTop="39" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Member.cs" caret="2567" fromTop="46" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Member.cs" caret="2702" fromTop="50" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Member.cs" caret="3099" fromTop="38" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Member.cs" caret="3320" fromTop="45" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Member.cs" caret="3460" fromTop="49" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Notification.cs" caret="1674" fromTop="41" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Notification.cs" caret="268" fromTop="11" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Notification.cs" caret="1869" fromTop="23" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Notification.cs" caret="2009" fromTop="27" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:NotificationRepository.cs" caret="2221" fromTop="28" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="2468" fromTop="27" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="2493" fromTop="27" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:NotificationRepository.cs" caret="2789" fromTop="17" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:NotificationRepository.cs" caret="3313" fromTop="17" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:NotificationRepository.cs" caret="5983" fromTop="18" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:NotificationRepository.cs" caret="7321" fromTop="18" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="946" fromTop="27" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1160" fromTop="27" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:AuthRepository.cs" caret="545" fromTop="16" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="2544" fromTop="45" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="795" fromTop="27" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="1289" fromTop="30" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="795" fromTop="20" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="2584" fromTop="45" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="823" fromTop="27" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="823" fromTop="20" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="2539" fromTop="27" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="2532" fromTop="36" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="1441" fromTop="28" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2015" fromTop="36" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2015" fromTop="41" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="157" fromTop="4" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2015" fromTop="33" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="1920" fromTop="36" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="1706" fromTop="32" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1316" fromTop="31" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="1347" fromTop="27" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1092" fromTop="39" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="852" fromTop="24" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1092" fromTop="34" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1149" fromTop="33" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2738" fromTop="30" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Utility.cs" caret="313" fromTop="13" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -111,7 +111,7 @@
       <Item value="Member`0" priority="78" />
       <Item value="ID" priority="0" />
       <Item value="Name" priority="7" />
-      <Item value="new" priority="112" />
+      <Item value="new" priority="114" />
       <Item value="EnvironmentVariableTarget`0" priority="2" />
       <Item value="name" priority="7" />
       <Item value="NetMsmqBinding`0" priority="0" />
@@ -159,7 +159,7 @@
       <Item value="Response`0" priority="0" />
       <Item value="r" priority="1" />
       <Item value="GetResponse" priority="1" />
-      <Item value="entity" priority="26" />
+      <Item value="entity" priority="27" />
       <Item value="Entity" priority="24" />
       <Item value="Index" priority="0" />
       <Item value="Paging" priority="0" />
@@ -186,14 +186,14 @@
       <Item value="Fluently`0" priority="3" />
       <Item value="MySQLConfiguration`0" priority="0" />
       <Item value="MsSqlConfiguration`0" priority="1" />
-      <Item value="c" priority="1" />
+      <Item value="c" priority="2" />
       <Item value="HashtableCacheProvider`0" priority="0" />
       <Item value="NHibernateConfig`0" priority="0" />
       <Item value="CreateSessionFactory`0" priority="1" />
       <Item value="s" priority="0" />
       <Item value="session" priority="8" />
       <Item value="transaction" priority="0" />
-      <Item value="if" priority="45" />
+      <Item value="if" priority="47" />
       <Item value="attribute" priority="1" />
       <Item value="is" priority="1" />
       <Item value="Persister" priority="0" />
@@ -207,8 +207,8 @@
       <Item value="Family`0" priority="14" />
       <Item value="family" priority="8" />
       <Item value="Family" priority="2" />
-      <Item value="id" priority="0" />
-      <Item value="else" priority="11" />
+      <Item value="id" priority="1" />
+      <Item value="else" priority="15" />
       <Item value="try" priority="5" />
       <Item value="thr" priority="3" />
       <Item value="Exception`0" priority="0" />
@@ -216,7 +216,7 @@
       <Item value="XmlObjectSerializer`0" priority="2" />
       <Item value="ManyToOnePart" priority="0" />
       <Item value="MemberRepository`0" priority="5" />
-      <Item value="throw" priority="22" />
+      <Item value="throw" priority="23" />
       <Item value="Exception" priority="0" />
       <Item value="e" priority="1" />
       <Item value="DateTime" priority="0" />
@@ -257,7 +257,7 @@
       <Item value="AesManaged`0" priority="0" />
       <Item value="algth" priority="0" />
       <Item value="aes" priority="1" />
-      <Item value="String`0" priority="31" />
+      <Item value="String`0" priority="32" />
       <Item value="tenantId" priority="1" />
       <Item value="businessUnitId" priority="5" />
       <Item value="userId" priority="2" />
@@ -281,7 +281,7 @@
       <Item value="HexStringToByteArray`0" priority="0" />
       <Item value="Principal`0" priority="21" />
       <Item value="Principal" priority="1" />
-      <Item value="principal" priority="66" />
+      <Item value="principal" priority="69" />
       <Item value="DecryptContext`0" priority="0" />
       <Item value="token" priority="20" />
       <Item value="delim" priority="0" />
@@ -299,7 +299,7 @@
       <Item value="SqlDataAdapter" priority="0" />
       <Item value="null" priority="7" />
       <Item value="HttpRequest`0" priority="3" />
-      <Item value="HttpContext`0" priority="8" />
+      <Item value="HttpContext`0" priority="10" />
       <Item value="HttpRequestBase" priority="3" />
       <Item value="model" priority="15" />
       <Item value="DBConnection" priority="1" />
@@ -382,7 +382,7 @@
       <Item value="GetCollectionResponse&lt;Member&gt;" priority="0" />
       <Item value="response" priority="0" />
       <Item value="HttpResponseException" priority="0" />
-      <Item value="WebFaultException" priority="6" />
+      <Item value="WebFaultException" priority="7" />
       <Item value="HttpStatusCode`0" priority="2" />
       <Item value="returnUrl" priority="1" />
       <Item value="Redirect`0" priority="1" />
@@ -502,8 +502,8 @@
       <Item value="OutgoingWebResponseContext`0" priority="0" />
       <Item value="OutgoingWebResponseContext" priority="0" />
       <Item value="Web" priority="0" />
-      <Item value="HttpCookie`0" priority="0" />
-      <Item value="HttpCookie" priority="0" />
+      <Item value="HttpCookie`0" priority="1" />
+      <Item value="HttpCookie" priority="1" />
       <Item value="cookie" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Rest.Extension">
@@ -598,7 +598,7 @@
       <Item value="EnterpriseId" priority="3" />
       <Item value="BusinessUnitId" priority="10" />
       <Item value="ProviderUserKey" priority="0" />
-      <Item value="MemberId" priority="1" />
+      <Item value="MemberId" priority="2" />
       <Item value="Apt" priority="0" />
       <Item value="City" priority="0" />
       <Item value="Email" priority="1" />
@@ -773,7 +773,7 @@
     <ItemStatistics item="Qualified:@System.String">
       <Item value="Join`0" priority="1" />
       <Item value="Format`0" priority="4" />
-      <Item value="IsNullOrEmpty`0" priority="6" />
+      <Item value="IsNullOrEmpty`0" priority="7" />
       <Item value="Empty" priority="28" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Auth.Encrypt">
@@ -784,8 +784,8 @@
       <Item value="ToString`0" priority="1" />
       <Item value="Split`0" priority="2" />
       <Item value="ToUpper`0" priority="2" />
-      <Item value="ToLower`0" priority="1" />
-      <Item value="Trim`0" priority="1" />
+      <Item value="ToLower`0" priority="2" />
+      <Item value="Trim`0" priority="2" />
       <Item value="Contains`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Auth.AuthManager">
@@ -814,13 +814,13 @@
       <Item value="ToDateTime`0" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Web.HttpContext">
-      <Item value="Current" priority="10" />
+      <Item value="Current" priority="12" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpContext">
       <Item value="Handler" priority="0" />
-      <Item value="Request" priority="3" />
+      <Item value="Request" priority="4" />
       <Item value="User" priority="3" />
-      <Item value="Response" priority="1" />
+      <Item value="Response" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Data.SqlDbType">
       <Item value="NVarChar" priority="3" />
@@ -835,6 +835,8 @@
       <Item value="ValidateUser`0" priority="0" />
       <Item value="GetUser`0" priority="9" />
       <Item value="CreateUser`0" priority="1" />
+      <Item value="Provider" priority="0" />
+      <Item value="Providers" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Security.Principal.IPrincipal">
       <Item value="Identity" priority="5" />
@@ -906,7 +908,7 @@
       <Item value="Headers" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Net.HttpStatusCode">
-      <Item value="Unauthorized" priority="3" />
+      <Item value="Unauthorized" priority="4" />
       <Item value="Conflict" priority="0" />
       <Item value="NoContent" priority="0" />
       <Item value="InternalServerError" priority="0" />
@@ -1051,6 +1053,7 @@
     <ItemStatistics item="Qualified:System.Web.HttpRequest">
       <Item value="Headers" priority="1" />
       <Item value="Url" priority="0" />
+      <Item value="QueryString" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Rest.Auth.AuthManager">
       <Item value="ValidateToken`0" priority="0" />
@@ -1058,7 +1061,7 @@
     <ItemStatistics item="Qualified:Rest.Objects.Principal">
       <Item value="EnterpriseID" priority="0" />
       <Item value="BusinessUnitID" priority="0" />
-      <Item value="MemberID" priority="2" />
+      <Item value="MemberID" priority="6" />
       <Item value="Username" priority="2" />
       <Item value="ProviderUserKey" priority="0" />
     </ItemStatistics>

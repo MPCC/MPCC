@@ -58,7 +58,7 @@ namespace Rest.Routes
             if (WebOperationContext.Current != null)
             {
                 var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
-                return new GetResponse<Member>() {Entity = MemberRepository.UpdateMember(principal, entity)};
+                return new GetResponse<Member>() { Entity = MemberRepository.UpdateMember(principal, entity) };
             }
             throw new WebFaultException(HttpStatusCode.BadRequest);
         }
