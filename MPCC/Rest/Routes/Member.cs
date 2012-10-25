@@ -20,8 +20,7 @@ namespace Rest.Routes
             if (WebOperationContext.Current != null)
             {
                 long count;
-                var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
-                var entities = MemberRepository.GetMemberCollection(principal, index, paging, out count);
+                var entities = MemberRepository.GetMemberCollection(index, paging, out count);
                 return new GetCollectionResponse<Member>()
                            {Index = index, Paging = paging, Total = count, Entities = entities};
             }
@@ -33,15 +32,12 @@ namespace Rest.Routes
         {
             if (WebOperationContext.Current != null)
             {
-                var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
                 if(id.ToLower().Trim() == "me")
                 {
-                    return new GetResponse<Member>() { Entity = MemberRepository.GetMember(principal, principal.MemberID) };
+                    return new GetResponse<Member>() { Entity = MemberRepository.GetMember() };
                 }
-                else
-                {
-                    return new GetResponse<Member>() { Entity = MemberRepository.GetMember(principal, Convert.ToInt32(id)) };    
-                }
+                
+                return new GetResponse<Member>() { Entity = MemberRepository.GetMember(Convert.ToInt32(id)) }; 
             }
             throw new WebFaultException(HttpStatusCode.BadRequest);
         }
@@ -57,8 +53,7 @@ namespace Rest.Routes
         {
             if (WebOperationContext.Current != null)
             {
-                var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
-                return new GetResponse<Member>() { Entity = MemberRepository.UpdateMember(principal, entity) };
+                return new GetResponse<Member>() { Entity = MemberRepository.UpdateMember(entity) };
             }
             throw new WebFaultException(HttpStatusCode.BadRequest);
         }
@@ -69,8 +64,7 @@ namespace Rest.Routes
             if(WebOperationContext.Current != null)
             {
                 // TODO: WRITE CHANGE PASSWORD LOGIC
-                var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
-                return new GetResponse<Member>() { Entity = MemberRepository.UpdateMember(principal, entity) };
+                return new GetResponse<Member>() { Entity = MemberRepository.UpdateMember(entity) };
             }
             throw new WebFaultException(HttpStatusCode.BadRequest);
         }

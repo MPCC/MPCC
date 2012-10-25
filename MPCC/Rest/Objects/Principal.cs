@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Principal;
 using System.Web;
+using System.Web.Security;
 using Rest.Data;
 
 namespace Rest.Objects
@@ -28,6 +29,7 @@ namespace Rest.Objects
     {
         public IIdentity Identity { get; set; }
         public Principal Principal { get; set; }
+        public string[] Roles { get; set; }
 
         public bool IsInRole(string role)
         {

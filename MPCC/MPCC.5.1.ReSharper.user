@@ -10,62 +10,62 @@
     <RecentFiles>
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:Helper.cs" caret="559" fromTop="17" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Route.cs" caret="0" fromTop="0" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Family.cs" caret="3285" fromTop="35" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Notification.cs" caret="2699" fromTop="37" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:Encrypt.cs" caret="70" fromTop="3" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Global.asax.cs" caret="813" fromTop="20" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:Entity.cs" caret="3730" fromTop="19" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:AccountModels.cs" caret="0" fromTop="0" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:BaseRepo.cs" caret="15" fromTop="1" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:FamilyRepository.cs" caret="3532" fromTop="27" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Principal.cs" caret="1260" fromTop="39" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:BaseObject.cs" caret="212" fromTop="8" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Notification.cs" caret="1963" fromTop="67" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Family.cs" caret="941" fromTop="28" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:NotificationRepository.cs" caret="1256" fromTop="23" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Member.cs" caret="3460" fromTop="100" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:DBConnection.cs" caret="1867" fromTop="26" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="414" fromTop="9" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1419" fromTop="17" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Family.cs" caret="612" fromTop="16" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Utility.cs" caret="142" fromTop="5" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:AuthManager.cs" caret="1498" fromTop="37" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="2068" fromTop="32" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Global.asax.cs" caret="0" fromTop="0" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="3120" fromTop="33" />
       <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:AuthRepository.cs" caret="1036" fromTop="30" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2738" fromTop="30" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="484" fromTop="16" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="2785" fromTop="40" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:AuthManager.cs" caret="6211" fromTop="26" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Utility.cs" caret="406" fromTop="16" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Principal.cs" caret="765" fromTop="24" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="341" fromTop="11" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2323" fromTop="34" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1774" fromTop="30" />
     </RecentFiles>
     <RecentEdits>
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Notification.cs" caret="1869" fromTop="23" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Notification.cs" caret="2009" fromTop="27" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:NotificationRepository.cs" caret="2221" fromTop="28" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="2493" fromTop="27" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:NotificationRepository.cs" caret="2789" fromTop="17" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:NotificationRepository.cs" caret="3313" fromTop="17" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:NotificationRepository.cs" caret="5983" fromTop="18" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:NotificationRepository.cs" caret="7321" fromTop="18" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1160" fromTop="27" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:AuthRepository.cs" caret="545" fromTop="16" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="2584" fromTop="45" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="823" fromTop="27" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="823" fromTop="20" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="2539" fromTop="27" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="2532" fromTop="36" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="1441" fromTop="28" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2015" fromTop="36" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2015" fromTop="41" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="157" fromTop="4" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2015" fromTop="33" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="1920" fromTop="36" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="1706" fromTop="32" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1316" fromTop="31" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="1347" fromTop="27" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1092" fromTop="39" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="852" fromTop="24" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1092" fromTop="34" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1149" fromTop="33" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2738" fromTop="30" />
-      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Utility.cs" caret="313" fromTop="13" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1590" fromTop="26" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Principal.cs" caret="421" fromTop="15" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="3214" fromTop="52" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="3214" fromTop="24" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="2608" fromTop="13" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="2901" fromTop="35" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1329" fromTop="18" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1329" fromTop="27" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1329" fromTop="21" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="619" fromTop="17" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1342" fromTop="37" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Principal.cs" caret="914" fromTop="28" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1246" fromTop="31" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="3120" fromTop="33" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="214" fromTop="8" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Principal.cs" caret="718" fromTop="22" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="871" fromTop="24" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="298" fromTop="12" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="341" fromTop="11" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="362" fromTop="14" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="744" fromTop="21" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1098" fromTop="17" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1629" fromTop="29" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1519" fromTop="35" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1508" fromTop="29" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="1470" fromTop="15" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="1529" fromTop="18" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2797" fromTop="45" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2231" fromTop="33" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1853" fromTop="33" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -81,16 +81,16 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="this" priority="2" />
-      <Item value="string" priority="154" />
-      <Item value="var" priority="116" />
-      <Item value="public" priority="196" />
+      <Item value="string" priority="156" />
+      <Item value="var" priority="125" />
+      <Item value="public" priority="201" />
       <Item value="SampleUser`0" priority="1" />
       <Item value="virtual" priority="59" />
       <Item value="int" priority="54" />
-      <Item value="return" priority="76" />
+      <Item value="return" priority="79" />
       <Item value="list" priority="12" />
       <Item value="Extension`0" priority="1" />
-      <Item value="using" priority="24" />
+      <Item value="using" priority="25" />
       <Item value="Extension" priority="2" />
       <Item value="static" priority="78" />
       <Item value="memberId" priority="5" />
@@ -106,7 +106,7 @@
       <Item value="List" priority="12" />
       <Item value="Channel`0" priority="9" />
       <Item value="ChannelPreferences`0" priority="2" />
-      <Item value="Rest" priority="8" />
+      <Item value="Rest" priority="9" />
       <Item value="Objects" priority="6" />
       <Item value="Member`0" priority="78" />
       <Item value="ID" priority="0" />
@@ -119,7 +119,7 @@
       <Item value="address" priority="5" />
       <Item value="ChannelPreferences" priority="1" />
       <Item value="cp" priority="6" />
-      <Item value="x" priority="24" />
+      <Item value="x" priority="25" />
       <Item value="Channels`0" priority="2" />
       <Item value="interface" priority="3" />
       <Item value="Channel" priority="1" />
@@ -157,7 +157,7 @@
       <Item value="CollectionResponse&lt;Member&gt;" priority="0" />
       <Item value="Total" priority="1" />
       <Item value="Response`0" priority="0" />
-      <Item value="r" priority="1" />
+      <Item value="r" priority="2" />
       <Item value="GetResponse" priority="1" />
       <Item value="entity" priority="27" />
       <Item value="Entity" priority="24" />
@@ -171,7 +171,7 @@
       <Item value="Id`1" priority="0" />
       <Item value="Map`0" priority="7" />
       <Item value="DataContract" priority="2" />
-      <Item value="Membership`0" priority="14" />
+      <Item value="Membership`0" priority="15" />
       <Item value="Membership" priority="2" />
       <Item value="m" priority="34" />
       <Item value="startDate" priority="0" />
@@ -193,13 +193,13 @@
       <Item value="s" priority="0" />
       <Item value="session" priority="8" />
       <Item value="transaction" priority="0" />
-      <Item value="if" priority="47" />
+      <Item value="if" priority="54" />
       <Item value="attribute" priority="1" />
       <Item value="is" priority="1" />
       <Item value="Persister" priority="0" />
       <Item value="PersistenceModel`0" priority="0" />
       <Item value="private" priority="17" />
-      <Item value="foreach" priority="1" />
+      <Item value="foreach" priority="2" />
       <Item value="object" priority="5" />
       <Item value="l" priority="0" />
       <Item value="Image" priority="0" />
@@ -208,7 +208,7 @@
       <Item value="family" priority="8" />
       <Item value="Family" priority="2" />
       <Item value="id" priority="1" />
-      <Item value="else" priority="15" />
+      <Item value="else" priority="16" />
       <Item value="try" priority="5" />
       <Item value="thr" priority="3" />
       <Item value="Exception`0" priority="0" />
@@ -229,7 +229,7 @@
       <Item value="ToJSON`0" priority="0" />
       <Item value="typeof" priority="2" />
       <Item value="Utility" priority="0" />
-      <Item value="true" priority="6" />
+      <Item value="true" priority="8" />
       <Item value="override" priority="4" />
       <Item value="ServiceAuthenticationManager`0" priority="2" />
       <Item value="AuthServiceAuthorizationManager" priority="0" />
@@ -265,8 +265,8 @@
       <Item value="random" priority="2" />
       <Item value="Encrypt`0" priority="3" />
       <Item value="salt" priority="5" />
-      <Item value="Auth" priority="18" />
-      <Item value="AuthManager`0" priority="23" />
+      <Item value="Auth" priority="19" />
+      <Item value="AuthManager`0" priority="26" />
       <Item value="EncryptContext`0" priority="1" />
       <Item value="ByteArrayToHexString`0" priority="1" />
       <Item value="rij" priority="0" />
@@ -279,13 +279,13 @@
       <Item value="aesKey" priority="0" />
       <Item value="byte" priority="2" />
       <Item value="HexStringToByteArray`0" priority="0" />
-      <Item value="Principal`0" priority="21" />
-      <Item value="Principal" priority="1" />
-      <Item value="principal" priority="69" />
+      <Item value="Principal`0" priority="22" />
+      <Item value="Principal" priority="2" />
+      <Item value="principal" priority="76" />
       <Item value="DecryptContext`0" priority="0" />
-      <Item value="token" priority="20" />
+      <Item value="token" priority="22" />
       <Item value="delim" priority="0" />
-      <Item value="Convert`0" priority="12" />
+      <Item value="Convert`0" priority="13" />
       <Item value="BusinessUnitID" priority="1" />
       <Item value="TenantID" priority="0" />
       <Item value="UserID" priority="0" />
@@ -299,11 +299,11 @@
       <Item value="SqlDataAdapter" priority="0" />
       <Item value="null" priority="7" />
       <Item value="HttpRequest`0" priority="3" />
-      <Item value="HttpContext`0" priority="10" />
+      <Item value="HttpContext`0" priority="12" />
       <Item value="HttpRequestBase" priority="3" />
       <Item value="model" priority="15" />
       <Item value="DBConnection" priority="1" />
-      <Item value="MembershipProvider" priority="0" />
+      <Item value="MembershipProvider" priority="1" />
       <Item value="User" priority="1" />
       <Item value="userIsOnline" priority="0" />
       <Item value="HttpException" priority="5" />
@@ -316,7 +316,7 @@
       <Item value="providerUserKey" priority="7" />
       <Item value="GenerateToken`0" priority="0" />
       <Item value="MemberId" priority="3" />
-      <Item value="MembershipUser" priority="3" />
+      <Item value="MembershipUser" priority="4" />
       <Item value="RegisterCustomUser`0" priority="0" />
       <Item value="CustomLogin`0" priority="1" />
       <Item value="DbCommand`0" priority="3" />
@@ -358,7 +358,7 @@
       <Item value="ipAddress" priority="2" />
       <Item value="newSalt" priority="0" />
       <Item value="expire" priority="1" />
-      <Item value="false" priority="4" />
+      <Item value="false" priority="6" />
       <Item value="isValid" priority="7" />
       <Item value="DisposeToken`0" priority="0" />
       <Item value="webRequest" priority="0" />
@@ -377,7 +377,7 @@
       <Item value="InstanceContextMode`0" priority="0" />
       <Item value="headers" priority="0" />
       <Item value="ApplicationException`0" priority="0" />
-      <Item value="request" priority="1" />
+      <Item value="request" priority="7" />
       <Item value="GetCollectionResponse" priority="2" />
       <Item value="GetCollectionResponse&lt;Member&gt;" priority="0" />
       <Item value="response" priority="0" />
@@ -386,7 +386,7 @@
       <Item value="HttpStatusCode`0" priority="2" />
       <Item value="returnUrl" priority="1" />
       <Item value="Redirect`0" priority="1" />
-      <Item value="WebOperationContext`0" priority="3" />
+      <Item value="WebOperationContext`0" priority="4" />
       <Item value="p" priority="2" />
       <Item value="paging" priority="4" />
       <Item value="Math`0" priority="2" />
@@ -477,9 +477,9 @@
       <Item value="Login`0" priority="4" />
       <Item value="oauth_timestamp" priority="11" />
       <Item value="Unauthorized" priority="0" />
-      <Item value="u" priority="0" />
+      <Item value="u" priority="4" />
       <Item value="AuthRepository`0" priority="1" />
-      <Item value="in" priority="0" />
+      <Item value="in" priority="2" />
       <Item value="GetToken`0" priority="0" />
       <Item value="IIdentity`0" priority="1" />
       <Item value="Identity" priority="2" />
@@ -493,7 +493,7 @@
       <Item value="ValidateToken`0" priority="0" />
       <Item value="setcontext" priority="1" />
       <Item value="IPrincipal`0" priority="0" />
-      <Item value="AuthUser`0" priority="0" />
+      <Item value="AuthUser`0" priority="1" />
       <Item value="BaseRepo`0" priority="0" />
       <Item value="formatToISO86`0" priority="2" />
       <Item value="_time" priority="0" />
@@ -505,6 +505,13 @@
       <Item value="HttpCookie`0" priority="1" />
       <Item value="HttpCookie" priority="1" />
       <Item value="cookie" priority="1" />
+      <Item value="RoleProvider" priority="1" />
+      <Item value="Roles`0" priority="3" />
+      <Item value="IsIn`0" priority="0" />
+      <Item value="AuthenticationType" priority="0" />
+      <Item value="Roles" priority="0" />
+      <Item value="CurrentUser" priority="0" />
+      <Item value="GetMember`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Rest.Extension">
       <Item value="JSONHelper`0" priority="1" />
@@ -773,7 +780,7 @@
     <ItemStatistics item="Qualified:@System.String">
       <Item value="Join`0" priority="1" />
       <Item value="Format`0" priority="4" />
-      <Item value="IsNullOrEmpty`0" priority="7" />
+      <Item value="IsNullOrEmpty`0" priority="8" />
       <Item value="Empty" priority="28" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Auth.Encrypt">
@@ -814,12 +821,12 @@
       <Item value="ToDateTime`0" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Web.HttpContext">
-      <Item value="Current" priority="12" />
+      <Item value="Current" priority="14" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpContext">
       <Item value="Handler" priority="0" />
       <Item value="Request" priority="4" />
-      <Item value="User" priority="3" />
+      <Item value="User" priority="6" />
       <Item value="Response" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Data.SqlDbType">
@@ -833,20 +840,20 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Web.Security.Membership">
       <Item value="ValidateUser`0" priority="0" />
-      <Item value="GetUser`0" priority="9" />
+      <Item value="GetUser`0" priority="11" />
       <Item value="CreateUser`0" priority="1" />
       <Item value="Provider" priority="0" />
       <Item value="Providers" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Security.Principal.IPrincipal">
-      <Item value="Identity" priority="5" />
+      <Item value="Identity" priority="9" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Security.Principal.IIdentity">
-      <Item value="Name" priority="1" />
+      <Item value="Name" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Security.MembershipUser">
       <Item value="ProviderUserKey" priority="8" />
-      <Item value="UserName" priority="1" />
+      <Item value="UserName" priority="2" />
       <Item value="Email" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Connect.Models.RegisterModel">
@@ -919,7 +926,7 @@
       <Item value="Url" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.ServiceModel.Web.WebOperationContext">
-      <Item value="Current" priority="3" />
+      <Item value="Current" priority="5" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.ServiceModel.Web.WebOperationContext">
       <Item value="IncomingRequest" priority="1" />
@@ -929,7 +936,7 @@
       <Item value="IsIn`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Int32">
-      <Item value="ToString`0" priority="2" />
+      <Item value="ToString`0" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:NHibernate.ICriteria">
       <Item value="CreateCriteria`0" priority="0" />
@@ -1056,14 +1063,15 @@
       <Item value="QueryString" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Rest.Auth.AuthManager">
-      <Item value="ValidateToken`0" priority="0" />
+      <Item value="ValidateToken`0" priority="2" />
+      <Item value="GetPrincipal`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Rest.Objects.Principal">
-      <Item value="EnterpriseID" priority="0" />
-      <Item value="BusinessUnitID" priority="0" />
-      <Item value="MemberID" priority="6" />
-      <Item value="Username" priority="2" />
-      <Item value="ProviderUserKey" priority="0" />
+      <Item value="EnterpriseID" priority="1" />
+      <Item value="BusinessUnitID" priority="1" />
+      <Item value="MemberID" priority="7" />
+      <Item value="Username" priority="4" />
+      <Item value="ProviderUserKey" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpResponse">
       <Item value="Headers" priority="0" />
@@ -1071,6 +1079,19 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:Rest.Objects.Token">
       <Item value="oauth_token" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Web.IncomingWebRequestContext">
+      <Item value="UriTemplateMatch" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.UriTemplateMatch">
+      <Item value="QueryParameters" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Security.Roles">
+      <Item value="GetRolesForUser`0" priority="1" />
+      <Item value="GetAllRoles`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.AuthUser">
+      <Item value="Principal" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
