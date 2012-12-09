@@ -1,0 +1,16 @@
+C:\New\MPCC\MPCC\ConnectASPX\bin\ConnectASPX.dll
+C:\New\MPCC\MPCC\ConnectASPX\bin\ConnectASPX.pdb
+C:\New\MPCC\MPCC\ConnectASPX\bin\Rest.dll
+C:\New\MPCC\MPCC\ConnectASPX\bin\FluentNHibernate.dll
+C:\New\MPCC\MPCC\ConnectASPX\bin\NHibernate.dll
+C:\New\MPCC\MPCC\ConnectASPX\bin\Iesi.Collections.dll
+C:\New\MPCC\MPCC\ConnectASPX\bin\Rest.pdb
+C:\New\MPCC\MPCC\ConnectASPX\bin\FluentNHibernate.pdb
+C:\New\MPCC\MPCC\ConnectASPX\bin\FluentNHibernate.xml
+C:\New\MPCC\MPCC\ConnectASPX\bin\NHibernate.pdb
+C:\New\MPCC\MPCC\ConnectASPX\bin\NHibernate.xml
+C:\New\MPCC\MPCC\ConnectASPX\bin\Iesi.Collections.pdb
+C:\New\MPCC\MPCC\ConnectASPX\bin\Iesi.Collections.xml
+C:\New\MPCC\MPCC\ConnectASPX\obj\Debug\ResolveAssemblyReference.cache
+C:\New\MPCC\MPCC\ConnectASPX\obj\Debug\ConnectASPX.dll
+C:\New\MPCC\MPCC\ConnectASPX\obj\Debug\ConnectASPX.pdb

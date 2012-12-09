@@ -1,0 +1,250 @@
+﻿
+.shortcuts {
+    text-align: center;
+}
+.shortcuts .shortcut {
+    background: none repeat scroll 0 0 #F3F3F3;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-block;
+    margin: 0 0.9% 1em;
+    padding: 12px 0;
+    text-decoration: none;
+    vertical-align: top;
+    width: 22.5%;
+}
+.shortcuts .shortcut .shortcut-icon {
+    color: #888888;
+    font-size: 32px;
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
+}
+.shortcuts .shortcut:hover {
+    background: none repeat scroll 0 0 #E8E8E8;
+}
+.shortcuts .shortcut:hover .shortcut-icon {
+    color: #666666;
+}
+.shortcuts .shortcut-label {
+    color: #666666;
+    display: block;
+    font-weight: 400;
+}
+.stats {
+    display: table;
+    margin-bottom: 1.9em;
+    margin-top: 0.5em;
+    padding: 0 0 0 10px;
+    width: 100%;
+}
+.stats .stat {
+    color: #999999;
+    display: table-cell;
+    font-size: 11px;
+    font-weight: bold;
+    vertical-align: top;
+    width: 40%;
+}
+.stat-value {
+    color: #444444;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    margin-bottom: 0.55em;
+}
+.stat-time {
+    padding-top: 1.5em;
+    text-align: center;
+}
+.stat-time .stat-value {
+    color: #FF9900;
+    font-size: 40px;
+}
+.stats #donut-chart {
+    height: 100px;
+    margin-left: -20px;
+}
+.news-items {
+    margin: 1em 0 0;
+}
+.news-items li {
+    border-bottom: 1px dotted #CCCCCC;
+    display: table;
+    margin-bottom: 1em;
+    padding: 0 2em 1em 1.5em;
+}
+.news-items li:last-child {
+    border: medium none;
+    padding-bottom: 0;
+}
+.news-item-date {
+    display: table-cell;
+}
+.news-item-detail {
+    display: table-cell;
+}
+.news-item-title {
+    font-size: 13px;
+    font-weight: 600;
+}
+.news-item-date {
+    text-align: right;
+    vertical-align: middle;
+    width: 75px;
+}
+.news-item-day {
+    color: #888888;
+    display: block;
+    font-size: 24px;
+    margin-bottom: 0.25em;
+}
+.news-item-preview {
+    color: #777777;
+    margin-bottom: 0;
+}
+.news-item-month {
+    color: #888888;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    padding-right: 1px;
+}
+.action-table .btn-small {
+    font-size: 10px;
+    padding: 4px 5px 5px;
+}
+.action-table .td-actions {
+    text-align: center;
+    width: 80px;
+}
+.action-table .td-actions .btn {
+    margin-right: 0.5em;
+}
+.action-table .td-actions .btn:last-child {
+}
+.shortcuts .shortcut {
+    width: 31%;
+}
+.stats .stat {
+    margin-bottom: 3em;
+}
+.stats .stat .stat-value {
+    font-size: 20px;
+    margin-bottom: 0.15em;
+}
+.stats {
+    display: block;
+    float: left;
+    margin-bottom: 0;
+}
+#chart-stats {
+    margin: 2em 0 1em;
+}
+.shortcuts .shortcut {
+    width: 48%;
+}
+.faq-search {
+	margin-bottom: 2em;
+	
+	text-align: right;
+}
+.faq-search input {
+	width: 96%;
+	display: block;
+	padding: 2%;
+}
+
+.faq-empty {
+	display: none;
+}
+.faq-toc {
+	padding: 1.5em 0;
+	margin: 2em 0 0;
+	
+	border: 1px dotted #CCC;
+	border-right: none;
+	border-left: none;
+}
+.faq-toc ol {
+	padding: 0;
+	margin: 0;
+}
+.faq-toc li {
+	margin-bottom: .75em;
+	
+	list-style: none;
+}
+.faq-toc a {
+	margin-left: .5em;
+}
+.faq-list {
+	padding: 0;
+	margin: 3em 0 0;
+	
+	list-style: none;	
+}
+
+.faq-list li {
+	display: table;
+	margin-bottom: 2em;
+}
+
+.faq-icon {
+	display: table-cell;
+	padding-right: 1.25em;
+	vertical-align: top;
+}
+
+.faq-text {
+	display: table-cell;
+	vertical-align: top;
+	
+}
+.faq-number {
+	width: 32px;
+	height: 32px;
+	
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+	line-height: 32px;
+	color: #FFF;	
+	background: #F90;	
+	border: 3px solid #FFF;	
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);	
+	border-radius: 100px;	
+	text-shadow: 1px 1px 2px rgba(0,0,0,.4);
+}
+.btn-support-ask {
+		display: block; font-size: 22px; padding: 14px 0; font-weight: 600; margin-bottom: .75em;
+	}
+	
+	.btn-support-contact {
+		display: block; padding: 12px 0; font-size: 18px; font-weight: 600;
+	}
+	.tweet_list { padding: 0px;margin:0px}
+	.tweet_list li{line-height: 20px;margin-bottom: 13px;list-style-type: none;padding-left: 0px;border-bottom: 1px solid #eee;padding-bottom: 13px; margin-left:0px}
+.js-video {
+  height: 0;
+  padding-top: 5px;
+  padding-bottom: 57.25%;
+  margin-bottom: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.js-video.widescreen {
+  padding-bottom: 57.25%;
+}
+
+.js-video.vimeo {
+  padding-top: 0;
+}
+/**/
+
+.js-video embed, .js-video iframe, .js-video object, .js-video video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
