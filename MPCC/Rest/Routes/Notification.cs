@@ -20,8 +20,7 @@ namespace Rest.Routes
         public GetCollectionResponse<Notification> GetCollection(int index, int paging)
         {
             long count;
-            var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
-            var entities = NotificationRepository.GetNotificationCollection(principal, index, paging, out count);
+            var entities = NotificationRepository.GetNotificationCollection(index, paging, out count);
             return new GetCollectionResponse<Notification>() { Index = index, Paging = paging, Total = count, Entities = entities };
         }
 
@@ -29,31 +28,27 @@ namespace Rest.Routes
         public GetCollectionResponse<Notification> GetSentCollection(int index, int paging)
         {
             long count;
-            var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
-            var entities = NotificationRepository.GetSentNotificationCollection(principal, index, paging, out count);
+            var entities = NotificationRepository.GetSentNotificationCollection(index, paging, out count);
             return new GetCollectionResponse<Notification>() { Index = index, Paging = paging, Total = count, Entities = entities };
         }
 
         [WebInvoke(UriTemplate = "v1/", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         public GetResponse<Notification> Create(Notification entity)
         {
-            var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
-            return new GetResponse<Notification>() { Entity = NotificationRepository.CreateNotification(principal, entity) };
+            return new GetResponse<Notification>() { Entity = NotificationRepository.CreateNotification(entity) };
         }
 
         [WebInvoke(UriTemplate = "v1/{id}", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         public GetResponse<Notification> Update(string id, Notification entity)
         {
-            var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
             entity.ID = Convert.ToInt32(id);
-            return new GetResponse<Notification>() { Entity = NotificationRepository.UpdateNotification(principal, entity) };
+            return new GetResponse<Notification>() { Entity = NotificationRepository.UpdateNotification(entity) };
         }
 
         [WebInvoke(UriTemplate = "v1/{id}/cancel", Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         public void Cancel(string id)
         {
-            var principal = Utility.GetContext(WebOperationContext.Current.IncomingRequest);
-            NotificationRepository.CancelNotification(principal, Convert.ToInt32(id));
+            NotificationRepository.CancelNotification(Convert.ToInt32(id));
         }
     }
 }

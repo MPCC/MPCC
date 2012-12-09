@@ -1,0 +1,1097 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:Helper.cs" caret="559" fromTop="17" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Route.cs" caret="0" fromTop="0" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Notification.cs" caret="2699" fromTop="37" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:Encrypt.cs" caret="70" fromTop="3" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:Entity.cs" caret="3730" fromTop="19" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:AccountModels.cs" caret="0" fromTop="0" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:BaseRepo.cs" caret="15" fromTop="1" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:FamilyRepository.cs" caret="3532" fromTop="27" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:BaseObject.cs" caret="212" fromTop="8" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Notification.cs" caret="1963" fromTop="67" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Family.cs" caret="941" fromTop="28" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:NotificationRepository.cs" caret="1256" fromTop="23" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Member.cs" caret="3460" fromTop="100" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:DBConnection.cs" caret="1867" fromTop="26" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Family.cs" caret="612" fromTop="16" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Utility.cs" caret="142" fromTop="5" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:AuthManager.cs" caret="1498" fromTop="37" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Auth.cs" caret="2068" fromTop="32" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Global.asax.cs" caret="0" fromTop="0" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="3120" fromTop="33" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:AuthRepository.cs" caret="1036" fromTop="30" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Principal.cs" caret="765" fromTop="24" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="341" fromTop="11" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2323" fromTop="34" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1774" fromTop="30" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1590" fromTop="26" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Principal.cs" caret="421" fromTop="15" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="3214" fromTop="52" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="3214" fromTop="24" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="2608" fromTop="13" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="2901" fromTop="35" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1329" fromTop="18" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1329" fromTop="27" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1329" fromTop="21" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="619" fromTop="17" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1342" fromTop="37" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Principal.cs" caret="914" fromTop="28" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="1246" fromTop="31" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/f:Web.config" caret="3120" fromTop="33" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="214" fromTop="8" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Objects/f:Principal.cs" caret="718" fromTop="22" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="871" fromTop="24" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="298" fromTop="12" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Auth/f:ServiceAuthorization.cs" caret="341" fromTop="11" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="362" fromTop="14" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="744" fromTop="21" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1098" fromTop="17" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1629" fromTop="29" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1519" fromTop="35" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1508" fromTop="29" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="1470" fromTop="15" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="1529" fromTop="18" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2797" fromTop="45" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Routes/f:Member.cs" caret="2231" fromTop="33" />
+      <File id="9EA6FFF3-28D3-40CC-9E77-347C7C1D1517/d:Data/f:MemberRepository.cs" caret="1853" fromTop="33" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.10\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="this" priority="2" />
+      <Item value="string" priority="156" />
+      <Item value="var" priority="125" />
+      <Item value="public" priority="201" />
+      <Item value="SampleUser`0" priority="1" />
+      <Item value="virtual" priority="59" />
+      <Item value="int" priority="54" />
+      <Item value="return" priority="79" />
+      <Item value="list" priority="12" />
+      <Item value="Extension`0" priority="1" />
+      <Item value="using" priority="25" />
+      <Item value="Extension" priority="2" />
+      <Item value="static" priority="78" />
+      <Item value="memberId" priority="5" />
+      <Item value="fname" priority="1" />
+      <Item value="lname" priority="1" />
+      <Item value="class" priority="30" />
+      <Item value="Name`0" priority="9" />
+      <Item value="DateTime`0" priority="31" />
+      <Item value="System" priority="13" />
+      <Item value="Address`0" priority="2" />
+      <Item value="enum" priority="2" />
+      <Item value="MessageChannels`0" priority="11" />
+      <Item value="List" priority="12" />
+      <Item value="Channel`0" priority="9" />
+      <Item value="ChannelPreferences`0" priority="2" />
+      <Item value="Rest" priority="9" />
+      <Item value="Objects" priority="6" />
+      <Item value="Member`0" priority="78" />
+      <Item value="ID" priority="0" />
+      <Item value="Name" priority="7" />
+      <Item value="new" priority="114" />
+      <Item value="EnvironmentVariableTarget`0" priority="2" />
+      <Item value="name" priority="7" />
+      <Item value="NetMsmqBinding`0" priority="0" />
+      <Item value="Address" priority="1" />
+      <Item value="address" priority="5" />
+      <Item value="ChannelPreferences" priority="1" />
+      <Item value="cp" priority="6" />
+      <Item value="x" priority="25" />
+      <Item value="Channels`0" priority="2" />
+      <Item value="interface" priority="3" />
+      <Item value="Channel" priority="1" />
+      <Item value="c1" priority="7" />
+      <Item value="c2" priority="5" />
+      <Item value="List&lt;Channel&gt;" priority="0" />
+      <Item value="const" priority="10" />
+      <Item value="bool" priority="9" />
+      <Item value="clist" priority="0" />
+      <Item value="DateOfBirth" priority="0" />
+      <Item value="dob" priority="3" />
+      <Item value="Utility`0" priority="3" />
+      <Item value="List&lt;Member&gt;" priority="0" />
+      <Item value="Member" priority="2" />
+      <Item value="SampleMember`0" priority="0" />
+      <Item value="SampleData`0" priority="8" />
+      <Item value="SampleMemberOne`0" priority="1" />
+      <Item value="Data" priority="10" />
+      <Item value="void" priority="12" />
+      <Item value="instance" priority="0" />
+      <Item value="member" priority="19" />
+      <Item value="SampleMemberTwo`0" priority="1" />
+      <Item value="IEnumerable" priority="5" />
+      <Item value="TData`0" priority="36" />
+      <Item value="Collection" priority="1" />
+      <Item value="Collections" priority="0" />
+      <Item value="GCCollectionMode`0" priority="0" />
+      <Item value="CollectionResponse" priority="0" />
+      <Item value="entities" priority="2" />
+      <Item value="Entities" priority="5" />
+      <Item value="IEnumerable`0" priority="0" />
+      <Item value="ICollectionResponse`0" priority="0" />
+      <Item value="Enumerable`0" priority="0" />
+      <Item value="GetHashCode`0" priority="0" />
+      <Item value="CollectionResponse&lt;Member&gt;" priority="0" />
+      <Item value="Total" priority="1" />
+      <Item value="Response`0" priority="0" />
+      <Item value="r" priority="2" />
+      <Item value="GetResponse" priority="1" />
+      <Item value="entity" priority="27" />
+      <Item value="Entity" priority="24" />
+      <Item value="Index" priority="0" />
+      <Item value="Paging" priority="0" />
+      <Item value="IncomingWebRequestContext`0" priority="7" />
+      <Item value="index" priority="9" />
+      <Item value="DataMember" priority="18" />
+      <Item value="ClassMap" priority="0" />
+      <Item value="ChannelMap`0" priority="0" />
+      <Item value="Id`1" priority="0" />
+      <Item value="Map`0" priority="7" />
+      <Item value="DataContract" priority="2" />
+      <Item value="Membership`0" priority="15" />
+      <Item value="Membership" priority="2" />
+      <Item value="m" priority="34" />
+      <Item value="startDate" priority="0" />
+      <Item value="lastVisitDate" priority="0" />
+      <Item value="endDate" priority="0" />
+      <Item value="Enums`0" priority="3" />
+      <Item value="MessageChannel`0" priority="1" />
+      <Item value="MessageChannel" priority="0" />
+      <Item value="mc" priority="1" />
+      <Item value="NHibernate" priority="2" />
+      <Item value="FluentNHibernate" priority="1" />
+      <Item value="Fluently`0" priority="3" />
+      <Item value="MySQLConfiguration`0" priority="0" />
+      <Item value="MsSqlConfiguration`0" priority="1" />
+      <Item value="c" priority="2" />
+      <Item value="HashtableCacheProvider`0" priority="0" />
+      <Item value="NHibernateConfig`0" priority="0" />
+      <Item value="CreateSessionFactory`0" priority="1" />
+      <Item value="s" priority="0" />
+      <Item value="session" priority="8" />
+      <Item value="transaction" priority="0" />
+      <Item value="if" priority="54" />
+      <Item value="attribute" priority="1" />
+      <Item value="is" priority="1" />
+      <Item value="Persister" priority="0" />
+      <Item value="PersistenceModel`0" priority="0" />
+      <Item value="private" priority="17" />
+      <Item value="foreach" priority="2" />
+      <Item value="object" priority="5" />
+      <Item value="l" priority="0" />
+      <Item value="Image" priority="0" />
+      <Item value="gravatar" priority="0" />
+      <Item value="Family`0" priority="14" />
+      <Item value="family" priority="8" />
+      <Item value="Family" priority="2" />
+      <Item value="id" priority="1" />
+      <Item value="else" priority="16" />
+      <Item value="try" priority="5" />
+      <Item value="thr" priority="3" />
+      <Item value="Exception`0" priority="0" />
+      <Item value="ReferenceComponentPart" priority="0" />
+      <Item value="XmlObjectSerializer`0" priority="2" />
+      <Item value="ManyToOnePart" priority="0" />
+      <Item value="MemberRepository`0" priority="5" />
+      <Item value="throw" priority="23" />
+      <Item value="Exception" priority="0" />
+      <Item value="e" priority="1" />
+      <Item value="DateTime" priority="0" />
+      <Item value="jsonDate" priority="0" />
+      <Item value="DataContractFormat" priority="1" />
+      <Item value="Style" priority="0" />
+      <Item value="WebMessageFormat`0" priority="0" />
+      <Item value="OperationFormatStyle`0" priority="0" />
+      <Item value="Serializable" priority="0" />
+      <Item value="ToJSON`0" priority="0" />
+      <Item value="typeof" priority="2" />
+      <Item value="Utility" priority="0" />
+      <Item value="true" priority="8" />
+      <Item value="override" priority="4" />
+      <Item value="ServiceAuthenticationManager`0" priority="2" />
+      <Item value="AuthServiceAuthorizationManager" priority="0" />
+      <Item value="OperationContext`0" priority="5" />
+      <Item value="AppDomainManagerInitializationOptions`0" priority="0" />
+      <Item value="DotNetOpenAuth" priority="0" />
+      <Item value="OAuth2" priority="0" />
+      <Item value="bob" priority="1" />
+      <Item value="OAuth" priority="0" />
+      <Item value="IAuthorizationServer`0" priority="0" />
+      <Item value="ServiceModel" priority="2" />
+      <Item value="serv" priority="0" />
+      <Item value="protected" priority="4" />
+      <Item value="context" priority="5" />
+      <Item value="ServiceAuthorizationManager`0" priority="1" />
+      <Item value="operationContext" priority="4" />
+      <Item value="MessageHeader`0" priority="2" />
+      <Item value="CheckAccess`0" priority="0" />
+      <Item value="ChannelFactory`0" priority="1" />
+      <Item value="Object`0" priority="2" />
+      <Item value="cf" priority="0" />
+      <Item value="IContextChannel`0" priority="0" />
+      <Item value="Security" priority="0" />
+      <Item value="Cryptography" priority="0" />
+      <Item value="AesManaged`0" priority="0" />
+      <Item value="algth" priority="0" />
+      <Item value="aes" priority="1" />
+      <Item value="String`0" priority="32" />
+      <Item value="tenantId" priority="1" />
+      <Item value="businessUnitId" priority="5" />
+      <Item value="userId" priority="2" />
+      <Item value="data" priority="2" />
+      <Item value="random" priority="2" />
+      <Item value="Encrypt`0" priority="3" />
+      <Item value="salt" priority="5" />
+      <Item value="Auth" priority="19" />
+      <Item value="AuthManager`0" priority="26" />
+      <Item value="EncryptContext`0" priority="1" />
+      <Item value="ByteArrayToHexString`0" priority="1" />
+      <Item value="rij" priority="0" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="ArgumentNullException`0" priority="0" />
+      <Item value="char" priority="2" />
+      <Item value="key" priority="1" />
+      <Item value="splitKey" priority="2" />
+      <Item value="rijKey" priority="0" />
+      <Item value="aesKey" priority="0" />
+      <Item value="byte" priority="2" />
+      <Item value="HexStringToByteArray`0" priority="0" />
+      <Item value="Principal`0" priority="22" />
+      <Item value="Principal" priority="2" />
+      <Item value="principal" priority="76" />
+      <Item value="DecryptContext`0" priority="0" />
+      <Item value="token" priority="22" />
+      <Item value="delim" priority="0" />
+      <Item value="Convert`0" priority="13" />
+      <Item value="BusinessUnitID" priority="1" />
+      <Item value="TenantID" priority="0" />
+      <Item value="UserID" priority="0" />
+      <Item value="NotFiniteNumberException`0" priority="0" />
+      <Item value="NotImplementedException" priority="0" />
+      <Item value="StoreToken`0" priority="0" />
+      <Item value="enterpriseId" priority="1" />
+      <Item value="Sql" priority="0" />
+      <Item value="SqlClient" priority="0" />
+      <Item value="SqlDataAdapter`0" priority="0" />
+      <Item value="SqlDataAdapter" priority="0" />
+      <Item value="null" priority="7" />
+      <Item value="HttpRequest`0" priority="3" />
+      <Item value="HttpContext`0" priority="12" />
+      <Item value="HttpRequestBase" priority="3" />
+      <Item value="model" priority="15" />
+      <Item value="DBConnection" priority="1" />
+      <Item value="MembershipProvider" priority="1" />
+      <Item value="User" priority="1" />
+      <Item value="userIsOnline" priority="0" />
+      <Item value="HttpException" priority="5" />
+      <Item value="httpCode" priority="0" />
+      <Item value="LoginModel`0" priority="3" />
+      <Item value="user" priority="12" />
+      <Item value="HttpException`0" priority="1" />
+      <Item value="Guid`0" priority="6" />
+      <Item value="GetPrincipal`0" priority="1" />
+      <Item value="providerUserKey" priority="7" />
+      <Item value="GenerateToken`0" priority="0" />
+      <Item value="MemberId" priority="3" />
+      <Item value="MembershipUser" priority="4" />
+      <Item value="RegisterCustomUser`0" priority="0" />
+      <Item value="CustomLogin`0" priority="1" />
+      <Item value="DbCommand`0" priority="3" />
+      <Item value="cmd" priority="5" />
+      <Item value="CommandType`0" priority="0" />
+      <Item value="SqlDbType`0" priority="0" />
+      <Item value="DBConnection`0" priority="5" />
+      <Item value="DbConnection`0" priority="6" />
+      <Item value="DbConnectionManager" priority="0" />
+      <Item value="ConfigurationManager" priority="0" />
+      <Item value="DbConnectionStringBuilder`0" priority="1" />
+      <Item value="DbConnectionStringBuilder" priority="0" />
+      <Item value="connStr" priority="6" />
+      <Item value="GetDbConnection`0" priority="0" />
+      <Item value="ReadOnlyException`0" priority="0" />
+      <Item value="readonly" priority="2" />
+      <Item value="SqlConnection`0" priority="2" />
+      <Item value="SqlConnection" priority="2" />
+      <Item value="conn" priority="3" />
+      <Item value="Connection`0" priority="0" />
+      <Item value="parameters" priority="0" />
+      <Item value="rows" priority="0" />
+      <Item value="Hashtable`0" priority="1" />
+      <Item value="hash" priority="3" />
+      <Item value="Hashtable" priority="1" />
+      <Item value="ApplicationException" priority="0" />
+      <Item value="ex" priority="1" />
+      <Item value="reader" priority="7" />
+      <Item value="finally" priority="0" />
+      <Item value="for" priority="0" />
+      <Item value="i" priority="3" />
+      <Item value="email" priority="0" />
+      <Item value="sql" priority="0" />
+      <Item value="sqlParams" priority="0" />
+      <Item value="Guid" priority="4" />
+      <Item value="ProviderUserKey" priority="2" />
+      <Item value="row" priority="5" />
+      <Item value="userAgent" priority="5" />
+      <Item value="ipAddress" priority="2" />
+      <Item value="newSalt" priority="0" />
+      <Item value="expire" priority="1" />
+      <Item value="false" priority="6" />
+      <Item value="isValid" priority="7" />
+      <Item value="DisposeToken`0" priority="0" />
+      <Item value="webRequest" priority="0" />
+      <Item value="UnauthorizedAccessException" priority="2" />
+      <Item value="RequestNotification`0" priority="0" />
+      <Item value="UrlHelper`0" priority="0" />
+      <Item value="UrlHelper" priority="0" />
+      <Item value="Request" priority="5" />
+      <Item value="ArgumentNullException" priority="0" />
+      <Item value="CancellationTokenModelBinder`0" priority="0" />
+      <Item value="Response" priority="4" />
+      <Item value="lu" priority="0" />
+      <Item value="RestBase`0" priority="0" />
+      <Item value="Uri`0" priority="1" />
+      <Item value="InstanceContext`0" priority="0" />
+      <Item value="InstanceContextMode`0" priority="0" />
+      <Item value="headers" priority="0" />
+      <Item value="ApplicationException`0" priority="0" />
+      <Item value="request" priority="7" />
+      <Item value="GetCollectionResponse" priority="2" />
+      <Item value="GetCollectionResponse&lt;Member&gt;" priority="0" />
+      <Item value="response" priority="0" />
+      <Item value="HttpResponseException" priority="0" />
+      <Item value="WebFaultException" priority="7" />
+      <Item value="HttpStatusCode`0" priority="2" />
+      <Item value="returnUrl" priority="1" />
+      <Item value="Redirect`0" priority="1" />
+      <Item value="WebOperationContext`0" priority="4" />
+      <Item value="p" priority="2" />
+      <Item value="paging" priority="4" />
+      <Item value="Math`0" priority="2" />
+      <Item value="results" priority="0" />
+      <Item value="IFormatProvider`0" priority="0" />
+      <Item value="IQueryOver`0" priority="0" />
+      <Item value="T`0" priority="0" />
+      <Item value="where" priority="2" />
+      <Item value="TData" priority="2" />
+      <Item value="List&lt;TData&gt;" priority="0" />
+      <Item value="ICriteriaQuery`0" priority="2" />
+      <Item value="ICriterion`0" priority="1" />
+      <Item value="QueryOver`0" priority="0" />
+      <Item value="Restrictions`0" priority="0" />
+      <Item value="filter1" priority="0" />
+      <Item value="bufilter" priority="3" />
+      <Item value="GetResponse&lt;Member&gt;" priority="0" />
+      <Item value="out" priority="6" />
+      <Item value="count" priority="4" />
+      <Item value="cnt" priority="0" />
+      <Item value="KeyValuePair" priority="0" />
+      <Item value="AppDomainManager`0" priority="0" />
+      <Item value="ConfigurationSettings`0" priority="0" />
+      <Item value="Configuration" priority="3" />
+      <Item value="Provider" priority="1" />
+      <Item value="ProviderBase`0" priority="0" />
+      <Item value="ConfigurationManager`0" priority="0" />
+      <Item value="ProviderSettings`0" priority="0" />
+      <Item value="ProviderSettings" priority="0" />
+      <Item value="FormattedDate" priority="0" />
+      <Item value="ModifiedDate" priority="1" />
+      <Item value="value" priority="0" />
+      <Item value="partial" priority="0" />
+      <Item value="f" priority="26" />
+      <Item value="GetFamily`0" priority="1" />
+      <Item value="familyId" priority="4" />
+      <Item value="long" priority="1" />
+      <Item value="GetFamilyMembers`0" priority="0" />
+      <Item value="FamilyRepository`0" priority="0" />
+      <Item value="AppDomainSetup`0" priority="0" />
+      <Item value="BadRequest" priority="0" />
+      <Item value="CheckPermissions`0" priority="3" />
+      <Item value="AddFamilyMember`0" priority="0" />
+      <Item value="Notification`0" priority="9" />
+      <Item value="FromMemberID" priority="0" />
+      <Item value="FromUsername" priority="0" />
+      <Item value="notification" priority="7" />
+      <Item value="Subject" priority="0" />
+      <Item value="Message" priority="0" />
+      <Item value="Cateogory" priority="0" />
+      <Item value="Read" priority="0" />
+      <Item value="prinicpal" priority="0" />
+      <Item value="n" priority="6" />
+      <Item value="HttpResponse`0" priority="0" />
+      <Item value="break" priority="0" />
+      <Item value="case" priority="0" />
+      <Item value="Enum`0" priority="1" />
+      <Item value="category" priority="1" />
+      <Item value="GetNotification`0" priority="0" />
+      <Item value="GetNotificationCategory`0" priority="0" />
+      <Item value="Notification" priority="0" />
+      <Item value="subject" priority="4" />
+      <Item value="message" priority="3" />
+      <Item value="fromUsername" priority="1" />
+      <Item value="Request`0" priority="0" />
+      <Item value="NotificationRequest`0" priority="0" />
+      <Item value="prinicipal" priority="3" />
+      <Item value="toMemberId" priority="2" />
+      <Item value="SubjectLines`0" priority="2" />
+      <Item value="MessageLines`0" priority="0" />
+      <Item value="familyName" priority="2" />
+      <Item value="NotificationRepository`0" priority="0" />
+      <Item value="FamilyRequest`0" priority="0" />
+      <Item value="ActionAPI" priority="0" />
+      <Item value="ActionText" priority="0" />
+      <Item value="ActionOccurred" priority="0" />
+      <Item value="apitext" priority="0" />
+      <Item value="ActionApiMethod" priority="1" />
+      <Item value="IsEmptyExpression`0" priority="0" />
+      <Item value="AuthService`0" priority="0" />
+      <Item value="Token`0" priority="8" />
+      <Item value="Token" priority="6" />
+      <Item value="oauth_token" priority="4" />
+      <Item value="expires" priority="1" />
+      <Item value="FirstName" priority="0" />
+      <Item value="LastName" priority="0" />
+      <Item value="Email" priority="0" />
+      <Item value="Login`0" priority="4" />
+      <Item value="oauth_timestamp" priority="11" />
+      <Item value="Unauthorized" priority="0" />
+      <Item value="u" priority="4" />
+      <Item value="AuthRepository`0" priority="1" />
+      <Item value="in" priority="2" />
+      <Item value="GetToken`0" priority="0" />
+      <Item value="IIdentity`0" priority="1" />
+      <Item value="Identity" priority="2" />
+      <Item value="ApplicationIdentity`0" priority="0" />
+      <Item value="AuthIdentity`0" priority="1" />
+      <Item value="IsAuthenticated" priority="1" />
+      <Item value="_id" priority="1" />
+      <Item value="EnterpriseID" priority="0" />
+      <Item value="MemberID" priority="0" />
+      <Item value="Username" priority="0" />
+      <Item value="ValidateToken`0" priority="0" />
+      <Item value="setcontext" priority="1" />
+      <Item value="IPrincipal`0" priority="0" />
+      <Item value="AuthUser`0" priority="1" />
+      <Item value="BaseRepo`0" priority="0" />
+      <Item value="formatToISO86`0" priority="2" />
+      <Item value="_time" priority="0" />
+      <Item value="BaseObject`0" priority="4" />
+      <Item value="dateTime" priority="1" />
+      <Item value="OutgoingWebResponseContext`0" priority="0" />
+      <Item value="OutgoingWebResponseContext" priority="0" />
+      <Item value="Web" priority="0" />
+      <Item value="HttpCookie`0" priority="1" />
+      <Item value="HttpCookie" priority="1" />
+      <Item value="cookie" priority="1" />
+      <Item value="RoleProvider" priority="1" />
+      <Item value="Roles`0" priority="3" />
+      <Item value="IsIn`0" priority="0" />
+      <Item value="AuthenticationType" priority="0" />
+      <Item value="Roles" priority="0" />
+      <Item value="CurrentUser" priority="0" />
+      <Item value="GetMember`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Extension">
+      <Item value="JSONHelper`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Extension+JSONHelper">
+      <Item value="ToJSON`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="ToJSON`0" priority="8" />
+      <Item value="Add`0" priority="11" />
+      <Item value="Count" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.Name">
+      <Item value="First" priority="2" />
+      <Item value="Last" priority="3" />
+      <Item value="Middle" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.Address">
+      <Item value="State" priority="2" />
+      <Item value="Street" priority="1" />
+      <Item value="City" priority="1" />
+      <Item value="Zip" priority="1" />
+      <Item value="Apt" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.ChannelPreferences">
+      <Item value="Preferred" priority="3" />
+      <Item value="MessageChannels" priority="2" />
+      <Item value="Channels" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Objects.MessageChannels">
+      <Item value="Twitter" priority="4" />
+      <Item value="Email" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.MessageChannels">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.Channel">
+      <Item value="Name" priority="1" />
+      <Item value="AccountId" priority="2" />
+      <Item value="ChannelId" priority="3" />
+      <Item value="Preferred" priority="1" />
+      <Item value="IsActive" priority="2" />
+      <Item value="IsOptIn" priority="2" />
+      <Item value="ChannelName" priority="0" />
+      <Item value="IsPreferred" priority="0" />
+      <Item value="Type" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="ToString`0" priority="13" />
+      <Item value="ToShortDateString`0" priority="2" />
+      <Item value="AddHours`0" priority="3" />
+      <Item value="AddMinutes`0" priority="0" />
+      <Item value="ToUniversalTime`0" priority="0" />
+      <Item value="AddDays`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="UtcNow" priority="0" />
+      <Item value="Parse`0" priority="0" />
+      <Item value="Now" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.SampleData">
+      <Item value="GetMemberList`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Data.SampleData">
+      <Item value="GetMemberById`0" priority="1" />
+      <Item value="SaveMember`0" priority="0" />
+      <Item value="DeleteMember`0" priority="0" />
+      <Item value="GetMemberList`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="ToJSON`0" priority="4" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="ToArray`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Data.CollectionResponse`1">
+      <Item value="ToJSON`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.Member">
+      <Item value="ToJSON`0" priority="1" />
+      <Item value="Name" priority="3" />
+      <Item value="Address" priority="4" />
+      <Item value="DateOfBirth" priority="1" />
+      <Item value="Channels" priority="1" />
+      <Item value="Membership" priority="0" />
+      <Item value="Image" priority="2" />
+      <Item value="GetType`0" priority="0" />
+      <Item value="FirstName" priority="2" />
+      <Item value="LastName" priority="0" />
+      <Item value="ModifiedDate" priority="1" />
+      <Item value="LastVisitDate" priority="4" />
+      <Item value="EnterpriseId" priority="3" />
+      <Item value="BusinessUnitId" priority="10" />
+      <Item value="ProviderUserKey" priority="0" />
+      <Item value="MemberId" priority="2" />
+      <Item value="Apt" priority="0" />
+      <Item value="City" priority="0" />
+      <Item value="Email" priority="1" />
+      <Item value="FamilyId" priority="5" />
+      <Item value="MiddleName" priority="1" />
+      <Item value="StartDate" priority="1" />
+      <Item value="Street" priority="1" />
+      <Item value="Zip" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Data.Response">
+      <Item value="ToJSON`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Data.Response`1">
+      <Item value="ToJSON`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Data.GetResponse`1">
+      <Item value="ToJSON`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.Membership">
+      <Item value="StartDate" priority="1" />
+      <Item value="LastVisitDate" priority="1" />
+      <Item value="IsActive" priority="1" />
+      <Item value="EndDate" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Data.Enums">
+      <Item value="MessageChannels`0" priority="0" />
+      <Item value="NotificationCategory`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.MessageChannel">
+      <Item value="Id" priority="1" />
+      <Item value="Name" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.PropertyPart">
+      <Item value="Column`0" priority="10" />
+      <Item value="ReadOnly`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.OneToManyPart`1">
+      <Item value="KeyColumns" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FluentNHibernate.Cfg.Fluently">
+      <Item value="Configure`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.FluentConfiguration">
+      <Item value="Database`0" priority="3" />
+      <Item value="Cache`0" priority="0" />
+      <Item value="BuildSessionFactory`0" priority="0" />
+      <Item value="Mappings`0" priority="1" />
+      <Item value="ExposeConfiguration`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FluentNHibernate.Cfg.Db.MsSqlConfiguration">
+      <Item value="MsSql2005" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.Db.MsSqlConfiguration">
+      <Item value="ConnectionString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.Db.MsSqlConnectionStringBuilder">
+      <Item value="FromAppSetting`0" priority="0" />
+      <Item value="FromConnectionStringWithKey`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.Db.CacheSettingsBuilder">
+      <Item value="UseQueryCache`0" priority="0" />
+      <Item value="ProviderClass`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.MappingConfiguration">
+      <Item value="FluentMappings" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.FluentMappingsContainer">
+      <Item value="AddFromAssemblyOf`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ISessionFactory">
+      <Item value="OpenSession`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ISession">
+      <Item value="BeginTransaction`0" priority="1" />
+      <Item value="SaveOrUpdate`0" priority="0" />
+      <Item value="Save`0" priority="0" />
+      <Item value="QueryOver`1" priority="1" />
+      <Item value="CreateCriteria`0" priority="0" />
+      <Item value="Get`1" priority="1" />
+      <Item value="Delete`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ITransaction">
+      <Item value="Commit`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="Equals`0" priority="0" />
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.IdentityPart">
+      <Item value="Column`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.Family">
+      <Item value="Id" priority="7" />
+      <Item value="Name" priority="5" />
+      <Item value="Image" priority="5" />
+      <Item value="EnterpriseId" priority="2" />
+      <Item value="BusinessUnitId" priority="1" />
+      <Item value="CreatedBy" priority="5" />
+      <Item value="ModifiedDate" priority="1" />
+      <Item value="CreatedDate" priority="0" />
+      <Item value="IsActive" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="InnerException" priority="3" />
+      <Item value="Message" priority="1" />
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Data.MemberRepository">
+      <Item value="GetMemberList`0" priority="0" />
+      <Item value="GetMember`0" priority="2" />
+      <Item value="UpdateMember`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Data.Entity`1">
+      <Item value="Save`0" priority="3" />
+      <Item value="FindMany`1" priority="1" />
+      <Item value="FindOne`1" priority="1" />
+      <Item value="Delete`0" priority="0" />
+      <Item value="Update`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Utility">
+      <Item value="ToDateTime`0" priority="0" />
+      <Item value="GetContext`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.Web.WebMessageFormat">
+      <Item value="Json" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.OperationFormatStyle">
+      <Item value="Rpc" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.GetCollectionResponse`1">
+      <Item value="ToJSON`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Runtime.Serialization.Json.DataContractJsonSerializer">
+      <Item value="ToJSON`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Utility`1">
+      <Item value="ToJSON`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Auth.AuthServiceAuthorizationManager">
+      <Item value="CheckAccess`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.OperationContext">
+      <Item value="Current" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.OperationContext">
+      <Item value="RequestContext" priority="4" />
+      <Item value="SessionId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Channels.RequestContext">
+      <Item value="RequestMessage" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Channels.Message">
+      <Item value="Headers" priority="3" />
+      <Item value="State" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.Channels.MessageHeader">
+      <Item value="CreateHeader`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.ChannelFactory`1">
+      <Item value="CreateChannel`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.Cryptography.AesManaged">
+      <Item value="IV" priority="2" />
+      <Item value="GenerateIV`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Join`0" priority="1" />
+      <Item value="Format`0" priority="4" />
+      <Item value="IsNullOrEmpty`0" priority="8" />
+      <Item value="Empty" priority="28" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Auth.Encrypt">
+      <Item value="EncryptStringToBytes`0" priority="0" />
+      <Item value="DecryptStringFromBytes`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="ToString`0" priority="1" />
+      <Item value="Split`0" priority="2" />
+      <Item value="ToUpper`0" priority="2" />
+      <Item value="ToLower`0" priority="2" />
+      <Item value="Trim`0" priority="2" />
+      <Item value="Contains`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Auth.AuthManager">
+      <Item value="GenerateSalt`0" priority="0" />
+      <Item value="DecryptContext`0" priority="0" />
+      <Item value="GenerateToken`0" priority="3" />
+      <Item value="GetPrincipal`0" priority="2" />
+      <Item value="DisposeToken`0" priority="1" />
+      <Item value="CreateMember`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.Cryptography.RijndaelManaged">
+      <Item value="Key" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Auth.Principal">
+      <Item value="TenantID" priority="1" />
+      <Item value="EnterpriseID" priority="6" />
+      <Item value="BusinessUnitID" priority="11" />
+      <Item value="MemberID" priority="13" />
+      <Item value="EnterpriseId" priority="0" />
+      <Item value="ProviderUserKey" priority="1" />
+      <Item value="Username" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToInt32`0" priority="8" />
+      <Item value="ToBase64String`0" priority="0" />
+      <Item value="ToDateTime`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.HttpContext">
+      <Item value="Current" priority="14" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpContext">
+      <Item value="Handler" priority="0" />
+      <Item value="Request" priority="4" />
+      <Item value="User" priority="6" />
+      <Item value="Response" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Data.SqlDbType">
+      <Item value="NVarChar" priority="3" />
+      <Item value="UniqueIdentifier" priority="1" />
+      <Item value="Int" priority="3" />
+      <Item value="DateTime" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Connect.Models.LoginModel">
+      <Item value="UserName" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Security.Membership">
+      <Item value="ValidateUser`0" priority="0" />
+      <Item value="GetUser`0" priority="11" />
+      <Item value="CreateUser`0" priority="1" />
+      <Item value="Provider" priority="0" />
+      <Item value="Providers" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.Principal.IPrincipal">
+      <Item value="Identity" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.Principal.IIdentity">
+      <Item value="Name" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Security.MembershipUser">
+      <Item value="ProviderUserKey" priority="8" />
+      <Item value="UserName" priority="2" />
+      <Item value="Email" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Connect.Models.RegisterModel">
+      <Item value="UserName" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Common.DbConnectionStringBuilder">
+      <Item value="ConnectionString" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlConnection">
+      <Item value="Open`0" priority="1" />
+      <Item value="Close`0" priority="0" />
+      <Item value="CreateCommand`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Common.DbCommand">
+      <Item value="CommandText" priority="0" />
+      <Item value="Parameters" priority="1" />
+      <Item value="CommandType" priority="0" />
+      <Item value="ExecuteNonQuery`0" priority="0" />
+      <Item value="ExecuteScalar`0" priority="0" />
+      <Item value="ExecuteReader`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Common.DbParameterCollection">
+      <Item value="AddRange`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Common.DbDataReader">
+      <Item value="HasRows" priority="0" />
+      <Item value="Close`0" priority="0" />
+      <Item value="FieldCount" priority="0" />
+      <Item value="Read`0" priority="0" />
+      <Item value="IsDBNull`0" priority="0" />
+      <Item value="GetName`0" priority="1" />
+      <Item value="GetValue`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Hashtable">
+      <Item value="Add`0" priority="2" />
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Auth.DBConnection">
+      <Item value="ExecuteQuery`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.HttpWebRequest">
+      <Item value="Headers" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.WebHeaderCollection">
+      <Item value="Add`0" priority="0" />
+      <Item value="Get`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpRequestBase">
+      <Item value="Url" priority="2" />
+      <Item value="Headers" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Uri">
+      <Item value="AbsoluteUri" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Specialized.NameValueCollection">
+      <Item value="Add`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpResponseBase">
+      <Item value="Headers" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.HttpStatusCode">
+      <Item value="Unauthorized" priority="4" />
+      <Item value="Conflict" priority="0" />
+      <Item value="NoContent" priority="0" />
+      <Item value="InternalServerError" priority="0" />
+      <Item value="BadRequest" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.RedirectResult">
+      <Item value="Equals`0" priority="0" />
+      <Item value="Url" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.Web.WebOperationContext">
+      <Item value="Current" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Web.WebOperationContext">
+      <Item value="IncomingRequest" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.Criterion.Lambda.IQueryOverRestrictionBuilder`2">
+      <Item value="Equals`0" priority="0" />
+      <Item value="IsIn`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ICriteria">
+      <Item value="CreateCriteria`0" priority="0" />
+      <Item value="SetFirstResult`0" priority="0" />
+      <Item value="SetMaxResults`0" priority="0" />
+      <Item value="Add`0" priority="0" />
+      <Item value="List`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.IQueryOver`2">
+      <Item value="WhereRestrictionOn`0" priority="3" />
+      <Item value="SingleOrDefault`1" priority="0" />
+      <Item value="Take`0" priority="0" />
+      <Item value="Future`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="Min`0" priority="2" />
+      <Item value="Max`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NHibernate.Criterion.QueryOver">
+      <Item value="Of`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NHibernate.Criterion.QueryOver`2">
+      <Item value="Of`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.Criterion.QueryOver`2">
+      <Item value="Where`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.Criterion.ICriterion">
+      <Item value="Equals`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.IQueryOver`1">
+      <Item value="ToRowCountInt64Query`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.IFutureValue`1">
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Guid">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Configuration.ConfigurationSettings">
+      <Item value="AppSettings" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Configuration.ConfigurationManager">
+      <Item value="ConnectionStrings" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Configuration.ConnectionStringSettings">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Data.FamilyRepository">
+      <Item value="DeleteFamily`0" priority="0" />
+      <Item value="GetFamily`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.Notification">
+      <Item value="MemberId" priority="1" />
+      <Item value="FromMemberId" priority="0" />
+      <Item value="FromUsername" priority="1" />
+      <Item value="Cateogory" priority="1" />
+      <Item value="Subject" priority="1" />
+      <Item value="Message" priority="1" />
+      <Item value="Read" priority="0" />
+      <Item value="ToMemberID" priority="0" />
+      <Item value="ModifiedDate" priority="0" />
+      <Item value="IsActive" priority="2" />
+      <Item value="HasRead" priority="0" />
+      <Item value="FromMemberID" priority="0" />
+      <Item value="Category" priority="0" />
+      <Item value="ActionText" priority="1" />
+      <Item value="ActionOccurred" priority="1" />
+      <Item value="ActionAPI" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Data.Enums+NotificationCategory">
+      <Item value="Message" priority="0" />
+      <Item value="REQUEST" priority="0" />
+      <Item value="MESSAGE" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Data.Enums+NotificationCategory">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Data.SubjectLines">
+      <Item value="FamilyRequest" priority="1" />
+      <Item value="FamilyRequestConfirmed" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Data.MessageLines">
+      <Item value="FamilyRequest" priority="1" />
+      <Item value="FamilyRequestConfirmed" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Login">
+      <Item value="username" priority="2" />
+      <Item value="password" priority="1" />
+      <Item value="email" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Data.AuthRepository">
+      <Item value="Login`0" priority="0" />
+      <Item value="RegisterMember`0" priority="0" />
+      <Item value="Logoff`0" priority="0" />
+      <Item value="RefreshToken`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.AuthManager">
+      <Item value="DisposeToken`0" priority="2" />
+      <Item value="GetPrincipal`0" priority="0" />
+      <Item value="GenerateToken`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Token">
+      <Item value="ToString`0" priority="0" />
+      <Item value="oauth_token" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Principal">
+      <Item value="EnterpriseID" priority="0" />
+      <Item value="BusinessUnitID" priority="0" />
+      <Item value="MemberID" priority="0" />
+      <Item value="ProviderUserKey" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Channels.MessageHeaderInfo">
+      <Item value="ToString`0" priority="0" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Channels.MessageHeaders">
+      <Item value="FindHeader`0" priority="0" />
+      <Item value="Any`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpRequest">
+      <Item value="Headers" priority="1" />
+      <Item value="Url" priority="0" />
+      <Item value="QueryString" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Rest.Auth.AuthManager">
+      <Item value="ValidateToken`0" priority="2" />
+      <Item value="GetPrincipal`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.Principal">
+      <Item value="EnterpriseID" priority="1" />
+      <Item value="BusinessUnitID" priority="1" />
+      <Item value="MemberID" priority="7" />
+      <Item value="Username" priority="4" />
+      <Item value="ProviderUserKey" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpResponse">
+      <Item value="Headers" priority="0" />
+      <Item value="SetCookie`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.Token">
+      <Item value="oauth_token" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Web.IncomingWebRequestContext">
+      <Item value="UriTemplateMatch" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.UriTemplateMatch">
+      <Item value="QueryParameters" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Security.Roles">
+      <Item value="GetRolesForUser`0" priority="1" />
+      <Item value="GetAllRoles`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Rest.Objects.AuthUser">
+      <Item value="Principal" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

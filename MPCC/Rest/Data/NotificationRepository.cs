@@ -3,32 +3,33 @@ using System.Collections.Generic;
 using System.Net;
 using System.ServiceModel.Web;
 using NHibernate.Criterion;
+using Rest.Auth;
 using Rest.Objects;
 
 namespace Rest.Data
 {
-    public class NotificationRepository
+    public class NotificationRepository : ServiceAuthorization
     {
-        public static List<Notification> GetNotificationCollection(Principal principal, int index, int paging, out long count)
+        public static List<Notification> GetNotificationCollection(int index, int paging, out long count)
         {
-            var bufilter = Restrictions.Where<Notification>(x => x.BusinessUnitID == principal.BusinessUnitID && x.EnterpriseID == principal.EnterpriseID && x.ToMemberID == principal.MemberID && x.IsActive);
+            var bufilter = Restrictions.Where<Notification>(x => x.BusinessUnitID == CurrentUser.Principal.BusinessUnitID && x.EnterpriseID == CurrentUser.Principal.EnterpriseID && x.ToMemberID == CurrentUser.Principal.MemberID && x.IsActive);
             return Entity<Notification>.FindMany<Notification>(bufilter, index, paging, out count);
         }
 
-        public static List<Notification> GetSentNotificationCollection(Principal principal, int index, int paging, out long count)
+        public static List<Notification> GetSentNotificationCollection(int index, int paging, out long count)
         {
-            var bufilter = Restrictions.Where<Notification>(x => x.BusinessUnitID == principal.BusinessUnitID && x.EnterpriseID == principal.EnterpriseID && x.FromMemberID == principal.MemberID && x.IsActive);
+            var bufilter = Restrictions.Where<Notification>(x => x.BusinessUnitID == CurrentUser.Principal.BusinessUnitID && x.EnterpriseID == CurrentUser.Principal.EnterpriseID && x.FromMemberID == CurrentUser.Principal.MemberID && x.IsActive);
             return Entity<Notification>.FindMany<Notification>(bufilter, index, paging, out count);
         }
 
-        public static Notification CreateNotification(Principal principal, Notification notification)
+        public static Notification CreateNotification(Notification notification)
         {
             var n = new Notification()
             {
                 EnterpriseID = notification.EnterpriseID,
                 BusinessUnitID = notification.BusinessUnitID,
                 ToMemberID = notification.ToMemberID,
-                FromMemberID = principal.MemberID,
+                FromMemberID = CurrentUser.Principal.MemberID,
                 FromUsername = notification.FromUsername,
                 Subject = notification.Subject ?? String.Empty,
                 Message = notification.Message ?? String.Empty,
@@ -46,15 +47,15 @@ namespace Rest.Data
             return n;
         }
 
-        public static Notification GetNotification(Principal principal, int id)
+        public static Notification GetNotification(int id)
         {
             return Entity<Notification>.FindOne<Notification>(id);
         }
 
-        public static Notification UpdateNotification(Principal principal, Notification notification)
+        public static Notification UpdateNotification(Notification notification)
         {
-            var n = GetNotification(principal, notification.ID);
-            CheckPermissions(principal.MemberID, n.ToMemberID);
+            var n = GetNotification(notification.ID);
+            CheckPermissions(CurrentUser.Principal.MemberID, n.ToMemberID);
             n.ModifiedDate = DateTime.Now.ToString();
             n.IsActive = notification.IsActive;
             n.HasRead = notification.HasRead;
@@ -63,10 +64,10 @@ namespace Rest.Data
             return n;
         }
 
-        public static void CancelNotification(Principal principal, int notificationID)
+        public static void CancelNotification(int notificationID)
         {
-            var n = GetNotification(principal, notificationID);
-            CheckPermissions(principal.MemberID, n.FromMemberID);
+            var n = GetNotification(notificationID);
+            CheckPermissions(CurrentUser.Principal.MemberID, n.FromMemberID);
             n.ModifiedDate = DateTime.Now.ToString();
             n.IsActive = false;
             Entity<Notification>.Update(n);
@@ -98,20 +99,20 @@ namespace Rest.Data
         /// <param name="actionApiText"></param>
         /// <returns></returns>
         
-        public static Notification NotificationRequest(Principal principal, int toMemberId, string subject, string message)
+        public static Notification NotificationRequest(int toMemberId, string subject, string message)
         {
-            return NotificationRequest(principal, toMemberId, subject, message, String.Empty, String.Empty, String.Empty);
+            return NotificationRequest(toMemberId, subject, message, String.Empty, String.Empty, String.Empty);
         }
 
-        public static Notification NotificationRequest(Principal principal, int toMemberId, string subject, string message, string actionApi, string actionApiText, string actionApiMethod)
+        public static Notification NotificationRequest(int toMemberId, string subject, string message, string actionApi, string actionApiText, string actionApiMethod)
         {
             return new Notification()
                        {
-                           EnterpriseID = principal.EnterpriseID,
-                           BusinessUnitID = principal.BusinessUnitID,
+                           EnterpriseID = CurrentUser.Principal.EnterpriseID,
+                           BusinessUnitID = CurrentUser.Principal.BusinessUnitID,
                            ToMemberID = toMemberId,
-                           FromMemberID = principal.MemberID,
-                           FromUsername = principal.Username,
+                           FromMemberID = CurrentUser.Principal.MemberID,
+                           FromUsername = CurrentUser.Principal.Username,
                            Subject = subject,
                            Message = message,
                            ActionApiMethod = actionApiMethod,
@@ -126,20 +127,20 @@ namespace Rest.Data
                        };
         }
 
-        public static Notification NotificationMessage(Principal principal, int toMemberId, string subject, string message)
+        public static Notification NotificationMessage(int toMemberId, string subject, string message)
         {
-            return NotificationMessage(principal, toMemberId, subject, message, String.Empty, String.Empty, String.Empty);
+            return NotificationMessage(toMemberId, subject, message, String.Empty, String.Empty, String.Empty);
         }
 
-        public static Notification NotificationMessage(Principal principal, int toMemberId, string subject, string message, string actionApi, string actionApiText, string actionApiMethod)
+        public static Notification NotificationMessage(int toMemberId, string subject, string message, string actionApi, string actionApiText, string actionApiMethod)
         {
             return new Notification()
             {
-                EnterpriseID = principal.EnterpriseID,
-                BusinessUnitID = principal.BusinessUnitID,
+                EnterpriseID = CurrentUser.Principal.EnterpriseID,
+                BusinessUnitID = CurrentUser.Principal.BusinessUnitID,
                 ToMemberID = toMemberId,
-                FromMemberID = principal.MemberID,
-                FromUsername = principal.Username,
+                FromMemberID = CurrentUser.Principal.MemberID,
+                FromUsername = CurrentUser.Principal.Username,
                 Subject = subject,
                 Message = message,
                 ActionApiMethod = actionApiMethod,

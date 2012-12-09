@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.ServiceModel.Web;
+using System.Web;
 using System.Web.Script.Serialization;
 using System.Xml;
 using Rest.Auth;
@@ -16,7 +17,12 @@ namespace Rest
 
             if (String.IsNullOrEmpty(token))
             {
-                throw new WebFaultException(HttpStatusCode.Unauthorized);
+                if(String.IsNullOrEmpty(request.UriTemplateMatch.QueryParameters["oauth_token"]))
+                {
+                    throw new WebFaultException(HttpStatusCode.Unauthorized);
+                }
+                
+                token = request.UriTemplateMatch.QueryParameters["oauth_token"];
             }
 
             if (!AuthManager.ValidateToken(token))
