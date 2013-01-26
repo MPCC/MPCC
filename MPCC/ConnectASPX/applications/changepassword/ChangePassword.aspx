@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Change Password" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
+﻿<%@ Page Title="Change Password" Language="C#" MasterPageFile="~/connect.master" AutoEventWireup="true"
     CodeBehind="ChangePassword.aspx.cs" Inherits="ConnectASPX.Account.ChangePassword" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">

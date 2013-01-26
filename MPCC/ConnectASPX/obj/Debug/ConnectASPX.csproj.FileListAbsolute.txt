@@ -14,3 +14,19 @@ C:\New\MPCC\MPCC\ConnectASPX\bin\Iesi.Collections.xml
 C:\New\MPCC\MPCC\ConnectASPX\obj\Debug\ResolveAssemblyReference.cache
 C:\New\MPCC\MPCC\ConnectASPX\obj\Debug\ConnectASPX.dll
 C:\New\MPCC\MPCC\ConnectASPX\obj\Debug\ConnectASPX.pdb
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\bin\ConnectASPX.dll
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\bin\ConnectASPX.pdb
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\bin\Rest.dll
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\bin\FluentNHibernate.dll
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\bin\NHibernate.dll
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\bin\Iesi.Collections.dll
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\bin\Rest.pdb
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\bin\FluentNHibernate.pdb
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\bin\FluentNHibernate.xml
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\bin\NHibernate.pdb
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\bin\NHibernate.xml
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\bin\Iesi.Collections.pdb
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\bin\Iesi.Collections.xml
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\obj\Debug\ConnectASPX.csprojResolveAssemblyReference.cache
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\obj\Debug\ConnectASPX.dll
+D:\PERSONAL DEVELOPMENT\MPCC\MPCC\MPCC\ConnectASPX\obj\Debug\ConnectASPX.pdb
