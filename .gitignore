@@ -22,3 +22,7 @@ MPCC/ConnectASPX/bin/NHibernate.xml
 MPCC/ConnectASPX/bin/Rest.dll
 MPCC/ConnectASPX/bin/Rest.pdb
 MPCC/ConnectASPX/bin/System.Web.Providers.dll
+MPCC/ConnectASPX/obj/Debug/ConnectASPX.csproj.FileListAbsolute.txt
+MPCC/ConnectASPX/obj/Debug/ConnectASPX.csprojResolveAssemblyReference.cache
+MPCC/ConnectASPX/obj/Debug/ConnectASPX.dll
+MPCC/ConnectASPX/obj/Debug/ConnectASPX.pdb

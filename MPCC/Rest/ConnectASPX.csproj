@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6D28265E-68E4-4318-856E-535BFBE2F40A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConnectASPX</RootNamespace>
+    <AssemblyName>ConnectASPX</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="applications\css\bootstrap.min.css" />
+    <Content Include="applications\css\font-awesome-ie7.min.css" />
+    <Content Include="applications\css\font-awesome.min.css" />
+    <Content Include="applications\css\style.css" />
+    <Content Include="applications\imgs\backbone_logo.png" />
+    <Content Include="applications\imgs\body-bg.png" />
+    <Content Include="applications\imgs\loadingorange16x16.gif" />
+    <Content Include="applications\imgs\loadingorange32x32.gif" />
+    <Content Include="applications\imgs\loadingOrange52x52.gif" />
+    <Content Include="applications\imgs\mpcc_lg.png" />
+    <Content Include="applications\imgs\require_logo.png" />
+    <Content Include="applications\index.html" />
+    <Content Include="applications\js\collections\contributors\ContributorsCollection.js" />
+    <Content Include="applications\js\collections\projects\ProjectsCollection.js" />
+    <Content Include="applications\js\common.js" />
+    <Content Include="applications\js\main.js" />
+    <Content Include="applications\js\models\contributor\ContributorModel.js" />
+    <Content Include="applications\js\models\owner\OwnerModel.js" />
+    <Content Include="applications\js\models\project\ProjectModel.js" />
+    <Content Include="applications\js\router.js" />
+    <Content Include="applications\js\views\appsview.js" />
+    <Content Include="applications\js\views\FooterView.js" />
+    <Content Include="applications\js\views\HomeView.js" />
+    <Content Include="applications\js\views\newsview.js" />
+    <Content Include="applications\js\views\notificationsview.js" />
+    <Content Include="applications\js\views\resourcesview.js" />
+    <Content Include="applications\js\views\sermonsview.js" />
+    <Content Include="applications\templates\apps.html" />
+    <Content Include="applications\templates\footerTemplate.html" />
+    <Content Include="applications\templates\homeTemplate.html" />
+    <Content Include="applications\templates\news.html" />
+    <Content Include="applications\templates\notifications.html" />
+    <Content Include="applications\templates\resources.html" />
+    <Content Include="applications\templates\sermons.html" />
+    <Content Include="App_Themes\default\css\bootstrap.min.css" />
+    <Content Include="App_Themes\default\css\content.css" />
+    <Content Include="App_Themes\default\font\fontawesome-webfont.svg" />
+    <Content Include="App_Themes\default\img\body-bg.png" />
+    <Content Include="App_Themes\default\img\check.png" />
+    <Content Include="App_Themes\default\img\glyphicons-halflings-white.png" />
+    <Content Include="App_Themes\default\img\glyphicons-halflings.png" />
+    <Content Include="App_Themes\default\img\mpcc_lg.png" />
+    <Content Include="App_Themes\default\img\mpcc_logo.png" />
+    <Content Include="App_Themes\default\img\password.png" />
+    <Content Include="App_Themes\default\img\user.png" />
+    <Content Include="applications\changepassword\ChangePassword.aspx" />
+    <Content Include="applications\changepassword\ChangePasswordSuccess.aspx" />
+    <Content Include="about.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="faq.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="scripts\all.min.js" />
+    <Content Include="scripts\app.js" />
+    <Content Include="scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="scripts\jquery-1.4.1.js" />
+    <Content Include="scripts\jquery-1.4.1.min.js" />
+    <Content Include="scripts\jquery.tweet.js" />
+    <Content Include="scripts\common.js" />
+    <Content Include="scripts\libs\backbone.js" />
+    <Content Include="scripts\libs\bootstrap.js" />
+    <Content Include="scripts\libs\jquery.js" />
+    <Content Include="scripts\libs\jquery.validate.min.js" />
+    <Content Include="scripts\libs\order.js" />
+    <Content Include="scripts\libs\require.js" />
+    <Content Include="scripts\libs\underscore.js" />
+    <Content Include="scripts\loader.js" />
+    <Content Include="scripts\main.js" />
+    <Content Include="scripts\router.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="applications\changepassword\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="applications\changepassword\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="applications\changepassword\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="applications\changepassword\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="connect.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rest\Rest.csproj">
+      <Project>{9EA6FFF3-28D3-40CC-9E77-347C7C1D1517}</Project>
+      <Name>Rest</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="applications\fonts\font01.woff" />
+    <None Include="applications\fonts\font02.woff" />
+    <None Include="applications\fonts\font03.woff" />
+    <None Include="applications\fonts\font04.woff" />
+    <None Include="applications\fonts\fontawesome-webfont.eot" />
+    <None Include="applications\fonts\fontawesome-webfont.ttf" />
+    <None Include="applications\fonts\fontawesome-webfont.woff" />
+    <None Include="applications\fonts\FontAwesome.otf" />
+    <None Include="App_Themes\default\font\fontawesome-webfont.eot" />
+    <None Include="App_Themes\default\font\fontawesome-webfont.svgz" />
+    <None Include="App_Themes\default\font\fontawesome-webfont.ttf" />
+    <None Include="App_Themes\default\font\fontawesome-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20844</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

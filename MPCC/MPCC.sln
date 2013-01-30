@@ -3,26 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rest", "Rest\Rest.csproj", "{9EA6FFF3-28D3-40CC-9E77-347C7C1D1517}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "connect", "http://localhost/connect", "{0EAB6CE1-08BB-4897-ADED-B88E6EFEF93D}"
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "false"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/connect"
-		Debug.AspNetCompiler.PhysicalPath = "ConnectASPX\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\connect\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/connect"
-		Release.AspNetCompiler.PhysicalPath = "ConnectASPX\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\connect\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "Connect\"
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectASPX", "ConnectASPX\ConnectASPX.csproj", "{6D28265E-68E4-4318-856E-535BFBE2F40A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,16 +25,16 @@ Global
 		{9EA6FFF3-28D3-40CC-9E77-347C7C1D1517}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{9EA6FFF3-28D3-40CC-9E77-347C7C1D1517}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{9EA6FFF3-28D3-40CC-9E77-347C7C1D1517}.Release|x86.ActiveCfg = Release|Any CPU
-		{0EAB6CE1-08BB-4897-ADED-B88E6EFEF93D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EAB6CE1-08BB-4897-ADED-B88E6EFEF93D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0EAB6CE1-08BB-4897-ADED-B88E6EFEF93D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{0EAB6CE1-08BB-4897-ADED-B88E6EFEF93D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{0EAB6CE1-08BB-4897-ADED-B88E6EFEF93D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{0EAB6CE1-08BB-4897-ADED-B88E6EFEF93D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EAB6CE1-08BB-4897-ADED-B88E6EFEF93D}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{0EAB6CE1-08BB-4897-ADED-B88E6EFEF93D}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{0EAB6CE1-08BB-4897-ADED-B88E6EFEF93D}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
-		{0EAB6CE1-08BB-4897-ADED-B88E6EFEF93D}.Release|x86.ActiveCfg = Debug|Any CPU
+		{6D28265E-68E4-4318-856E-535BFBE2F40A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D28265E-68E4-4318-856E-535BFBE2F40A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D28265E-68E4-4318-856E-535BFBE2F40A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6D28265E-68E4-4318-856E-535BFBE2F40A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6D28265E-68E4-4318-856E-535BFBE2F40A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6D28265E-68E4-4318-856E-535BFBE2F40A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D28265E-68E4-4318-856E-535BFBE2F40A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D28265E-68E4-4318-856E-535BFBE2F40A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6D28265E-68E4-4318-856E-535BFBE2F40A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6D28265E-68E4-4318-856E-535BFBE2F40A}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
